@@ -210,6 +210,8 @@ section#main-part{
   border-left: 0.6rem solid #333;
 }
 
+
+
 .left-list-menu::-webkit-scrollbar-thumb {
   cursor: pointer;
   border-radius: 1rem;
