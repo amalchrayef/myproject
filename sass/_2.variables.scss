@@ -1,4 +1,4 @@
-/*************** colors *******************/
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* colors *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
 html {
     --color-primary: #404040;
@@ -17,4 +17,85 @@ html {
     --color-quaternary-m-light:#3b3b3b;
     --color-quaternary-m-dark: hsla(39, 56%, 92%, 0.85);  
 
+}
+
+
+// Dark Color Palette (Custom Properties)
+/*html[data-theme="dark"] {
+  --color-primary: rgb(36, 38, 43);
+  --color-primary-m: rgba(36, 38, 43, 0.65);
+  --color-secondary: rgb(124, 185, 8);
+  --color-secondary-m: rgba(123, 185, 8, 0.5);
+  --color-tertiary: rgb(38, 52, 65);
+  --color-tertiary-m: hsla(183, 34%, 38%, 0.65);
+  --color-quaternary: hsl(220, 10%, 28%);
+  --color-quaternary-m: hsla(220, 10%, 28%, 0.65);
+  --color-quinary: white;
+  --color-quinary-m: rgba(255, 255, 255, 0.5);
+}
+*/
+//*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Font Weights *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+$font-weights: (
+  "font-weight-thin": 100,
+  "font-weight-light": 300,
+  "font-weight-regular": 400,
+  "font-weight-medium": 500,
+  "font-weight-bold": 700,
+  "font-weight-black": 900,
+);
+@function font-weight($font-weight-style) {
+    @return map-get($font-weights, $font-weight-style);
+  }
+
+
+  //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Font Sizes *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+$font-sizes: (
+    "font-size-smallest":calc(0.3rem + 0.6667vw) ,
+    "font-size-small":calc(0.5rem + 0.6vw) ,
+    "font-size-regular":calc(0.6rem + 0.667vw),
+    "font-size-medium": calc(0.7rem + 0.6667vw),
+    "font-size-large":calc(1rem + 0.6vw) ,
+    "font-size-xlarge": 1.35rem ,
+    "font-size-xxlarge":1.5rem,
+    "font-size-xxxlarge":1.7rem  ,
+
+  );
+  
+  @function font-size($font-size-style) {
+    @return map-get($font-sizes, $font-size-style);
+  }
+
+
+    //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Heights *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+  $height: (
+    "height-size-small":0.11rem  ,
+    "height-size-regular":0.25rem ,
+    "height-size-medium": calc(2.2vw + 2.2vh) ,
+    "height-size-large":calc(3vw + 2.2vh),
+    "height-size-larger": 3.5rem  ,
+    "height-size-largest":4.5rem ,
+    "height-size-xlarge": 80% ,
+    "height-size-xxlarge": 100% ,
+    "height-size-xxxlarge": 150%,
+
+  );
+  
+  @function height($height-size) {
+    @return map-get($height, $height-size);
+  }
+
+
+  //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Break Points *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+$break-points: (
+  "break-point-smallest": 320px,
+  "break-point-smaller": 350px,
+  "break-point-small": 460px,
+  "break-point-medium": 650px,
+  "break-point-tablet": 950px,
+  "break-point-desktop": 1510px,
+);
+
+@function break-point($break-point-limit) {
+  @return map-get($break-points, $break-point-limit);
 }

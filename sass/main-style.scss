@@ -1,3 +1,62 @@
+//*-*-*-*-*-*-*-*-*-*-- The 1510px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@mixin media-desktop {
+    @media screen and (min-width: break-point(break-point-desktop)) {
+      @content;
+    }
+  }
+  
+  //*-*-*-*-*-*-*-*-*-*-- The 950px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+  @mixin media-tablet {
+    @media screen and (max-width: break-point(break-point-tablet)) {
+      @content;
+    }
+  }
+  
+  //*-*-*-*-*-*-*-*-*-*-- The 650px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+  @mixin media-medium {
+    @media screen and (max-width: break-point(break-point-medium)) {
+      @content;
+    }
+  }
+  
+  //*-*-*-*-*-*-*-*-*-*-- The 460px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+  @mixin media-small {
+    @media screen and (max-width: break-point(break-point-small)) {
+      @content;
+    }
+  }
+ //*-*-*-*-*-*-*-*-*-*-- The 350px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+ @mixin media-smaller {
+    @media screen and (max-width: break-point(break-point-smaller)) {
+      @content;
+    }
+  }
+   //*-*-*-*-*-*-*-*-*-*-- The 320px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+   @mixin media-smallest {
+    @media screen and (max-width: break-point(break-point-smallest)) {
+      @content;
+    }
+  }
+
+// *-*-*-*-*-*--*-*-*-*-*-*-*-*---------------------------------*-*-*-*-*-*-*--*-*-*--*-*-*-*-*-*-*-*
+
+::selection {
+    user-select: none;
+  }
+  
 @import "1.reset.scss" ;
 @import "2.variables.scss" ;
 @import "3.utilities.scss" ;
+@import "4.navbar-1.scss" ;
+
+
+
+//*-*-*-*-*-*- Dark Mode Smooth Transition For All HTML Elements -*-*-*-*-*-*-*
+/*html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+  transition: all 0.5s !important;
+  transition-delay: 0 !important;
+  
+}*/

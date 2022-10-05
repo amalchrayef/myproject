@@ -1,0 +1,42 @@
+.header {
+    height: height(height-size-medium);
+    z-index: 2;
+
+  &__main-nav{
+    height: 100%;
+    background-color: var(--color-primary-m-dark);
+    flex-wrap: nowrap;
+    overflow-y: auto;
+
+    &--parts { 
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+
+      &-partleft,&-partright{
+        display: flex; 
+        margin-left: 1.5vw;
+      }
+      & li {
+        padding-right: 2vw;
+        & a 
+        {
+         color: #9c9c9c; 
+         font-size: font-size(font-size-smallest);
+         transition: color 0.30s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* for the animation */ 
+
+          &:active,&:hover {
+            color: white;
+           }
+         
+        }
+      }
+    }
+  }
+
+  &__main-nav::-webkit-scrollbar{
+    display: none; 
+  }
+  }
