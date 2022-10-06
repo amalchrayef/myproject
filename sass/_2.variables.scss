@@ -15,7 +15,10 @@ html {
   
     --color-quaternary: #fff;
     --color-quaternary-m-light:#3b3b3b;
-    --color-quaternary-m-dark: hsla(39, 56%, 92%, 0.85);  
+    --color-quaternary-m-dark: hsla(39, 56%, 92%, 0.85);
+
+    --color-fifthynary: white;
+    --color-fifthynary-m-dark: black;
 
 }
 
@@ -70,6 +73,7 @@ $font-sizes: (
 
   $height: (
     "height-size-small":0.11rem  ,
+    "height-size-smal":0.2rem ,
     "height-size-regular":0.25rem ,
     "height-size-medium": calc(2.2vw + 2.2vh) ,
     "height-size-large":calc(3vw + 2.2vh),

@@ -12,10 +12,25 @@ body {
 
   li {
     list-style: none;  
+    white-space: nowrap;
   }
   
   a {
 text-decoration: none; 
 font-weight: font-weight(font-weight-light); 
 letter-spacing: 0.1rem;
+}
+section#main-part{
+  display: grid;
+  grid-template-columns:
+    [container-start] 24rem [center-start] 1fr[container-end];
+  grid-template-rows: 85vh  /* !!!!!!!!!!!!!!! */
+}
+
+ //*-*-*-*-*-*-*-*-*-*-- The 1510px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@include media-desktop {
+  body {
+    width: 1510px;
+    margin: 0 auto;
+  }
 }

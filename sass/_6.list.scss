@@ -1,0 +1,8 @@
+.left-list-menu{
+    grid-column: container-start / center-start;
+    background-color: var(--color-secondary-m-dark);
+    overflow-y: auto;
+    height: height(height-size-xxlarge);
+    padding-right: 0.7rem;
+  
+  }
