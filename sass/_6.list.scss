@@ -4,5 +4,138 @@
     overflow-y: auto;
     height: height(height-size-xxlarge);
     padding-right: 0.7rem;
-  
+  /* *************** scroll bar properties **********/
+  &::-webkit-scrollbar {
+    width: 1.3rem;
+    border-left: 0.6rem solid var(--color-primary-m-dark);
   }
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color:var(--color-quaternary-m--dark);
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    border-top: 0.19rem solid transparent;
+    border-bottom: 0.19rem solid transparent;
+    background-clip: content-box;
+  }
+  &::-webkit-scrollbar-track {
+    background-color:var(--color-secondary-m-dark);
+    border-left: 0.06rem solid var(--color-primary-m-dark);
+  }
+
+
+   /* scroll bar elements */ 
+
+ &-first-icon {
+    display: flex;
+    justify-content: space-between;
+  align-items: baseline;
+  padding-left: 1rem;
+  padding-right: 1rem ;
+  
+   }  
+   &-first-icon i {
+    color: var(--color-tertiary);
+  font-size: 1.35rem; 
+   } 
+
+   /* for the space entre les li */ 
+ &-second-list li.a, &-first-icon, li.b-2, li.b-3 , li.b-4, li.b-5{
+    padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  align-items: baseline;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+     }
+     /* pour l espace e dassus de la drop down list we removed itt */ 
+   &-second-list li[class^="list"] {
+    padding-bottom: 0rem;
+  }
+  &-second-list li label {
+    padding-top: 0.3rem;
+    padding-bottom: 1.5rem;
+
+     }
+      /* to make the scroll bar have the same original ,*/ 
+   &-second-list li img,  label,li a.v{
+    margin-left: 1.8rem;
+    margin-right: 1rem;
+     } 
+
+     &-second-list li a , &-list-1 label.b-1,&-list-2 label.b-2 , &-list-2-3 li.b-3
+,&-list-3 label.b-3 , &-list-3-4 li.b-4,&-list-4 label.b-4 , &-list-4-5 li.b-5{
+font-size: 1.5rem; 
+color :var(--color-tertiary-m-light);
+padding-left: 0.6rem;
+
+ } 
+ &-second-list h1{
+    color: var(--color-tertiary-m-dark) ;
+    font-size: 1.3rem; 
+   padding-left: 1.5rem;
+     } 
+     &-second-list li img
+     {
+       width: 1.8rem;
+       height:height(height-size-xlarge);
+       padding-right: 0.01rem;
+      align-items: baseline;   
+        } 
+        /* for the hover effect */ 
+
+      &-second-list li:hover , &-second-list li span:hover
+      {
+        background-color:var(--color-primary); 
+       } 
+    &-second-list li a:active
+   {
+     color:var(--color-quaternary); 
+     font-weight: 900;
+     }
+     
+     /* for the fav botton */
+ .bt
+{
+background: transparent;
+border: none;
+outline: none;
+color: #757575;
+/*visibility: hidden;*/
+} 
+/* *************** drop down menu  **********/
+&-list-1,&-list-2, &-list-3, &-list-4{
+    position: relative;
+   width: 100%;
+  
+  line-height: 1.25  rem;
+  }
+  
+  
+  li label{
+   display: block;
+   cursor: pointer;
+  }
+
+  &-list-1-2,&-list-2-3,&-list-3-4,&list-4-5{
+    width: 100%;  
+    position: relative;
+    display: none;
+    list-style: none;
+    background-color: var(--color-quaternary-m-light);
+    border-top:#757575 ; /* not working */ 
+    border-bottom:#757575; /* not working */ 
+    margin-top: 1.5rem;
+  }
+  
+  
+  input{
+   display: none;
+  }
+ 
+  }
+
+  [id^="bttn"]:checked + ul,[id^="btnn"]:checked + ul,[id^="btnnn"]:checked + ul,[id^="btnnnn"]:checked + ul{
+    display: block;
+   }

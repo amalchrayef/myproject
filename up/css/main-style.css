@@ -23,6 +23,7 @@ html {
   --color-quaternary: #fff;
   --color-quaternary-m-light:#3b3b3b;
   --color-quaternary-m-dark: hsla(39, 56%, 92%, 0.85);
+  --color-quaternary-m--dark: hsla(0,0%,53%,.5);
   --color-fifthynary: white;
   --color-fifthynary-m-dark: black;
 }
@@ -345,6 +346,118 @@ section#main-part {
   overflow-y: auto;
   height: 100%;
   padding-right: 0.7rem;
+  /* *************** scroll bar properties **********/
+  /* scroll bar elements */
+  /* for the space entre les li */
+  /* pour l espace e dassus de la drop down list we removed itt */
+  /* to make the scroll bar have the same original ,*/
+  /* for the hover effect */
+  /* for the fav botton */
+  /* *************** drop down menu  **********/
+}
+.left-list-menu::-webkit-scrollbar {
+  width: 1.3rem;
+  border-left: 0.6rem solid var(--color-primary-m-dark);
+}
+.left-list-menu::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: var(--color-quaternary-m--dark);
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-top: 0.19rem solid transparent;
+  border-bottom: 0.19rem solid transparent;
+  background-clip: content-box;
+}
+.left-list-menu::-webkit-scrollbar-track {
+  background-color: var(--color-secondary-m-dark);
+  border-left: 0.06rem solid var(--color-primary-m-dark);
+}
+.left-list-menu-first-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.left-list-menu-first-icon i {
+  color: var(--color-tertiary);
+  font-size: 1.35rem;
+}
+.left-list-menu-second-list li.a, .left-list-menu-first-icon, .left-list-menu li.b-2, .left-list-menu li.b-3, .left-list-menu li.b-4, .left-list-menu li.b-5 {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  align-items: baseline;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.left-list-menu-second-list li[class^=list] {
+  padding-bottom: 0rem;
+}
+.left-list-menu-second-list li label {
+  padding-top: 0.3rem;
+  padding-bottom: 1.5rem;
+}
+.left-list-menu-second-list li img, .left-list-menu label, .left-list-menu li a.v {
+  margin-left: 1.8rem;
+  margin-right: 1rem;
+}
+.left-list-menu-second-list li a, .left-list-menu-list-1 label.b-1, .left-list-menu-list-2 label.b-2, .left-list-menu-list-2-3 li.b-3, .left-list-menu-list-3 label.b-3, .left-list-menu-list-3-4 li.b-4, .left-list-menu-list-4 label.b-4, .left-list-menu-list-4-5 li.b-5 {
+  font-size: 1.5rem;
+  color: var(--color-tertiary-m-light);
+  padding-left: 0.6rem;
+}
+.left-list-menu-second-list h1 {
+  color: var(--color-tertiary-m-dark);
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+}
+.left-list-menu-second-list li img {
+  width: 1.8rem;
+  height: 80%;
+  padding-right: 0.01rem;
+  align-items: baseline;
+}
+.left-list-menu-second-list li:hover, .left-list-menu-second-list li span:hover {
+  background-color: var(--color-primary);
+}
+.left-list-menu-second-list li a:active {
+  color: var(--color-quaternary);
+  font-weight: 900;
+}
+.left-list-menu .bt {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #757575;
+  /*visibility: hidden;*/
+}
+.left-list-menu-list-1, .left-list-menu-list-2, .left-list-menu-list-3, .left-list-menu-list-4 {
+  position: relative;
+  width: 100%;
+  line-height: 1.25 rem;
+}
+.left-list-menu li label {
+  display: block;
+  cursor: pointer;
+}
+.left-list-menu-list-1-2, .left-list-menu-list-2-3, .left-list-menu-list-3-4, .left-list-menulist-4-5 {
+  width: 100%;
+  position: relative;
+  display: none;
+  list-style: none;
+  background-color: var(--color-quaternary-m-light);
+  border-top: #757575; /* not working */
+  border-bottom: #757575; /* not working */
+  margin-top: 1.5rem;
+}
+.left-list-menu input {
+  display: none;
+}
+
+[id^=bttn]:checked + ul, [id^=btnn]:checked + ul, [id^=btnnn]:checked + ul, [id^=btnnnn]:checked + ul {
+  display: block;
 }
 
 /*html.transition,
