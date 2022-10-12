@@ -470,7 +470,7 @@ section#main-part {
 .middle-part-part-1 {
   grid-row: row-start/row-1;
   display: grid;
-  grid-template-columns: [column-start] 1fr [column-center] 40rem [column-end];
+  grid-template-columns: [column-start] 1fr [column-center] 38.8rem [column-end];
   /* for the affiche link to offers */
   /*  &-left-part
      {
@@ -534,23 +534,55 @@ section#main-part {
 .middle-part-lign-2 {
   grid-row: second-row/third-row;
   background-color: var(--color-fifthynary-m-light);
+  border-bottom: 0.001rem solid #367a65;
+  overflow: hidden;
+  width: 72rem;
 }
-.middle-part-lign-2 div:first-child {
+.middle-part-lign-2-tt {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  /*  border-bottom: 10rem solid var(--color-quinary);*/
+  border-bottom: 0.001rem solid #367a65;
 }
-.middle-part-lign-2 div:first-child a {
+.middle-part-lign-2-tt a {
   padding-left: 1.5rem;
   font-size: calc(0.3rem + 0.6667vw);
+  color: #cecece;
+  position: relative;
+  cursor: pointer;
+}
+.middle-part-lign-2-tt a:hover, .middle-part-lign-2-tt a:active {
   color: var(--color-fifthynary);
+}
+.middle-part-lign-2-tt a:first-child::before {
+  content: "";
+  position: absolute;
+  bottom: -58%;
+  left: 1.3rem;
+  width: 80%;
+  height: 0.2rem;
+  background-color: var(--color-tertiary-m-dark);
+  z-index: -1;
+}
+.middle-part-lign-2-tt a:last-child::before {
+  content: "";
+  position: absolute;
+  bottom: -58%;
+  left: 1.3rem;
+  width: 85%;
+  height: 0.2rem;
+  background-color: var(--color-tertiary-m-dark);
+  z-index: -1;
+}
+.middle-part-lign-2-tt a.on {
+  z-index: 1;
 }
 .middle-part-lign-2-title {
   display: flex;
   align-items: baseline;
-  padding-left: 1rem;
+  padding-left: 1.2em;
+  padding-top: 1rem;
 }
 .middle-part-lign-2-title h3:nth-child(2), .middle-part-lign-2-title i {
   padding-left: 0.5rem;
@@ -563,6 +595,84 @@ section#main-part {
 }
 .middle-part-lign-2-title i {
   font-size: calc(0.5rem + 0.6vw);
+}
+.middle-part-lign-2-carousel {
+  display: flex;
+  /*overflow: hidden;*/
+  width: 500%;
+  position: relative;
+}
+.middle-part-lign-2-carousel-boutton-prev {
+  position: absolute;
+  background-color: var(--color-primary);
+  width: 0.3rem;
+  height: 5rem;
+  top: 2.4rem;
+  left: -3rem;
+  opacity: 1;
+}
+.middle-part-lign-2-carousel-boutton-prev i {
+  color: var(--color-primary-m-light);
+  padding-left: 2.3rem;
+  padding-top: 1.2rem;
+}
+.middle-part-lign-2-carousel-boutton-prev i:hover, .middle-part-lign-2-carousel-boutton-prev i:active {
+  color: var(--color-fifthynary);
+}
+.middle-part-lign-2-carousel-boutton-next {
+  position: absolute;
+  background-color: var(--color-primary);
+  width: 0.3rem;
+  height: 5rem;
+  top: 2.4rem;
+  right: 79.15%;
+}
+.middle-part-lign-2-carousel-boutton-next i {
+  color: var(--color-primary-m-light);
+  /*padding-right: 30rem;*/
+  /* margin-right: 0.2rem;*/
+  padding-top: 1.2rem;
+}
+.middle-part-lign-2-carousel-boutton-next i:hover, .middle-part-lign-2-carousel-boutton-next i:active {
+  color: var(--color-fifthynary);
+}
+.middle-part-lign-2-carousel div {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(0.5rem + 0.6vw);
+  padding: 0.6rem;
+  /*  width: 36rem;*/
+  padding-right: 4rem;
+  padding-left: 1.5rem;
+}
+.middle-part-lign-2-carousel div h1, .middle-part-lign-2-carousel div p {
+  color: var(--color-fifthynary);
+  font-size: 1.4rem;
+  padding-left: 1.4rem;
+}
+.middle-part-lign-2-carousel div a {
+  display: flex;
+  padding-top: 1.5rem;
+  left: 0;
+  align-items: baseline;
+  font-size: 1rem !important;
+  padding-left: 1.4rem;
+}
+.middle-part-lign-2-carousel div a i {
+  color: var(--color-tertiary-m-dark);
+}
+.middle-part-lign-2-carousel div a h3, .middle-part-lign-2-carousel div a strike {
+  color: var(--color-fifthynary);
+}
+.middle-part-lign-2-carousel div .imgcarousel {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.middle-part-lign-2-carousel div .imgcarousel img {
+  width: 1.5rem;
+  height: 1.4rem;
+  /*padding-right: 0.rem ;*/
 }
 
 /*html.transition,

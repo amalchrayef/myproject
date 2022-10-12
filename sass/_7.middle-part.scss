@@ -8,7 +8,7 @@
     &-part-1{
   grid-row: row-start /  row-1 ;
   display: grid;   
-  grid-template-columns:  [column-start] 1fr [column-center] 40rem[column-end] ;
+  grid-template-columns:  [column-start] 1fr [column-center] 38.8rem[column-end] ;
 
   &-right-part{
     grid-column: column-start /  column-center ;
@@ -84,31 +84,68 @@
     grid-column: column-center /  column-end ;
         }*/
       }
+
+
       &-lign-2
          {
           grid-row: second-row /third-row ;
           background-color: var(--color-fifthynary-m-light);
-          & div:first-child  {
+          border-bottom: 0.001rem solid  #367a65;
+          overflow: hidden;
+          width: 72rem;
+          &-tt  {
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 1rem;
-         /*  border-bottom: 10rem solid var(--color-quinary);*/
-
-           & a
-           {
+            border-bottom: 0.001rem solid  #367a65;
+           
+            & a
+            {
             padding-left: 1.5rem;
             font-size: font-size(font-size-smallest);
-            color: var(--color-fifthynary);
+            color: #cecece;
+            position: relative;
+            cursor: pointer;
+            &:hover,&:active
+            {
+              color: var(--color-fifthynary);
+            }
+            }
+            & a:first-child::before
+            {
+             content: "";
+             position: absolute; 
+             bottom: -58%;
+             left:1.3rem;
+             width: 80%;
+             height: 0.2rem;
+             background-color: var(--color-tertiary-m-dark);
+             z-index: -1;
 
-          }
+           } 
 
-          }
+           & a:last-child::before
+           {
+            content: "";
+            position: absolute; 
+            bottom: -58%;
+            left:1.3rem;
+            width: 85%;
+            height: 0.2rem;
+            background-color: var(--color-tertiary-m-dark);
+            z-index: -1;
+          } 
+          & a.on {
+            z-index: 1;
+            }
+        }
           &-title
            {
             display: flex;
             align-items: baseline;
-            padding-left: 1rem;
+            padding-left: 1.2em;
+            padding-top: 1rem;
             & h3:nth-child(2) , & i  {
              padding-left: 0.5rem;
              color: var(--color-tertiary-m-dark);
@@ -125,5 +162,96 @@
  
              } 
           } 
+
+
+          &-carousel  {
+           display: flex;
+          /*overflow: hidden;*/
+          width: 500%;
+          position: relative;
+
+          &-boutton-prev  {
+            position: absolute;
+            background-color: var(--color-primary);
+            width: 0.3rem;
+            height: 5rem;
+            top: 2.4rem;
+            left: -3rem;
+            opacity: 1;
+            & i { 
+             color: var(--color-primary-m-light);
+             padding-left:2.3rem ;
+             padding-top:1.2rem ;
+             &:hover,&:active { 
+              color: var(--color-fifthynary);
+                } 
+               } 
+           }
+           &-boutton-next  { 
+            position: absolute; 
+            background-color: var(--color-primary);
+            width: 0.3rem;
+            height: 5rem;
+            top: 2.4rem;
+            right: 79.15%;
+            & i { 
+              color: var(--color-primary-m-light);
+              /*padding-right: 30rem;*/
+             /* margin-right: 0.2rem;*/
+              padding-top: 1.2rem ;
+              &:hover,&:active { 
+                color: var(--color-fifthynary);
+                  } 
+                } 
+            } 
+          
+          & div{
+            display: flex;
+            flex-direction: column;
+            font-size: font-size(font-size-small);
+            padding: 0.6rem;
+          /*  width: 36rem;*/
+            padding-right: 4rem;
+            padding-left: 1.5rem;
+
+           & h1, & p
+           {
+            color:var( --color-fifthynary);
+            font-size: 1.4rem;
+            padding-left: 1.4rem;
+          }
+            & a {
+              display: flex;
+              padding-top: 1.5rem;
+              left: 0;
+              align-items: baseline;
+              font-size: 1rem !important; 
+              padding-left: 1.4rem;
+
+              & i {
+               color:var(--color-tertiary-m-dark);
+              }
+              & h3 , & strike
+              {
+                color:var( --color-fifthynary);
+               }
+
+            }
+            & .imgcarousel{
+              display: flex;
+              flex-direction: row;
+              align-items: baseline;
+              & img   {
+                width: 1.5rem;
+                height: 1.4rem;
+                /*padding-right: 0.rem ;*/
+              }
+               
+            }
+          }
+          }
+
+
         }
     }
+  
