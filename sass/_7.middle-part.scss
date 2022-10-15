@@ -4,11 +4,31 @@
     grid-template-rows:  [row-start] 1fr [row-1] 1fr[row-1-end] 1fr[row-2] 1fr [row-2-end]
     1fr[row-3] 1fr [row-3-end] 1fr [row-end];
     /*grid-template-columns: auto;*/
+    overflow-y: auto;
 
+    /* *************** scroll bar properties **********/
+    &::-webkit-scrollbar {
+      width: 1.3rem;
+      border-left: 0.6rem solid var(--color-quaternary-m-light);
+    }
+    &::-webkit-scrollbar-thumb {
+      cursor: pointer;
+      border-radius: 1rem;
+      background-color:var(--color-tertiary);
+      border-left: 0.3rem solid transparent;
+      border-right: 0.3rem solid transparent;
+      border-top: 0.19rem solid transparent;
+      border-bottom: 0.19rem solid transparent;
+      background-clip: content-box;
+    }
+    &::-webkit-scrollbar-track {
+      background-color:var(--color-fifthynary-m-light);
+      border-left: 0.06rem solid var(--color-quaternary-m-light);
+    }
     &-part-1{
   grid-row: row-start /  row-1 ;
   display: grid;   
-  grid-template-columns:  [column-start] 1fr [column-center] 38.8rem[column-end] ;
+  grid-template-columns:  [column-start] 1fr [column-center] 40.5rem[column-end] ;
 
   &-right-part{
     grid-column: column-start /  column-center ;
@@ -92,7 +112,7 @@
           background-color: var(--color-fifthynary-m-light);
           border-bottom: 0.001rem solid  #367a65;
           overflow: hidden;
-          width: 72rem;
+          width: /*72rem*/ 100%;
           &-tt  {
             display: flex;
             justify-content: center;

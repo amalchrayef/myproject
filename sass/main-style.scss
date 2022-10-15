@@ -64,3 +64,7 @@ html.transition *::after {
   transition-delay: 0 !important;
   
 }*/
+/* to display the scroll bar */ 
+body::-webkit-scrollbar {
+  display: none;
+}

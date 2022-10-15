@@ -6,14 +6,14 @@ background-color: var(--color-fifthynary-m-light);
     font-size: font-size(font-size-xxlarge);
     padding: 1rem;
 }
-   &-top{
+ /*  &-top{
    grid-template-rows:  [row-a] 10rem [row-b] 10rem[row-c]10rem [row-d] 10rem[row-e]
    10rem [row-f] 10rem [row-g] 10rem [row-h] 10rem [row-i] 10rem [row-j] 10rem [row-k]
    10rem[row-l] 10rem [row-m] 10rem[row-n] ;
     }
-
+*/
  &-top-lign1 {
-    grid-row: row-a / row-b ;
+    /*grid-row: row-a / row-b ;*/
        display: flex;
        justify-content: space-between;
        padding-top: 1rem;
