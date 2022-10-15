@@ -675,6 +675,85 @@ section#main-part {
   /*padding-right: 0.rem ;*/
 }
 
+.middle-part-part-1-left-part {
+  grid-column: column-center/column-end;
+  background-color: var(--color-fifthynary-m-light);
+}
+.middle-part-part-1-left-part h2 {
+  color: var(--color-tertiary-m-dark);
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.middle-part-part-1-left-part-top {
+  grid-template-rows: [row-a] 10rem [row-b] 10rem [row-c] 10rem [row-d] 10rem [row-e] 10rem [row-f] 10rem [row-g] 10rem [row-h] 10rem [row-i] 10rem [row-j] 10rem [row-k] 10rem [row-l] 10rem [row-m] 10rem [row-n];
+}
+.middle-part-part-1-left-part-top-lign1 {
+  grid-row: row-a/row-b;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.001rem solid #757575;
+}
+.middle-part-part-1-left-part-top-lign1 .left {
+  padding-left: 0.6rem;
+}
+.middle-part-part-1-left-part-top-lign1 .left div img {
+  width: 2rem;
+  height: 2rem;
+  padding-right: 0.4rem;
+}
+.middle-part-part-1-left-part-top-lign1 .left div {
+  display: flex;
+  padding: 0.2rem;
+  color: var(--color-fifthynary);
+  font-size: 1.3rem;
+}
+.middle-part-part-1-left-part-top-lign1 .left div:last-child {
+  align-items: baseline;
+  color: var(--color-quaternary-m-dark);
+  font-size: 1rem;
+}
+.middle-part-part-1-left-part-top-lign1 .left div:last-child p, .middle-part-part-1-left-part-top-lign1 .left div:last-child i {
+  padding-right: 0.7rem;
+}
+.middle-part-part-1-left-part-top-lign1 .left div:last-child a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: var(--color-tertiary-m-dark);
+  height: 1.4rem;
+  width: 2rem;
+  padding-left: 0.8rem;
+}
+.middle-part-part-1-left-part-top-lign1 .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-left: 0.001rem solid #757575;
+  width: 19rem;
+}
+.middle-part-part-1-left-part-top-lign1 .right div a {
+  color: var(--color-secondary-m-light);
+  font-size: calc(0.5rem + 0.6vw);
+}
+.middle-part-part-1-left-part-top-lign1 .right div a:first-child {
+  padding-right: 0.6rem;
+  color: var(--color-quaternary-m-dark);
+  font-size: calc(0.5rem + 0.6vw);
+}
+.middle-part-part-1-left-part-top-lign1 .right div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.middle-part-part-1-left-part-top-lign1 .right div:hover {
+  background-color: var(--color-tertiary);
+}
+
 /*html.transition,
 html.transition *,
 html.transition *::before,

@@ -1,0 +1,87 @@
+.middle-part-part-1-left-part{
+grid-column: column-center /  column-end ;
+background-color: var(--color-fifthynary-m-light);
+ & h2{
+    color: var(--color-tertiary-m-dark);
+    font-size: font-size(font-size-xxlarge);
+    padding: 1rem;
+}
+   &-top{
+   grid-template-rows:  [row-a] 10rem [row-b] 10rem[row-c]10rem [row-d] 10rem[row-e]
+   10rem [row-f] 10rem [row-g] 10rem [row-h] 10rem [row-i] 10rem [row-j] 10rem [row-k]
+   10rem[row-l] 10rem [row-m] 10rem[row-n] ;
+    }
+
+ &-top-lign1 {
+    grid-row: row-a / row-b ;
+       display: flex;
+       justify-content: space-between;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       border-bottom: 0.001rem solid  #757575;
+
+    & .left {
+        padding-left: 0.6rem;
+
+        & div img {
+            width: 2rem;
+            height: height(height-size-medium-vol2);
+            padding-right: 0.4rem;
+
+        }
+        & div {
+            display: flex;
+            padding: 0.2rem;
+            color: var(--color-fifthynary);
+            font-size: 1.3rem;
+        }
+        & div:last-child {
+            align-items: baseline;
+            color: var(--color-quaternary-m-dark);
+            font-size: 1rem;
+
+         & p , & i {
+            padding-right: 0.7rem;
+        }
+        & a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background-color: var(--color-tertiary-m-dark);
+            height: 1.4rem;
+            width: 2rem;
+            padding-left: 0.8rem;
+        }
+        }
+        }
+        & .right {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-left: 0.001rem solid  #757575;
+            width: 19rem;
+            & div a{
+                color: var(--color-secondary-m-light);
+                font-size: font-size(font-size-small);
+                &:first-child{
+                    padding-right: 0.6rem;
+                    color: var(--color-quaternary-m-dark);
+                    font-size: font-size(font-size-small);
+                }
+            }
+            & div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+            }
+            & div:hover {
+                background-color: var(--color-tertiary);
+            }
+        }
+      }
+   
+
+ }

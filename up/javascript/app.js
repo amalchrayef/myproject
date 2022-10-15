@@ -68,18 +68,20 @@ activeColl.addEventListener('click', () =>{
 const activeButtonn = document.querySelector("middle-part-lign-2-tt a:nth-child(1)");
 const activeButton = document.querySelector("middle-part-lign-2-tt a:nth-child(2)");
 
+
+activeButtonn.addEventListener('click', () =>{
+  activeButtonn.classList.remove("off");
+  activeButtonn.classList.add("on");
+  activeButton.classList.remove("on");
+  activeButton.classList.add("off");
+});
 activeButton.addEventListener('click', () =>{
     activeButton.classList.remove("off");
     activeButton.classList.add("on");
     activeButtonn.classList.remove("on");
     activeButtonn.classList.add("off");
 });
-activeButtonn.addEventListener('click', () =>{
-    activeButtonn.classList.remove("off");
-    activeButtonn.classList.add("on");
-    activeButton.classList.remove("on");
-    activeButton.classList.add("off");
-});
+
  // console.log(activeButton);
 
 /******************  for the carousel *************   */ 
