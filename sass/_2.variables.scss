@@ -20,6 +20,8 @@ html {
     --color-fifthynary: white;
     --color-fifthynary-m-dark: black;
     --color-fifthynary-m-light: #585858;
+    --color-fifthynary-m--light: #494949;
+    --color-fifthynary-m---light: #4D6B2E;
 
 }
 
@@ -59,9 +61,10 @@ $font-sizes: (
     "font-size-regular":calc(0.6rem + 0.667vw),
     "font-size-medium": calc(0.7rem + 0.6667vw),
     "font-size-large":calc(1rem + 0.6vw) ,
+    "font-size--large":1.1rem ,
     "font-size-xlarge": 1.35rem ,
     "font-size-xxlarge":1.5rem,
-    "font-size-xxxlarge":1.7rem  ,
+    "font-size-xxxlarge":1.7rem ,
 
   );
   

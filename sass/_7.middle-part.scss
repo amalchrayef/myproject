@@ -5,6 +5,7 @@
     1fr[row-3] 1fr [row-3-end] 1fr [row-end];
     /*grid-template-columns: auto;*/
     overflow-y: auto;
+    border-bottom: 0.25rem solid  #367a65;
 
     /* *************** scroll bar properties **********/
     &::-webkit-scrollbar {
@@ -33,7 +34,7 @@
   &-right-part{
     grid-column: column-start /  column-center ;
     display: grid;   
-    grid-template-rows:  [first-row] 14.6rem [second-row] 1fr[third-row] 1fr[forth-row] 1fr[end-row] ;
+    grid-template-rows:  [first-row] 14.6rem [second-row]23rem[third-row] 1fr[forth-row] 1fr[end-row] ;
 
           }
           &-lign-1
@@ -113,6 +114,7 @@
           border-bottom: 0.001rem solid  #367a65;
           overflow: hidden;
           width: /*72rem*/ 100%;
+          height: 23rem;
           &-tt  {
             display: flex;
             justify-content: center;

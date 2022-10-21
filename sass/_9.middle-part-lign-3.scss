@@ -1,0 +1,103 @@
+.lign-3{
+   grid-row: third-row/forth-row;
+   background-color: var(--color-fifthynary-m--light);
+
+   &-first{
+    display: flex;
+    align-items: baseline;
+   justify-content: space-between;
+   padding: 1rem;
+   padding-bottom: 1.5rem;
+   
+   & h2{
+    padding-left: 1.5rem;
+    color: var(--color-tertiary-m-dark);
+}
+   & .second {
+    display: flex;
+    align-items: baseline;
+color: var(--color-tertiary-m-light);
+font-size: font-size(font-size-small);
+padding-right: 2rem;
+
+& p {
+    padding-right: 0.5rem;
+}
+& i {
+    font-size: font-size(font-size--large);
+}
+
+     }
+   }
+
+   &-second{
+    display: flex;
+    padding-left: 2.5rem;
+    align-items: baseline;
+    border-bottom: 0.25rem solid  #126e51;
+    padding-bottom: 0.50rem;
+    justify-content: space-between;
+    & h2{
+        color: var(--color-fifthynary);
+    }
+    & .numbers{
+      color: var(--color-tertiary-m-light) ; 
+    display: flex;
+    font-size: font-size(font-size-small);
+    display: flex;
+    & p{
+    padding-right: 6rem;
+    padding-left: 4rem;
+
+      }
+ }
+}
+ 
+&-third{
+
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-quaternary-m-dark);
+    font-size: font-size(font-size-small);
+    padding: 1.7rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #757575;
+&-left div:last-child{
+display: flex;
+align-items: baseline;
+font-size: font-size(font-size-smallest);
+
+& a i {
+    font-size: font-size(font-size--large);
+      }
+      & p,&  i  {
+        padding-right: 1.2rem;
+          }
+}
+ & .cotes{
+        display: flex;
+     /*justify-content: space-between !important;*/
+        padding-left: 4rem ;
+        color: var(--color-secondary-m-light);
+        border-left: 1px solid #757575;
+        & div {
+            padding-left: 3.9rem;
+            padding-right: 3.9rem;
+            padding-top: 2rem;
+           
+    /* &:hover {
+       background-color : var(--color-quaternary-m--dark);
+     }
+     &:first-child:hover {
+        background-color : var(--color-quaternary-m--dark);
+      }*/
+      
+        }
+       }
+       & .zeros {
+        padding-left: 14rem;
+         }
+      }
+     
+  
+      }
