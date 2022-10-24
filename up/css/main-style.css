@@ -1002,7 +1002,7 @@ section#main-part {
   padding-right: 0.5rem;
 }
 .part-2-parag {
-  padding: 1.5rem;
+  padding: 2rem;
   display: flex;
   color: var(--color-primary-m-light);
   font-size: calc(0.5rem + 0.6vw);
@@ -1023,6 +1023,10 @@ section#main-part {
 .part-3 { /*grid-column: center-start /  container-end ;*/
   grid-row: 3/4;
   border-bottom: 0.25rem solid #126e51;
+}
+.part-3 img {
+  width: 4.5rem;
+  height: 4.5rem;
 }
 .part-3 h2 {
   color: var(--color-tertiary-m-dark);
@@ -1046,6 +1050,7 @@ section#main-part {
 .part-3-parag-1 {
   display: flex;
   padding-right: 4rem;
+  flex-direction: column;
 }
 .part-3-parag-1 div p:first-child {
   font-weight: 500;
@@ -1059,6 +1064,72 @@ section#main-part {
 .part-3-parag-1 img {
   width: 2rem;
   height: 2rem;
+}
+
+.in-play-page {
+  display: grid;
+  grid-template-rows: repeat(6, min-content);
+  overflow-y: auto;
+  /* *************** scroll bar properties **********/
+}
+.in-play-page::-webkit-scrollbar {
+  width: 1.3rem;
+  border-left: 0.6rem solid var(--color-quaternary-m-light);
+}
+.in-play-page::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: var(--color-tertiary);
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-top: 0.19rem solid transparent;
+  border-bottom: 0.19rem solid transparent;
+  background-clip: content-box;
+}
+.in-play-page::-webkit-scrollbar-track {
+  background-color: var(--color-fifthynary-m-light);
+  border-left: 0.06rem solid var(--color-quaternary-m-light);
+}
+.in-play-page .horizontal-list {
+  overflow: hidden;
+  display: flex;
+  grid-row: 1/2;
+  background-color: var(--color-primary-m-dark);
+}
+.in-play-page .horizontal-list ul {
+  display: flex;
+  padding-left: 2.5rem;
+}
+.in-play-page .horizontal-list ul li {
+  padding-right: 4.1rem;
+}
+.in-play-page .horizontal-list ul img {
+  width: 3.8rem;
+  height: 3.8rem;
+  padding-bottom: 0.5rem;
+}
+.in-play-page .horizontal-list ul:first-child {
+  position: relative;
+  top: 1rem;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+.in-play-page .horizontal-list ul:first-child a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.in-play-page .horizontal-list ul:nth-child(2) {
+  position: absolute;
+  top: 11rem;
+  left: 0;
+  z-index: 5;
+}
+.in-play-page .horizontal-list ul:nth-child(2) a {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-primary-m-light);
 }
 
 /*html.transition,
