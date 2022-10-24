@@ -1091,45 +1091,63 @@ section#main-part {
   border-left: 0.06rem solid var(--color-quaternary-m-light);
 }
 .in-play-page .horizontal-list {
-  overflow: hidden;
+  /* overflow: hidden;*/
   display: flex;
   grid-row: 1/2;
+  height: 6rem;
   background-color: var(--color-primary-m-dark);
+  border-bottom: 0.2rem solid #126e51;
+  /***************************** 950px *************************************/
 }
 .in-play-page .horizontal-list ul {
-  display: flex;
-  padding-left: 2.5rem;
+  /* display: flex;*/
+  padding-left: 1.5rem;
+  padding-top: 0.75rem;
+  width: 100%;
 }
 .in-play-page .horizontal-list ul li {
   padding-right: 4.1rem;
 }
 .in-play-page .horizontal-list ul img {
-  width: 3.8rem;
-  height: 3.8rem;
-  padding-bottom: 0.5rem;
+  width: 3.1rem;
+  height: 3.1rem;
+  /*  padding-bottom: 0.5rem;*/
+  filter: grayscale(100%);
+  padding-left: 0.7rem;
 }
-.in-play-page .horizontal-list ul:first-child {
-  position: relative;
-  top: 1rem;
-  left: 0;
+.in-play-page .horizontal-list ul img:hover, .in-play-page .horizontal-list ul img:active {
+  filter: grayscale(0);
+}
+.in-play-page .horizontal-list ul {
+  /* position: relative;*/
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;*/
 }
-.in-play-page .horizontal-list ul:first-child a {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-}
-.in-play-page .horizontal-list ul:nth-child(2) {
-  position: absolute;
-  top: 11rem;
-  left: 0;
-  z-index: 5;
-}
-.in-play-page .horizontal-list ul:nth-child(2) a {
+.in-play-page .horizontal-list ul a {
   display: flex;
   flex-direction: column;
+}
+.in-play-page .horizontal-list ul a p {
   color: var(--color-primary-m-light);
+  text-align: center;
+}
+.in-play-page .horizontal-list ul a:hover p, .in-play-page .horizontal-list ul a:active p {
+  color: var(--color-fifthynary);
+}
+@media screen and (max-width: 950px) {
+  .in-play-page .horizontal-list {
+    padding-top: 1.1rem;
+    height: 7.5rem;
+    overflow-y: auto;
+  }
+  .in-play-page .horizontal-list::-webkit-scrollbar {
+    display: none;
+  }
+  .in-play-page .horizontal-list img {
+    width: 2rem;
+    height: 2rem;
+    padding-bottom: 0.5rem;
+  }
 }
 
 /*html.transition,
