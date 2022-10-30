@@ -28,7 +28,7 @@
     
 
 
-.horizontal-list{
+ & .horizontal-list{
   /* overflow: hidden;*/
      display: flex;
      grid-row: 1 / 2;
@@ -187,18 +187,19 @@ overflow-y: auto;
        align-items: baseline;
        padding-left: 2rem;
 
-      & input {
+    
+    /*  & input {
         position: absolute;
-        left: 7rem;
-        top: 18rem;
         opacity: 1;
         z-index: 3;
-
-        & [id^="btn-8"]:checked .inplay-board-hided-part{
+        width: 12rem;
+         height: 2rem;
+        & [id^="btn-8"]:checked .in-play-page .inplay-board-hided-part
+        {
           display: block;
          }
        }
-     
+     */
        & h2{
         padding-right: 0.75rem;
       }
@@ -255,47 +256,26 @@ overflow-y: auto;
   & .inplay-board-hided-part {
     grid-row: 3 / 4;
     height: height(height-size-larger);
-    display: flex;
-    align-items: center;
+   /* display: flex;
+    align-items: end;*/
 padding-left: 3rem;
 background-color: var( --color-primary);
 border-top: 1px solid #585858;
 font-size: font-size(font-size--large);
   display: none;
+  padding-top: 0.75rem;
+  color: var(--color-quaternary-m-dark);
+   & a {
+     color: var(--color-tertiary-m-dark);
 
-}
-      & .result-board {
-    grid-row: 4 / 5;
-
-  & ul li{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   background-color: var(--color-fifthynary-m-light);
-   color: var(--color-quaternary-m-dark);
-   height: height(height-size-medium-vol2);
-   padding-top: 2rem;
-
-   & div:first-child{
-      display: flex;
-      align-items: baseline;
-       padding-left: 2rem;
-        & i {
-       padding-right: 2rem;
-        }
-       }
-       & div:last-child{
-        display: flex;
-        align-items: baseline;
-        padding-right: 2rem;
-        & p {
-          padding-right: 15vw;
-           }
-         }
+  }
+  &.is-clicked { 
+    display: block;
   }
 
-}
 
+}
+   
 }
 
  

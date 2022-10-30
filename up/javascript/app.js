@@ -65,23 +65,23 @@ activeColl.addEventListener('click', () =>{
 
 /******************  for the featured topevents active buttons *************   */ 
 
-const activeButtonn = document.querySelector("middle-part-lign-2-tt a:nth-child(1)");
+/*const activeButtonn = document.querySelector("middle-part-lign-2-tt a:nth-child(1)");
 const activeButton = document.querySelector("middle-part-lign-2-tt a:nth-child(2)");
 
 
-activeButtonn.addEventListener('click', () =>{
+activeButton.addEventListener('click', () =>{
   activeButtonn.classList.remove("off");
   activeButtonn.classList.add("on");
   activeButton.classList.remove("on");
   activeButton.classList.add("off");
 });
-activeButton.addEventListener('click', () =>{
+activeButtonn.addEventListener('click', () =>{
     activeButton.classList.remove("off");
     activeButton.classList.add("on");
     activeButtonn.classList.remove("on");
     activeButtonn.classList.add("off");
 });
-
+*/
  // console.log(activeButton);
 
 /******************  for the carousel *************   */ 
@@ -144,3 +144,11 @@ When we click on the right button, move images to the left
   });
   
   /* */
+  const clickedButton = document.querySelector(".in-play-page .inplay-board div:first-child i");
+  const activePart = document.querySelector(".in-play-page .inplay-board-hided-part");
+
+  clickedButton.addEventListener("click", () =>{
+      activePart.classList.toggle("is-clicked");
+
+  });
+  
