@@ -241,14 +241,19 @@ overflow-y: auto;
 
         & li:first-child {
            background-color: var(--color-fifthynary);
-           color: var(--color-secondary);
            padding: 0.5rem;
+           & a {
+            color: var(--color-secondary);
+
+           }
         } 
-        & li{
+        & li {
           background-color: var(--color-quaternary-m-dark);
-          color: var(--color-fifthynary-m-dark);
           padding: 0.75rem;
           border-bottom: 1px solid #9c9c9c;
+          & a {
+            color: var(--color-fifthynary-m-dark);
+          }
 
        } 
       }

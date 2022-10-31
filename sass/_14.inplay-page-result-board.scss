@@ -50,25 +50,50 @@
    padding-left: 2rem;
    padding-right: 2rem;
    font-size: font-size(font-size--large);
-   & div:nth-child(1){
-   /* padding-right: 24vw;*/
-    display: flex;
-    flex-direction: column;
 
-    & a{
+   & a{
+    display: flex;
+    color: var(--color-quaternary-m-dark);
+
+   /* & a {
    
       color: var(--color-quaternary-m-dark);
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
     }
+   /* & .match-names{
+      display: flex;
+      flex-direction: column;
+     } */
   }
-
- /* & div:nth-child(3) {
-    padding-right: 5vw;
-   } */
-
-  & div:nth-child(4) {
+& div.timing{
+  display: flex;
+  flex-direction: column;
+  & a:nth-child(2){
    display: flex;
+   align-items: baseline;
+   & div:hover{
+ color: var(--color-fifthynary);
+   }
+   & div{
+padding-right: 0.5vw;      }
+  }
+}
+& div.scores{
+  display: flex;
+  & a{
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+   
+  }
+  & div:first-child {
+    display: none;
+  }
+}
+  & div:nth-child(4) {
+  /* display: flex;*/
+  color: var(--color-fifthynary-m----light);
   & div{
     padding-right: 1vw;
     

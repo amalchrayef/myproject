@@ -1268,14 +1268,18 @@ section#main-part {
 }
 .in-play-page .inplay-board div:nth-child(2) ul li:first-child {
   background-color: var(--color-fifthynary);
-  color: var(--color-secondary);
   padding: 0.5rem;
+}
+.in-play-page .inplay-board div:nth-child(2) ul li:first-child a {
+  color: var(--color-secondary);
 }
 .in-play-page .inplay-board div:nth-child(2) ul li {
   background-color: var(--color-quaternary-m-dark);
-  color: var(--color-fifthynary-m-dark);
   padding: 0.75rem;
   border-bottom: 1px solid #9c9c9c;
+}
+.in-play-page .inplay-board div:nth-child(2) ul li a {
+  color: var(--color-fifthynary-m-dark);
 }
 .in-play-page .inplay-board-hided-part {
   grid-row: 3/4;
@@ -1345,22 +1349,49 @@ section#main-part {
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: 1.1rem;
-  /* & div:nth-child(3) {
-     padding-right: 5vw;
+}
+.in-play-page .result-board ul li.fixture-details a {
+  display: flex;
+  color: var(--color-quaternary-m-dark);
+  /* & a {
+
+     color: var(--color-quaternary-m-dark);
+     display: flex;
+     flex-direction: column;
+   }
+  /* & .match-names{
+     display: flex;
+     flex-direction: column;
     } */
 }
-.in-play-page .result-board ul li.fixture-details div:nth-child(1) {
-  /* padding-right: 24vw;*/
+.in-play-page .result-board ul li.fixture-details div.timing {
   display: flex;
   flex-direction: column;
 }
-.in-play-page .result-board ul li.fixture-details div:nth-child(1) a {
-  color: var(--color-quaternary-m-dark);
+.in-play-page .result-board ul li.fixture-details div.timing a:nth-child(2) {
   display: flex;
-  flex-direction: row;
+  align-items: baseline;
+}
+.in-play-page .result-board ul li.fixture-details div.timing a:nth-child(2) div:hover {
+  color: var(--color-fifthynary);
+}
+.in-play-page .result-board ul li.fixture-details div.timing a:nth-child(2) div {
+  padding-right: 0.5vw;
+}
+.in-play-page .result-board ul li.fixture-details div.scores {
+  display: flex;
+}
+.in-play-page .result-board ul li.fixture-details div.scores a {
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+}
+.in-play-page .result-board ul li.fixture-details div.scores div:first-child {
+  display: none;
 }
 .in-play-page .result-board ul li.fixture-details div:nth-child(4) {
-  display: flex;
+  /* display: flex;*/
+  color: var(--color-fifthynary-m----light);
 }
 .in-play-page .result-board ul li.fixture-details div:nth-child(4) div {
   padding-right: 1vw;
