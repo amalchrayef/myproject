@@ -3,14 +3,14 @@
 & .result-board {
     grid-row: 4 / 5;
 
-  & ul li{
+  & ul li.fixture{
    display: flex;
    justify-content: space-between;
    align-items: center;
    background-color: var(--color-fifthynary-m-light);
    color: var(--color-quaternary-m-dark);
-   height: height(height-size-medium-vol2);
-   padding-top: 2rem;
+   height: height(height-size-larger);
+   padding-top: 0.25rem;
 
    & div:first-child{
       display: flex;
@@ -24,11 +24,96 @@
         display: flex;
         align-items: baseline;
         padding-right: 2rem;
-        & p {
-          padding-right: 15vw;
+        & img{
+          width: 2vw;
+          height: 4vh;
+          display: none;
+        /*  display: flex;
+          align-items: baseline;*/
+         /* padding-top: 0.5rem;
+          padding-right: 1rem;*/
+        }
+       & p {
+          padding-right: 15.8vw;
            }
          }
   }
+  & ul li.fixture-details{
 
+    display: flex;
+    align-items: baseline;
+    height:8rem;
+    padding-top: 0.4rem;
+    background-color: var(--color-fifthynary-m----light);
+   justify-content: space-between;
+   color: var(--color-quaternary-m-dark);
+   padding-left: 2rem;
+   padding-right: 2rem;
+   font-size: font-size(font-size--large);
+   & div:nth-child(1){
+   /* padding-right: 24vw;*/
+    display: flex;
+    flex-direction: column;
+
+    & a{
+   
+      color: var(--color-quaternary-m-dark);
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+ /* & div:nth-child(3) {
+    padding-right: 5vw;
+   } */
+
+  & div:nth-child(4) {
+   display: flex;
+  & div{
+    padding-right: 1vw;
+    
+  }
+  & i {
+    line-height: center;
+  }
+  } 
+  & img {
+    width: 1.5vw;
+    height: 3vh;
+    filter: grayscale(100%);
+    &:hover , &:active {
+      filter: grayscale(0);
+
+    }
+  }
+
+  & a i:nth-child(1) {
+    font-size: font-size(font-size-xxxlarge);
+    color: var(--color-quaternary-m-dark);
+
+    &:hover, &:active{
+      color: var(--color-tertiary-m-dark);
+    }
+  }
+
+  & div.cotes-matches {
+  display: flex;
+  height: 95%;
+  border-left: 0.2rem solid #585858;
+  border-right: 0.2rem solid #585858;
+
+  & a {
+    padding-right: 7vw;
+    padding-left: 7vw;
+    color: var(--color-secondary-m-light);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    &:hover{
+      background-color: var(--color-tertiary);
+    }
+  }
+   } 
+ }
 }
 }
