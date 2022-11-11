@@ -24,15 +24,16 @@
         display: flex;
         align-items: baseline;
         padding-right: 2rem;
+        
         & img{
-          width: 2vw;
-          height: 4vh;
+          width: 2.7vh;
+          height: 2.7vh;
           display: none;
-        /*  display: flex;
-          align-items: baseline;*/
-         /* padding-top: 0.5rem;
-          padding-right: 1rem;*/
-        }
+          transform: translateX(-28rem);      
+          }
+          & img.is-clicked{
+            display: block;
+          }
        & p {
           padding-right: 15.8vw;
            }
@@ -90,6 +91,9 @@ padding-right: 0.5vw;      }
   & div:first-child {
     display: none;
   }
+  & div[class^="is-clicked"] {
+    display: block;
+  }
 }
   & div:nth-child(4) {
   /* display: flex;*/
@@ -103,9 +107,10 @@ padding-right: 0.5vw;      }
   }
   } 
   & img {
-    width: 1.5vw;
-    height: 3vh;
+    width: 2rem;
+    height: 2rem;
     filter: grayscale(100%);
+    z-index: 1;
     &:hover , &:active {
       filter: grayscale(0);
 
@@ -141,4 +146,64 @@ padding-right: 0.5vw;      }
    } 
  }
 }
+
+          /***************************** 650px *************************************/ 
+
+      @include media-medium {
+
+    & .result-board ul li.fixture-details a i:nth-child(1) {
+     font-size: 1.25rem;
+    color: var(--color-quaternary-m-dark);
+   }
+   & .result-board ul li.fixture-details div.cotes-matches a {
+     padding-right: 2.1vw;
+    padding-left: 2.1vw;
+   
+} 
+  & .result-board ul li.fixture div:last-child p {
+  padding-right: 11.5vw;
+}
+
+& .result-board ul li.fixture div:first-child {
+  padding-left: 1vw;
+}
+& .result-board ul li.fixture div:first-child i {
+   padding-right: 1vw;
+}
+& .fixture h3{
+  font-size: font-size(font-size-regular);
+}
+& label.button{
+ font-size: font-size(font-size-large);
+}
+& .result-board ul li.fixture-details {
+   padding-left: 1vw;
+}
+& .result-board ul li.fixture-details img  {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+& .result-board ul li.fixture-details { 
+  padding-right: 1rem;
+
+ }
+}
+      /***************************** 450px *************************************/ 
+
+      @include media-small  {
+        & .result-board ul li.fixture-details a{
+           font-size: font-size(font-size-medium);
+          }
+          & .result-board ul li.fixture-details a i:nth-child(1) {
+            font-size: 0.80rem;
+          }
+          & .result-board ul li.fixture-details img  {
+            width: 1rem;
+            height: 1rem;
+          }
+          & .result-board ul li.fixture-details { 
+            padding-right: 0.5rem;
+          
+           }
+        }
 }

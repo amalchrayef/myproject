@@ -123,7 +123,7 @@ color: #757575;
    cursor: pointer;
   }
 
-  &-list-1-2,&-list-2-3,&-list-3-4,&list-4-5{
+  &-list-1-2,&-list-2-3,&-list-3-4, &-list-4-5{
     width: 100%;  
     position: relative;
     display: none;
@@ -141,6 +141,6 @@ color: #757575;
  
   }
 
-  [id^="bttn"]:checked + ul,[id^="btnn"]:checked + ul,[id^="btnnn"]:checked + ul,[id^="btnnnn"]:checked + ul{
+  input[id^="bttn"]:checked + ul,input[id^="btnn"]:checked + ul,input[id^="btnnn"]:checked + ul,input[id^="btnnnn"]:checked + ul{
     display: block;
    }

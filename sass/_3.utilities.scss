@@ -28,7 +28,7 @@ section#main-part{
 }
 
  //*-*-*-*-*-*-*-*-*-*-- The 1510px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
-@include media-desktop {
+@include media-tv {
   body {
     width: 1510px;
     margin: 0 auto;

@@ -81,68 +81,26 @@ activeButtonn.addEventListener('click', () =>{
     activeButtonn.classList.remove("on");
     activeButtonn.classList.add("off");
 });
-*/
+
  // console.log(activeButton);
 
-/******************  for the carousel *************   */ 
-/*const list = document.querySelector(".gallery-carousel__img-container--list");
-const imgs = Array.from(list.children);
-const nextButton = document.querySelector(".gallery-carousel__btn--right");
-const prevButton = document.querySelector(".gallery-carousel__btn--left");
+/******************  for the carousel *************   */
+const list = document.querySelector(".middle-part-lign-2 .middle-part-lign-2-carousel");
+const nextButton = document.querySelector(".middle-part-lign-2-carousel .middle-part-lign-2-carousel-boutton-next");
+const prevButton = document.querySelector(".middle-part-lign-2-carousel .middle-part-lign-2-carousel-boutton-prev");
 
-const imgWidth = imgs[0].getBoundingClientRect().width;
+// First Next Button Event Listener
+nextButton.addEventListener("click", () => {
+    list.style.marginLeft = "-45%"; 
+   /* x=1;*/
+    nextButton.style.paddingRight = "1.3rem"; 
 
-const setImgPosition = (img, index) => {
-  img.style.left = imgWidth * index + "px";
-};
-imgs.forEach(setImgPosition);
-// Hide/Show Arrows
-const hideShowArrows = (imgs, prevButton, nextButton, targetIndex) => {
-  if (targetIndex === 0) {
-    prevButton.classList.add("hidden");
-    nextButton.classList.remove("hidden");
-  } else if (targetIndex === imgs.length - 1) {
-    prevButton.classList.remove("hidden");
-    nextButton.classList.add("hidden");
-  } else {
-    prevButton.classList.remove("hidden");
-    nextButton.classList.remove("hidden");
-  }
-};
-When we click on the right button, move images to the left
------------*-*--*-*-*-*-*-*-*--*-*-*-*-*------------------------------------------------
-*/
 
-/*nextButton.addEventListener("click", (e) => {
-    const currentImg = list.querySelector(".current--img");
-    const nextImg = currentImg.nextElementSibling;
-    const currentDot = carouselNav.querySelector(".current--img");
-    const nextDot = currentDot.nextElementSibling;
-    const nextIndex = imgs.findIndex((img) => img === nextImg);
-  
-    moveToImg(list, currentImg, nextImg);
-    updateDots(currentDot, nextDot);
-    hideShowArrows(imgs, prevButton, nextButton, nextIndex);
   });
-  
-  /* 
-  --------*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---------------------------------------------------
-  When we click on the left button, move images to the right
-  -----------*-*--*-*-*-*-*-*-*--*-*-*-*-*------------------------------------------------
-  */
-  
- /* prevButton.addEventListener("click", (e) => {
-    const currentImg = list.querySelector(".current--img");
-    const prevImg = currentImg.previousElementSibling;
-    const currentDot = carouselNav.querySelector(".current--img");
-    const prevDot = currentDot.previousElementSibling;
-    const prevIndex = imgs.findIndex((img) => img === prevImg);
-  
-    moveToImg(list, currentImg, prevImg);
-    updateDots(currentDot, prevDot);
-    hideShowArrows(imgs, prevButton, nextButton, prevIndex);
+  prevButton.addEventListener("click", () => {
+    list.style.marginLeft = "45%";
+   /* x=1;*/
+    nextButton.style.paddingRight = "1.3rem";  
+
   });
-  
-  /* */
- 
   
