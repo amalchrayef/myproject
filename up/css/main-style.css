@@ -20,6 +20,7 @@ html {
   --color-tertiary:#757575;
   --color-tertiary-m-light:#c3c3c3;
   --color-tertiary-m-dark: #5fe8bd;
+  --color-tertiary-m--dark: #ddd;
   --color-quaternary: #fff;
   --color-quaternary-m-light:#3b3b3b;
   --color-quaternary-m-dark: hsla(39, 56%, 92%, 0.85);
@@ -80,6 +81,7 @@ section#main-part {
   body {
     width: 1510px;
     margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
   }
 }
 .header {
@@ -1503,6 +1505,275 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   font-size: 1.7rem;
   color: var(--color-tertiary-m-dark);
   padding: 1rem;
+}
+
+.in-play-live {
+  display: grid;
+  grid-template-columns: [column-1] 26rem [column-2] 1fr [column-3] 43rem [column-4];
+}
+.in-play-live-list {
+  background-color: var(--color-secondary-m-dark);
+  grid-column: column-1/column-2;
+  background-color: var(--color-secondary-m-dark);
+  overflow-y: auto;
+  /* *************** scroll bar properties **********/
+}
+.in-play-live-list::-webkit-scrollbar {
+  width: 1.3rem;
+  border-left: 0.6rem solid var(--color-primary-m-dark);
+}
+.in-play-live-list::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: var(--color-quaternary-m--dark);
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-top: 0.19rem solid transparent;
+  border-bottom: 0.19rem solid transparent;
+  background-clip: content-box;
+}
+.in-play-live-list::-webkit-scrollbar-track {
+  background-color: var(--color-secondary-m-dark);
+  border-left: 0.06rem solid var(--color-primary-m-dark);
+}
+.in-play-live-list div img {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+.in-play-live-list div {
+  padding-top: 1.4rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  color: var(--color-tertiary-m-light);
+  letter-spacing: 0.05rem;
+  font-size: calc(0.3rem + 0.6667vw);
+  border-bottom: 0.1rem solid #494949;
+}
+.in-play-live-list div:hover, .in-play-live-list div:active {
+  background-color: var(--color-fifthynary-m--light);
+}
+.in-play-live-list div:nth-child(2) {
+  display: none;
+}
+.in-play-live-list div:nth-child(2).is-clicked {
+  display: block;
+  border-top: 0.2rem solid #757575;
+}
+.in-play-live-list div:nth-child(4) {
+  padding-left: 1.5rem;
+  border-top: 0.2rem solid #126e51;
+}
+.in-play-live-list div:nth-child(4):hover i {
+  display: block;
+}
+.in-play-live-list div:nth-child(4) h4 {
+  padding-right: 7rem;
+}
+.in-play-live-list div:nth-child(4) span {
+  padding-right: 0.75rem;
+  color: var(--color-tertiary);
+}
+.in-play-live-list div:nth-child(4) i {
+  font-size: 1.1rem;
+  color: var(--color-tertiary);
+  display: none;
+}
+.in-play-live-list div:nth-child(4) {
+  display: none;
+}
+.in-play-live-list div:nth-child(4).is-clicked {
+  display: block;
+  display: flex;
+}
+.in-play-live-list div:nth-child(5) {
+  display: flex;
+  height: 7rem;
+  display: none;
+}
+.in-play-live-list div:nth-child(5):hover i:last-of-type {
+  display: block;
+}
+.in-play-live-list div:nth-child(5) time {
+  padding-right: 1rem;
+}
+.in-play-live-list div:nth-child(5) section.first-part {
+  padding-right: 8rem;
+}
+.in-play-live-list div:nth-child(5) i {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  color: var(--color-tertiary);
+}
+.in-play-live-list div:nth-child(5) i:last-of-type {
+  display: none;
+}
+.in-play-live-list div:nth-child(5).is-clicked {
+  display: block;
+  display: flex;
+}
+.in-play-live-matches {
+  grid-column: column-2/column-3;
+  overflow-y: auto;
+  display: grid;
+  grid-template-rows: [row-1] 14rem [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6];
+  /* *************** scroll bar properties **********/
+}
+.in-play-live-matches::-webkit-scrollbar {
+  width: 1.3rem;
+  border-left: 0.6rem solid var(--color-primary-m-dark);
+}
+.in-play-live-matches::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: var(--color-quaternary-m--dark);
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-top: 0.19rem solid transparent;
+  border-bottom: 0.19rem solid transparent;
+  background-clip: content-box;
+}
+.in-play-live-matches::-webkit-scrollbar-track {
+  background-color: var(--color-secondary-m-dark);
+  border-left: 0.06rem solid var(--color-primary-m-dark);
+}
+.in-play-live-matches-header {
+  grid-row: row-1/row-2;
+  background-color: var(--color-primary);
+  border-bottom: 0.2rem solid var(--color-secondary);
+  padding: 1.2rem;
+  padding-left: 2rem;
+  color: var(--color-tertiary-m-light);
+}
+.in-play-live-matches-header a {
+  color: var(--color-tertiary-m-light);
+  font-size: 1.1rem;
+}
+.in-play-live-matches-header a:hover {
+  color: var(--color-fifthynary);
+}
+.in-play-live-matches-header a i {
+  font-size: 1.1rem;
+}
+.in-play-live-matches-header div.title h2 {
+  font-size: 2.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0.75rem;
+  color: var(--color-tertiary-m--dark);
+}
+.in-play-live-matches-header div.title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.in-play-live-matches-header div.title div {
+  background-color: #126e51;
+}
+.in-play-live-matches-header div.menu {
+  display: flex;
+  font-size: 1.35rem;
+  align-items: baseline;
+  padding-top: 2.25rem;
+}
+.in-play-live-matches-header div.menu p {
+  padding-right: 2vw;
+  position: relative;
+  margin-left: 0.5rem;
+}
+.in-play-live-matches-header div.menu p:hover, .in-play-live-matches-header div.menu p:active {
+  color: var(--color-fifthynary);
+  cursor: pointer;
+}
+.in-play-live-matches-header div.menu p i:hover, .in-play-live-matches-header div.menu p i:active {
+  color: var(--color-fifthynary);
+  cursor: pointer;
+}
+.in-play-live-matches-header div.menu p::before {
+  content: "";
+  position: absolute;
+  bottom: -35%;
+  right: 35%;
+  left: -8%;
+  width: 80%;
+  height: 0.2rem;
+  background-color: var(--color-tertiary-m--dark);
+  z-index: -1;
+}
+.in-play-live-matches-header div.menu p.active:before {
+  z-index: 5;
+}
+
+.in-play-live-matches-body {
+  grid-row: row-2/row-3;
+  background-color: var(--color-fifthynary-m----light);
+  color: var(--color-tertiary-m--dark);
+}
+.in-play-live-matches-body-all .FR, .in-play-live-matches-body-all .DC, .in-play-live-matches-body-all .MG, .in-play-live-matches-body-all .AMG, .in-play-live-matches-body-all .MC {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+  border-bottom: 0.1rem solid var(--color-tertiary);
+  border-top: 0.2rem solid var(--color-secondary);
+  align-items: baseline;
+}
+.in-play-live-matches-body-all .FR:hover i, .in-play-live-matches-body-all .DC:hover i, .in-play-live-matches-body-all .MG:hover i, .in-play-live-matches-body-all .AMG:hover i, .in-play-live-matches-body-all .MC:hover i {
+  opacity: 5;
+}
+.in-play-live-matches-body-all .FR div i:nth-child(1), .in-play-live-matches-body-all .FR div i:nth-child(2), .in-play-live-matches-body-all .DC div i:nth-child(1), .in-play-live-matches-body-all .DC div i:nth-child(2), .in-play-live-matches-body-all .MG div i:nth-child(1), .in-play-live-matches-body-all .MG div i:nth-child(2), .in-play-live-matches-body-all .AMG div i:nth-child(1), .in-play-live-matches-body-all .AMG div i:nth-child(2), .in-play-live-matches-body-all .MC div i:nth-child(1), .in-play-live-matches-body-all .MC div i:nth-child(2) {
+  color: var(--color-tertiary);
+  font-size: 1.1rem;
+  opacity: -1;
+  padding-right: 1.5rem;
+}
+.in-play-live-matches-body-all .FR:hover div i:nth-child(1), .in-play-live-matches-body-all .FR:hover div i:nth-child(2), .in-play-live-matches-body-all .DC:hover div i:nth-child(1), .in-play-live-matches-body-all .DC:hover div i:nth-child(2), .in-play-live-matches-body-all .MG:hover div i:nth-child(1), .in-play-live-matches-body-all .MG:hover div i:nth-child(2), .in-play-live-matches-body-all .AMG:hover div i:nth-child(1), .in-play-live-matches-body-all .AMG:hover div i:nth-child(2), .in-play-live-matches-body-all .MC:hover div i:nth-child(1), .in-play-live-matches-body-all .MC:hover div i:nth-child(2) {
+  opacity: 5;
+}
+.in-play-live-matches-body-all .FR-under-list, .in-play-live-matches-body-all .DC-under-list {
+  height: 4rem;
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.in-play-live-matches-body-all .FR-under-list div span, .in-play-live-matches-body-all .DC-under-list div span {
+  padding-right: 1rem;
+}
+.in-play-live-matches-body-all .FR-under-list div span:nth-child(2), .in-play-live-matches-body-all .DC-under-list div span:nth-child(2) {
+  color: var(--color-secondary-m-light);
+}
+.in-play-live-matches-body-all .MG-under-list {
+  display: flex;
+  font-size: 1.1rem;
+  flex-direction: column;
+}
+.in-play-live-matches-body-all .MG-under-list div.lign-1 {
+  display: flex;
+  /* border-right: 0.1rem solid var(--color-tertiary);*/
+  background-color: var(--color-fifthynary-m-light);
+  justify-content: space-around;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.in-play-live-matches-body-all .MG-under-list div.lign-2 {
+  display: flex;
+  justify-content: space-around;
+  height: 3rem;
+  padding-top: 0.5rem;
+}
+.in-play-live-matches-body-all .MG-under-list div.lign-2 div:nth-child(1) span:nth-child(3), .in-play-live-matches-body-all .MG-under-list div.lign-2 div:nth-child(2) span:nth-child(3) {
+  /* border-right: 0.2rem solid var(--color-fifthynary-m-light);*/
+  /* padding-right: 3rem;*/
+  color: var(--color-secondary-m-light);
+  padding-left: 0.75rem;
 }
 
 /*html.transition,

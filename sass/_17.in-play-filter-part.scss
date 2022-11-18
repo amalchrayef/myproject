@@ -1,0 +1,84 @@
+.in-play-live-matches-body{
+    grid-row: row-2 / row-3;
+    background-color: var(--color-fifthynary-m----light);
+    color: var(--color-tertiary-m--dark);
+    &-all{
+        & .FR , & .DC , & .MG , & .AMG , & .MC {    
+          display: flex;
+           justify-content: space-between;
+           padding: 0.75rem;
+           padding-left: 2rem;
+           padding-right: 1.5rem;
+           border-bottom: 0.1rem solid var(--color-tertiary);
+           border-top: 0.2rem solid var(--color-secondary);
+           align-items: baseline;
+
+           &:hover i {
+            opacity: 5;         
+               }
+           & div i:nth-child(1), & div i:nth-child(2) {
+            color: var( --color-tertiary);
+            font-size: font-size(font-size--large);
+               opacity: -1;
+               padding-right: 1.5rem;            
+              }
+            
+             
+              
+        }
+        & .FR:hover , & .DC:hover , & .MG:hover , & .AMG:hover , & .MC:hover {  
+            & div i:nth-child(1), & div i:nth-child(2) {
+                   opacity: 5;
+                  }      
+           }
+      & .FR-under-list , & .DC-under-list {
+        height: 4rem;
+        display: flex;
+        font-size: font-size(font-size--large);
+        justify-content: space-between;
+        padding: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+         & div span {
+             padding-right: 1rem;
+         }
+         & div span:nth-child(2) {
+          color:var(--color-secondary-m-light);    
+           }
+      }
+      & .MG-under-list{
+        display: flex;
+        font-size: font-size(font-size--large);
+        flex-direction: column;
+        & div.lign-1 {
+            display: flex;
+           /* border-right: 0.1rem solid var(--color-tertiary);*/
+           background-color: var(--color-fifthynary-m-light);
+           justify-content: space-around;
+           padding-left: 1.5rem;
+           padding-top: 0.5rem;
+           padding-bottom: 0.5rem;
+
+
+        }
+        & div.lign-2 {
+            display: flex;
+            justify-content: space-around;
+            height: 3rem;
+            padding-top: 0.5rem;
+
+            & div:nth-child(1) span:nth-child(3),  & div:nth-child(2) span:nth-child(3){
+               /* border-right: 0.2rem solid var(--color-fifthynary-m-light);*/
+               /* padding-right: 3rem;*/
+                color: var(--color-secondary-m-light);
+                padding-left: 0.75rem;
+                
+            }
+
+        }
+       
+      }
+    }
+    
+
+   }
