@@ -1756,9 +1756,24 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   display: flex;
   font-size: 1.1rem;
   justify-content: space-between;
-  padding: 1rem;
+  /*  padding: 1rem;*/
+  /*  padding-top: 0.5rem;*/
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  /* align-items: center;*/
+}
+.in-play-live-matches-body-all .FR-under-list div, .in-play-live-matches-body-all .DC-under-list div {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  top: 1rem;
+  align-items: center;
+}
+.in-play-live-matches-body-all .FR-under-list div:hover, .in-play-live-matches-body-all .DC-under-list div:hover {
+  background-color: var(--color-tertiary);
+  width: 30%;
+  display: flex;
+  justify-content: center;
 }
 .in-play-live-matches-body-all .FR-under-list div span, .in-play-live-matches-body-all .DC-under-list div span {
   padding-right: 1rem;
@@ -1802,6 +1817,18 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
      background-color: aqua;
 
    }*/
+}
+.in-play-live-matches-body-all .MG-under-list div.lign-2 div {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  top: 1rem;
+}
+.in-play-live-matches-body-all .MG-under-list div.lign-2 div:hover {
+  background-color: var(--color-tertiary);
+  width: 30%;
+  display: flex;
+  justify-content: center;
 }
 .in-play-live-matches-body-all .MG-under-list div.lign-2 div:nth-child(1) span:nth-child(3), .in-play-live-matches-body-all .MG-under-list div.lign-2 div:nth-child(2) span:nth-child(3) {
   /* border-right: 0.2rem solid var(--color-fifthynary-m-light);*/
