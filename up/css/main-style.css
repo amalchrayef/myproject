@@ -1748,6 +1748,9 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 .in-play-live-matches-body-all .FR:hover div i:nth-child(1), .in-play-live-matches-body-all .FR:hover div i:nth-child(2), .in-play-live-matches-body-all .DC:hover div i:nth-child(1), .in-play-live-matches-body-all .DC:hover div i:nth-child(2), .in-play-live-matches-body-all .MG:hover div i:nth-child(1), .in-play-live-matches-body-all .MG:hover div i:nth-child(2), .in-play-live-matches-body-all .AMG:hover div i:nth-child(1), .in-play-live-matches-body-all .AMG:hover div i:nth-child(2), .in-play-live-matches-body-all .MC:hover div i:nth-child(1), .in-play-live-matches-body-all .MC:hover div i:nth-child(2) {
   opacity: 5;
 }
+.in-play-live-matches-body-all .FR:hover h2, .in-play-live-matches-body-all .DC:hover h2, .in-play-live-matches-body-all .MG:hover h2, .in-play-live-matches-body-all .AMG:hover h2, .in-play-live-matches-body-all .MC:hover h2 {
+  color: var(--color-tertiary-m-dark);
+}
 .in-play-live-matches-body-all .FR-under-list, .in-play-live-matches-body-all .DC-under-list {
   height: 4rem;
   display: flex;
@@ -1768,6 +1771,19 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   font-size: 1.1rem;
   flex-direction: column;
 }
+.in-play-live-matches-body-all .MG-under-list .lign-3 {
+  display: flex;
+  justify-content: space-around;
+}
+.in-play-live-matches-body-all .MG-under-list .lign-3 div {
+  display: flex;
+}
+.in-play-live-matches-body-all .MG-under-list .lign-3 div div, .in-play-live-matches-body-all .MG-under-list .lign-3 div.cotes {
+  padding: 2.5rem;
+}
+.in-play-live-matches-body-all .MG-under-list .lign-3 div.cotes:hover, .in-play-live-matches-body-all .MG-under-list .lign-3 div.cotes:active {
+  background-color: var(--color-tertiary);
+}
 .in-play-live-matches-body-all .MG-under-list div.lign-1 {
   display: flex;
   /* border-right: 0.1rem solid var(--color-tertiary);*/
@@ -1782,12 +1798,22 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   justify-content: space-around;
   height: 3rem;
   padding-top: 0.5rem;
+  /* & div:hover{
+     background-color: aqua;
+
+   }*/
 }
 .in-play-live-matches-body-all .MG-under-list div.lign-2 div:nth-child(1) span:nth-child(3), .in-play-live-matches-body-all .MG-under-list div.lign-2 div:nth-child(2) span:nth-child(3) {
   /* border-right: 0.2rem solid var(--color-fifthynary-m-light);*/
   /* padding-right: 3rem;*/
   color: var(--color-secondary-m-light);
   padding-left: 0.75rem;
+}
+.in-play-live-matches-body-all .MG-under-list div.lign-2 .first, .in-play-live-matches-body-all .MG-under-list div.lign-2 .second {
+  color: var(--color-secondary-m-light);
+}
+.in-play-live-matches-body-all .not-active {
+  display: none;
 }
 
 /*html.transition,
