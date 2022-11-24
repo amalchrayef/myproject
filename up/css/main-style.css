@@ -1722,6 +1722,20 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   border-top: 0.2rem solid var(--color-secondary);
   align-items: baseline;
 }
+.in-play-live-matches-body-all .FR .slider-all, .in-play-live-matches-body-all .DC .slider-all, .in-play-live-matches-body-all .MG .slider-all, .in-play-live-matches-body-all .AMG .slider-all, .in-play-live-matches-body-all .MC .slider-all {
+  display: flex;
+  justify-content: end;
+}
+.in-play-live-matches-body-all .FR .slider-all div, .in-play-live-matches-body-all .DC .slider-all div, .in-play-live-matches-body-all .MG .slider-all div, .in-play-live-matches-body-all .AMG .slider-all div, .in-play-live-matches-body-all .MC .slider-all div {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.in-play-live-matches-body-all .FR .slider-all div.slider, .in-play-live-matches-body-all .FR .slider-all div.all:hover, .in-play-live-matches-body-all .DC .slider-all div.slider, .in-play-live-matches-body-all .DC .slider-all div.all:hover, .in-play-live-matches-body-all .MG .slider-all div.slider, .in-play-live-matches-body-all .MG .slider-all div.all:hover, .in-play-live-matches-body-all .AMG .slider-all div.slider, .in-play-live-matches-body-all .AMG .slider-all div.all:hover, .in-play-live-matches-body-all .MC .slider-all div.slider, .in-play-live-matches-body-all .MC .slider-all div.all:hover {
+  background-color: var(--color-primary-m-light);
+  margin-left: 0.75rem;
+  border-radius: 45%;
+  color: var(--color-secondary-m-dark);
+}
 .in-play-live-matches-body-all .FR:hover i, .in-play-live-matches-body-all .DC:hover i, .in-play-live-matches-body-all .MG:hover i, .in-play-live-matches-body-all .AMG:hover i, .in-play-live-matches-body-all .MC:hover i {
   opacity: 5;
 }

@@ -13,6 +13,24 @@
            border-top: 0.2rem solid var(--color-secondary);
            align-items: baseline;
 
+            .slider-all {
+               display: flex;
+               justify-content: end;
+
+               & div {
+                padding-right: 1rem ;
+                padding-left: 1rem;
+
+                &.slider , &.all:hover{ 
+                  background-color: var(--color-primary-m-light);
+                  margin-left: 0.75rem;
+                  border-radius: 45%;
+                  color: var(--color-secondary-m-dark);
+               
+                }
+               }
+            }
+
            &:hover i {
             opacity: 5;         
                }
