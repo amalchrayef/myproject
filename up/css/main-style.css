@@ -1792,9 +1792,15 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 }
 .in-play-live-matches-body-all .MG-under-list .lign-3 div {
   display: flex;
+  width: 20%;
+}
+.in-play-live-matches-body-all .MG-under-list .lign-3 div div i {
+  border: 0.1rem solid var(--color-tertiary);
+  padding: 1.5rem;
 }
 .in-play-live-matches-body-all .MG-under-list .lign-3 div div, .in-play-live-matches-body-all .MG-under-list .lign-3 div.cotes {
   padding: 2.5rem;
+  width: 20%;
 }
 .in-play-live-matches-body-all .MG-under-list .lign-3 div.cotes:hover, .in-play-live-matches-body-all .MG-under-list .lign-3 div.cotes:active {
   background-color: var(--color-tertiary);
