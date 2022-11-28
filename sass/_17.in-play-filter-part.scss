@@ -3,12 +3,13 @@
     background-color: var(--color-fifthynary-m----light);
     color: var(--color-tertiary-m--dark);
     &-all , &-asian-lines , &-corners-cards , &-goals , &-half , &-minutes {
+      display: none;
       &.active{
       display: block;
       }
-      &.not-active{
+     /* &.not-active{
         display: none;
-        }
+        }*/
         & .FR , & .DC , & .MG , & .AMG , & .MC {    
           display: flex;
            justify-content: space-between;

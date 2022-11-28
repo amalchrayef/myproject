@@ -1712,11 +1712,14 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   background-color: var(--color-fifthynary-m----light);
   color: var(--color-tertiary-m--dark);
 }
+.in-play-live-matches-body-all, .in-play-live-matches-body-asian-lines, .in-play-live-matches-body-corners-cards, .in-play-live-matches-body-goals, .in-play-live-matches-body-half, .in-play-live-matches-body-minutes {
+  display: none;
+  /* &.not-active{
+     display: none;
+     }*/
+}
 .in-play-live-matches-body-all.active, .in-play-live-matches-body-asian-lines.active, .in-play-live-matches-body-corners-cards.active, .in-play-live-matches-body-goals.active, .in-play-live-matches-body-half.active, .in-play-live-matches-body-minutes.active {
   display: block;
-}
-.in-play-live-matches-body-all.not-active, .in-play-live-matches-body-asian-lines.not-active, .in-play-live-matches-body-corners-cards.not-active, .in-play-live-matches-body-goals.not-active, .in-play-live-matches-body-half.not-active, .in-play-live-matches-body-minutes.not-active {
-  display: none;
 }
 .in-play-live-matches-body-all .FR, .in-play-live-matches-body-all .DC, .in-play-live-matches-body-all .MG, .in-play-live-matches-body-all .AMG, .in-play-live-matches-body-all .MC, .in-play-live-matches-body-asian-lines .FR, .in-play-live-matches-body-asian-lines .DC, .in-play-live-matches-body-asian-lines .MG, .in-play-live-matches-body-asian-lines .AMG, .in-play-live-matches-body-asian-lines .MC, .in-play-live-matches-body-corners-cards .FR, .in-play-live-matches-body-corners-cards .DC, .in-play-live-matches-body-corners-cards .MG, .in-play-live-matches-body-corners-cards .AMG, .in-play-live-matches-body-corners-cards .MC, .in-play-live-matches-body-goals .FR, .in-play-live-matches-body-goals .DC, .in-play-live-matches-body-goals .MG, .in-play-live-matches-body-goals .AMG, .in-play-live-matches-body-goals .MC, .in-play-live-matches-body-half .FR, .in-play-live-matches-body-half .DC, .in-play-live-matches-body-half .MG, .in-play-live-matches-body-half .AMG, .in-play-live-matches-body-half .MC, .in-play-live-matches-body-minutes .FR, .in-play-live-matches-body-minutes .DC, .in-play-live-matches-body-minutes .MG, .in-play-live-matches-body-minutes .AMG, .in-play-live-matches-body-minutes .MC {
   display: flex;

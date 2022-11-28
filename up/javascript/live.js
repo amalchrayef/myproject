@@ -23,24 +23,26 @@ clickedLignn.addEventListener("click", () =>{
 
 const liste = document.querySelector(".in-play-live-matches-header .menu");
 const sentences = Array.from(liste.children);
-/*const activePartt = document.querySelector("in-play-live-matches-body div.active");*/
+/*const    activeSpace = document.querySelector("in-play-live-matches-body div.active");*/
+
 const parts = document.querySelector(".in-play-live-matches-body");
 const part = Array.from(parts.children);
 
 for (let i = 0; i < sentences.length; i++) {
  
 sentences[i].addEventListener("click", () =>{
+
     activeSentence = document.querySelector(".in-play-live-matches-header .menu p.active");
     activeSentence.classList.remove("active");
-    sentences[i].classList.add("active");
+    sentences[i].classList.add("active"); 
 
-    activePartt = document.querySelector("in-play-live-matches-body div.active");
-    activePartt.classList.remove("active");
-    activePartt.classList.toggle("not-active");
+    activeSpace = document.querySelector(".in-play-live-matches-body div.active");
+    activeSpace.classList.remove("active");
+    part[i].classList.add("active");
 
-    part[i].classList.remove("not-active");
-    part[i].classList.toggle("active");
-    
+
 });
+
+
 
 }
