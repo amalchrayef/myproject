@@ -1771,6 +1771,9 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   padding-right: 1.5rem;
   /* align-items: center;*/
 }
+.in-play-live-matches-body-all .FR-under-list.is-clicked, .in-play-live-matches-body-all .DC-under-list.is-clicked, .in-play-live-matches-body-asian-lines .FR-under-list.is-clicked, .in-play-live-matches-body-asian-lines .DC-under-list.is-clicked, .in-play-live-matches-body-corners-cards .FR-under-list.is-clicked, .in-play-live-matches-body-corners-cards .DC-under-list.is-clicked, .in-play-live-matches-body-goals .FR-under-list.is-clicked, .in-play-live-matches-body-goals .DC-under-list.is-clicked, .in-play-live-matches-body-half .FR-under-list.is-clicked, .in-play-live-matches-body-half .DC-under-list.is-clicked, .in-play-live-matches-body-minutes .FR-under-list.is-clicked, .in-play-live-matches-body-minutes .DC-under-list.is-clicked {
+  display: none;
+}
 .in-play-live-matches-body-all .FR-under-list div, .in-play-live-matches-body-all .DC-under-list div, .in-play-live-matches-body-asian-lines .FR-under-list div, .in-play-live-matches-body-asian-lines .DC-under-list div, .in-play-live-matches-body-corners-cards .FR-under-list div, .in-play-live-matches-body-corners-cards .DC-under-list div, .in-play-live-matches-body-goals .FR-under-list div, .in-play-live-matches-body-goals .DC-under-list div, .in-play-live-matches-body-half .FR-under-list div, .in-play-live-matches-body-half .DC-under-list div, .in-play-live-matches-body-minutes .FR-under-list div, .in-play-live-matches-body-minutes .DC-under-list div {
   width: 30%;
   display: flex;

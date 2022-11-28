@@ -46,3 +46,26 @@ sentences[i].addEventListener("click", () =>{
 
 
 }
+
+const list1 = document.querySelector(".in-play-live-matches-body  div.FR");
+const  underList1= document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-all div div.FR-under-list");
+
+list1.addEventListener("click", () =>{
+    underList1.classList.toggle("is-clicked");
+    /*underList1.classList.remove("is-clicked");*/
+});
+
+const list2 = document.querySelector(".in-play-live-matches-body  div.DC");
+const  underList2= document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-all div div.DC-under-list");
+
+list2.addEventListener("click", () =>{
+    underList2.classList.toggle("is-clicked");
+    /*underList1.classList.remove("is-clicked");*/
+});
+const list3 = document.querySelector(".in-play-live-matches-body .second-list div.DC");
+const  underList3= document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-all div.second-list div.DC-under-list");
+
+list3.addEventListener("click", () =>{
+    underList3.classList.toggle("is-clicked");
+    /*underList1.classList.remove("is-clicked");*/
+});
