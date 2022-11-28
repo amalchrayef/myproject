@@ -96,7 +96,9 @@
         display: flex;
         font-size: font-size(font-size--large);
         flex-direction: column;
-
+       &.is-clicked{
+        display: none;
+       }
         & .lign-3{
           display: flex;
           justify-content: space-around;

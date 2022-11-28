@@ -1798,6 +1798,9 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   font-size: 1.1rem;
   flex-direction: column;
 }
+.in-play-live-matches-body-all .MG-under-list.is-clicked, .in-play-live-matches-body-asian-lines .MG-under-list.is-clicked, .in-play-live-matches-body-corners-cards .MG-under-list.is-clicked, .in-play-live-matches-body-goals .MG-under-list.is-clicked, .in-play-live-matches-body-half .MG-under-list.is-clicked, .in-play-live-matches-body-minutes .MG-under-list.is-clicked {
+  display: none;
+}
 .in-play-live-matches-body-all .MG-under-list .lign-3, .in-play-live-matches-body-asian-lines .MG-under-list .lign-3, .in-play-live-matches-body-corners-cards .MG-under-list .lign-3, .in-play-live-matches-body-goals .MG-under-list .lign-3, .in-play-live-matches-body-half .MG-under-list .lign-3, .in-play-live-matches-body-minutes .MG-under-list .lign-3 {
   display: flex;
   justify-content: space-around;
