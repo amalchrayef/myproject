@@ -20,6 +20,7 @@ clickedLignn.addEventListener("click", () =>{
 });
 
 
+    /************************* for the filter *************************/ 
 
 const liste = document.querySelector(".in-play-live-matches-header .menu");
 const sentences = Array.from(liste.children);
@@ -46,6 +47,7 @@ sentences[i].addEventListener("click", () =>{
 
 
 }
+    /************************* for the underlists *************************/ 
 
 const list1 = document.querySelector(".in-play-live-matches-body  div.FR");
 const  underList1= document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-all div div.FR-under-list");
@@ -138,6 +140,46 @@ const  underList13= document.querySelector(".in-play-live-matches-body .in-play-
     underList13.classList.toggle("is-clicked");
     /*underList1.classList.remove("is-clicked");*/
 });
+
+const list14 = document.querySelector(".in-play-live-matches-body .tenth-MG-list div.MG");
+const  underList14= document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-all div.tenth-MG-list div.two-lists");
+
+   list14.addEventListener("click", () =>{
+    underList14.classList.toggle("is-clicked");
+    /*underList1.classList.remove("is-clicked");*/
+});
+
+
+    /************************* for the slider/all *************************/ 
+
+    const slider = document.querySelector(".in-play-live-matches-body .tenth-MG-list .slider-all .slider");
+    const  all = document.querySelector(".in-play-live-matches-body .tenth-MG-list .slider-all .all");
+    const sliderPart= document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-all div.tenth-MG-list div.two-lists div.MG-under-list-slider");
+    const  allPart = document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-all div.tenth-MG-list div.two-lists div.MG-under-list-all");
+    
+    all.addEventListener("click", () =>{
+        allPart.classList.remove("not-active");
+        sliderPart.classList.remove("active");
+        sliderPart.classList.add("not-active");
+         allPart.classList.add("active");
+         slider.classList.remove("on");
+         all.classList.add("on");
+
+
+    });
+
+    slider.addEventListener("click", () =>{
+        allPart.classList.remove("active");
+        sliderPart.classList.remove("not-active");
+        allPart.classList.add("not-active");
+       sliderPart.classList.add("active");
+       slider.classList.add("on");
+       all.classList.remove("on");
+    });
+    
+
+
+
 
 
 

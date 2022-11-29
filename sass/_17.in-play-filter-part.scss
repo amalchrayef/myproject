@@ -20,23 +20,7 @@
            border-top: 0.2rem solid var(--color-secondary);
            align-items: baseline;
 
-            .slider-all {
-               display: flex;
-               justify-content: end;
-
-               & div {
-                padding-right: 1rem ;
-                padding-left: 1rem;
-
-                &.slider , &.all:hover{ 
-                  background-color: var(--color-primary-m-light);
-                  margin-left: 0.75rem;
-                  border-radius: 45%;
-                  color: var(--color-secondary-m-dark);
-               
-                }
-               }
-            }
+         
 
            &:hover i {
             opacity: 5;         
@@ -64,6 +48,7 @@
         display: flex;
         font-size: font-size(font-size--large);
         justify-content: space-between;
+        cursor: pointer;
       /*  padding: 1rem;*/
     /*  padding-top: 0.5rem;*/
         padding-left: 1.5rem;
@@ -92,13 +77,44 @@
           color:var(--color-secondary-m-light);    
            }
       }
-      & .MG-under-list{
+      & .two-lists{
+        &.is-clicked{
+          display: none;
+         }
+      }
+
+      & .two-lists .slider-all {
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+        padding-right: 2rem;
+        padding: 1rem;
+
+        & div {
+         padding-right: 1rem ;
+         padding-left: 1rem;
+
+         &.slider.on , &.all:hover , &.all.on{ 
+           background-color: var(--color-primary-m-light);
+           margin-left: 0.75rem;
+           border-radius: 45%;
+           color: var(--color-secondary-m-dark);
+        
+         }
+        }
+     }
+    
+      & .MG-under-list , & .MG-under-list-slider , & .MG-under-list-all{
         display: flex;
         font-size: font-size(font-size--large);
         flex-direction: column;
+        cursor: pointer;
+
+        
        &.is-clicked{
         display: none;
        }
+
         & .lign-3{
           display: flex;
           justify-content: space-around;
@@ -182,9 +198,14 @@
         }
        
       }
-      & .not-active{
+   
+      & .active{
+        display: block;
+      }
+     & .not-active{
         display: none;
       }
+
     }
     
 
