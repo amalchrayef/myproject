@@ -1,0 +1,19 @@
+.in-play-live-tracker{
+    grid-column: column-3 / column-4;
+    background-color: var(--color-primary-m-dark);
+   & .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    color: var(--color-quaternary-m-dark);
+
+    & div:nth-child(2) , & div:nth-child(3){
+        font-size: font-size(font-size-xxlarge);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: var(--color-secondary-m-light);
+        font-weight: font-weight(font-weight-black);
+    }
+   }
+}

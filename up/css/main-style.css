@@ -1889,6 +1889,25 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   display: none;
 }
 
+.in-play-live-tracker {
+  grid-column: column-3/column-4;
+  background-color: var(--color-primary-m-dark);
+}
+.in-play-live-tracker .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  color: var(--color-quaternary-m-dark);
+}
+.in-play-live-tracker .header div:nth-child(2), .in-play-live-tracker .header div:nth-child(3) {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: var(--color-secondary-m-light);
+  font-weight: 900;
+}
+
 /*html.transition,
 html.transition *,
 html.transition *::before,

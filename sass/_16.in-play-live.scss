@@ -132,25 +132,27 @@
       display: grid;
       grid-template-rows: [row-1] 14rem [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6]  ;
 
-      /* *************** scroll bar properties **********/
-      &::-webkit-scrollbar {
-        width: 1.3rem;
-        border-left: 0.6rem solid var(--color-primary-m-dark);
-      }
-      &::-webkit-scrollbar-thumb {
-        cursor: pointer;
-        border-radius: 1rem;
-        background-color:var(--color-quaternary-m--dark);
-        border-left: 0.3rem solid transparent;
-        border-right: 0.3rem solid transparent;
-        border-top: 0.19rem solid transparent;
-        border-bottom: 0.19rem solid transparent;
-        background-clip: content-box;
-      }
-      &::-webkit-scrollbar-track {
-        background-color:var(--color-secondary-m-dark);
-        border-left: 0.06rem solid var(--color-primary-m-dark);
-      }
+    
+    /* *************** scroll bar properties **********/
+    &::-webkit-scrollbar {
+      width: 1.3rem;
+      border-left: 0.6rem solid var(--color-primary-m-dark);
+    }
+    &::-webkit-scrollbar-thumb {
+      cursor: pointer;
+      border-radius: 1rem;
+      background-color:var(--color-quaternary-m--dark);
+      border-left: 0.3rem solid transparent;
+      border-right: 0.3rem solid transparent;
+      border-top: 0.19rem solid transparent;
+      border-bottom: 0.19rem solid transparent;
+      background-clip: content-box;
+    }
+    &::-webkit-scrollbar-track {
+      background-color:var(--color-secondary-m-dark);
+      border-left: 0.06rem solid var(--color-primary-m-dark);
+    }
+  
       &-header{
         grid-row: row-1 / row-2;
         background-color: var(--color-primary);
