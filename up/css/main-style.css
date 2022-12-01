@@ -1908,6 +1908,65 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   padding-right: 1.5rem;
   color: var(--color-secondary-m-light);
   font-weight: 900;
+  position: relative;
+}
+.in-play-live-tracker .header div:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  bottom: -35%;
+  right: -20%;
+  left: 15%;
+  width: 70%;
+  height: 0.2rem;
+  background-color: var(--color-tertiary-m--dark);
+  z-index: 5;
+}
+.in-play-live-tracker .header div:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  bottom: -35%;
+  right: -20%;
+  left: 15%;
+  width: 70%;
+  height: 0.2rem;
+  background-color: var(--color-tertiary-m-dark);
+  z-index: 5;
+}
+.in-play-live-tracker .tracker-part {
+  border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
+}
+.in-play-live-tracker .tracker-part a {
+  color: var(--color-tertiary);
+  font-size: 1.1rem;
+}
+.in-play-live-tracker .tracker-part a:hover, .in-play-live-tracker .tracker-part a:active {
+  color: var(--color-primary-m-light);
+}
+.in-play-live-tracker .tracker-part .stats-timeline {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  font-size: 1.1rem;
+  color: var(--color-primary-m-light);
+  padding-bottom: 1rem;
+}
+.in-play-live-tracker .tracker-part .stats-timeline div {
+  padding-left: 1rem;
+  position: relative;
+}
+.in-play-live-tracker .tracker-part .stats-timeline div:hover, .in-play-live-tracker .tracker-part .stats-timeline div:active {
+  color: var(--color-quaternary);
+}
+.in-play-live-tracker .tracker-part .stats-timeline div::before {
+  content: "";
+  position: absolute;
+  bottom: -55%;
+  right: -20%;
+  left: 30%;
+  width: 70%;
+  height: 0.2rem;
+  background-color: var(--color-tertiary-m-dark);
+  z-index: 5;
 }
 
 /*html.transition,
