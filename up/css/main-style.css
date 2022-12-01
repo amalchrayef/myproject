@@ -1898,12 +1898,14 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   color: var(--color-quaternary-m-dark);
+  border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
 }
 .in-play-live-tracker .header div:nth-child(2), .in-play-live-tracker .header div:nth-child(3) {
   font-size: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   color: var(--color-secondary-m-light);
   font-weight: 900;
 }
