@@ -220,3 +220,19 @@ const  underList14= document.querySelector(".in-play-live-matches-body .in-play-
                   list22.addEventListener("click", () =>{
                    underList22.classList.toggle("is-clicked");
                });
+
+    /************************* for the tracker part  ((stats-timeline)) *************************/ 
+    const stats = document.querySelector(".in-play-live-tracker .tracker-part div:nth-child(1)");
+    const  timeline= document.querySelector(".in-play-live-tracker .tracker-part div:nth-child(2)");
+       stats.addEventListener("click", () =>{
+        stats.classList.toggle("active");
+        timeline.classList.remove("active");
+
+    });
+
+      timeline.addEventListener("click", () =>{
+        timeline.classList.toggle("active");
+        stats.classList.remove("active");
+
+    });
+

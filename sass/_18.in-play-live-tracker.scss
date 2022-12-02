@@ -43,7 +43,12 @@
       }
    }
    & .tracker-part{
+
     border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
+    & img{
+        padding-top: 2rem;
+        padding-left: 2.5rem;
+    }
     & a {
     color: var(--color-tertiary);  
     font-size: font-size(font-size--large);
@@ -64,6 +69,7 @@
         position: relative;
         &:hover, &:active{
             color: var(--color-quaternary);  
+        
         }
         &::before{
             content: "";
@@ -74,9 +80,16 @@
                 width: 70%;
                 height: height(height-size-smal);
                 background-color: var(--color-tertiary-m-dark);
-                z-index: 5;
+                z-index: -1;
           }
+        
     }
+    & div.active{
+        &::before{
+                z-index: 7;
+          }
+
   }
    }
 }
+  }

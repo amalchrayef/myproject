@@ -1935,6 +1935,10 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 .in-play-live-tracker .tracker-part {
   border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
 }
+.in-play-live-tracker .tracker-part img {
+  padding-top: 2rem;
+  padding-left: 2.5rem;
+}
 .in-play-live-tracker .tracker-part a {
   color: var(--color-tertiary);
   font-size: 1.1rem;
@@ -1966,7 +1970,10 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   width: 70%;
   height: 0.2rem;
   background-color: var(--color-tertiary-m-dark);
-  z-index: 5;
+  z-index: -1;
+}
+.in-play-live-tracker .tracker-part .stats-timeline div.active::before {
+  z-index: 7;
 }
 
 /*html.transition,
