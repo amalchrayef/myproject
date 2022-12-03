@@ -8,7 +8,6 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: var(--color-quaternary-m-dark);
-    border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
     
 
     & div:nth-child(2) , & div:nth-child(3){
@@ -44,7 +43,6 @@
    }
    & .tracker-part{
 
-    border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
     & img{
         padding-top: 2rem;
         padding-left: 2.5rem;
@@ -52,44 +50,130 @@
     & a {
     color: var(--color-tertiary);  
     font-size: font-size(font-size--large);
+    display: flex;
+    justify-content:end ;
+    padding-right: 2rem;
+    padding-top: 1rem;
     &:hover, &:active{
         color: var(--color-primary-m-light);  
   
     }
   }
-  & .stats-timeline{
-    display: flex;
-    justify-content: center;
-    padding-top: 4rem;
-    font-size: font-size(font-size--large);
-    color: var(--color-primary-m-light);  
-    padding-bottom: 1rem;
-    & div{
-        padding-left: 1rem;
-        position: relative;
-        &:hover, &:active{
-            color: var(--color-quaternary);  
-        
-        }
-        &::before{
-            content: "";
-                position: absolute; 
-                bottom: -55%;
-                right: -20%;
-                left: 30%;
-                width: 70%;
-                height: height(height-size-smal);
-                background-color: var(--color-tertiary-m-dark);
-                z-index: -1;
-          }
-        
-    }
-    & div.active{
-        &::before{
-                z-index: 7;
-          }
-
-  }
-   }
+ 
 }
+   & .stats {
+    & img {
+      padding-left: 0.75rem;
+      padding-right: 1rem;
+      display: block;
+    }
+ }
+ & .st-T-line{
+    border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
+    & .stats-timeline{
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+        font-size: font-size(font-size--large);
+        color: var(--color-primary-m-light);  
+        padding-bottom: 1rem;
+        border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
+
+        & div{
+            padding-left: 1rem;
+            position: relative;
+            &:hover, &:active{
+                color: var(--color-quaternary);  
+            
+            }
+            &::before{
+                content: "";
+                    position: absolute; 
+                    bottom: -55%;
+                    right: -20%;
+                    left: 30%;
+                    width: 70%;
+                    height: height(height-size-smal);
+                    background-color: var(--color-tertiary-m-dark);
+                    z-index: -1;
+              }
+            
+        }
+        & div.active{
+            &::before{
+                    z-index: 7;
+              }
+    
+      }
+       }
+ }
+ & .my-bets{
+    border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
+    padding: 1rem;
+    font-size: font-size(font-size--large);
+    color: var(--color-primary-m-light);
+
+    & h2{
+        color: var(--color-tertiary-m-dark);
+    }
+    & .first-lign{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+
+        & div:nth-child(2){
+            display: flex;
+            align-items: baseline;
+            padding-right: 0.75rem;
+            & div{
+                padding-right: 0.5rem;
+            }
+        }
+        & div:nth-child(2):hover , & div:nth-child(2):active {
+            color: var(--color-tertiary-m--dark);
+
+        }
+    }
+    & .cards{
+        padding-top: 1rem;
+        border: 0.1rem solid var(--color-fifthynary-m--light);
+        padding: 0.75rem;
+        margin-bottom: 1.2rem;
+        & .cotes{
+            display: flex;
+            justify-content: space-between;
+            & div {
+                color: var(--color-tertiary-m--dark);
+            }
+        }
+
+
+    }
+ }
+ & section.part-2{
+    display: flex;
+    flex-direction:column ;
+    & div.part-2-parag{
+        display: flex;
+        flex-direction:column ;
+        & div {
+            padding-top: 1rem;
+        }
+
+    }
+ }
+ & section.part-3{
+    display: flex;
+    flex-direction:column ;
+    & div.part-2-parag{
+        display: flex;
+        flex-direction:column ;
+        & div {
+            padding-top: 1rem;
+        }
+
+    }
+ }
   }

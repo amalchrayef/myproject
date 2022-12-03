@@ -1900,7 +1900,6 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: var(--color-quaternary-m-dark);
-  border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
 }
 .in-play-live-tracker .header div:nth-child(2), .in-play-live-tracker .header div:nth-child(3) {
   font-size: 1.5rem;
@@ -1932,9 +1931,6 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   background-color: var(--color-tertiary-m-dark);
   z-index: 5;
 }
-.in-play-live-tracker .tracker-part {
-  border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
-}
 .in-play-live-tracker .tracker-part img {
   padding-top: 2rem;
   padding-left: 2.5rem;
@@ -1942,26 +1938,39 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 .in-play-live-tracker .tracker-part a {
   color: var(--color-tertiary);
   font-size: 1.1rem;
+  display: flex;
+  justify-content: end;
+  padding-right: 2rem;
+  padding-top: 1rem;
 }
 .in-play-live-tracker .tracker-part a:hover, .in-play-live-tracker .tracker-part a:active {
   color: var(--color-primary-m-light);
 }
-.in-play-live-tracker .tracker-part .stats-timeline {
+.in-play-live-tracker .stats img {
+  padding-left: 0.75rem;
+  padding-right: 1rem;
+  display: block;
+}
+.in-play-live-tracker .st-T-line {
+  border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
+}
+.in-play-live-tracker .st-T-line .stats-timeline {
   display: flex;
   justify-content: center;
-  padding-top: 4rem;
+  padding-top: 2rem;
   font-size: 1.1rem;
   color: var(--color-primary-m-light);
   padding-bottom: 1rem;
+  border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
 }
-.in-play-live-tracker .tracker-part .stats-timeline div {
+.in-play-live-tracker .st-T-line .stats-timeline div {
   padding-left: 1rem;
   position: relative;
 }
-.in-play-live-tracker .tracker-part .stats-timeline div:hover, .in-play-live-tracker .tracker-part .stats-timeline div:active {
+.in-play-live-tracker .st-T-line .stats-timeline div:hover, .in-play-live-tracker .st-T-line .stats-timeline div:active {
   color: var(--color-quaternary);
 }
-.in-play-live-tracker .tracker-part .stats-timeline div::before {
+.in-play-live-tracker .st-T-line .stats-timeline div::before {
   content: "";
   position: absolute;
   bottom: -55%;
@@ -1972,8 +1981,70 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   background-color: var(--color-tertiary-m-dark);
   z-index: -1;
 }
-.in-play-live-tracker .tracker-part .stats-timeline div.active::before {
+.in-play-live-tracker .st-T-line .stats-timeline div.active::before {
   z-index: 7;
+}
+.in-play-live-tracker .my-bets {
+  border-bottom: 0.1rem solid var(--color-fifthynary-m--light);
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: var(--color-primary-m-light);
+}
+.in-play-live-tracker .my-bets h2 {
+  color: var(--color-tertiary-m-dark);
+}
+.in-play-live-tracker .my-bets .first-lign {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.in-play-live-tracker .my-bets .first-lign div:nth-child(2) {
+  display: flex;
+  align-items: baseline;
+  padding-right: 0.75rem;
+}
+.in-play-live-tracker .my-bets .first-lign div:nth-child(2) div {
+  padding-right: 0.5rem;
+}
+.in-play-live-tracker .my-bets .first-lign div:nth-child(2):hover, .in-play-live-tracker .my-bets .first-lign div:nth-child(2):active {
+  color: var(--color-tertiary-m--dark);
+}
+.in-play-live-tracker .my-bets .cards {
+  padding-top: 1rem;
+  border: 0.1rem solid var(--color-fifthynary-m--light);
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+.in-play-live-tracker .my-bets .cards .cotes {
+  display: flex;
+  justify-content: space-between;
+}
+.in-play-live-tracker .my-bets .cards .cotes div {
+  color: var(--color-tertiary-m--dark);
+}
+.in-play-live-tracker section.part-2 {
+  display: flex;
+  flex-direction: column;
+}
+.in-play-live-tracker section.part-2 div.part-2-parag {
+  display: flex;
+  flex-direction: column;
+}
+.in-play-live-tracker section.part-2 div.part-2-parag div {
+  padding-top: 1rem;
+}
+.in-play-live-tracker section.part-3 {
+  display: flex;
+  flex-direction: column;
+}
+.in-play-live-tracker section.part-3 div.part-2-parag {
+  display: flex;
+  flex-direction: column;
+}
+.in-play-live-tracker section.part-3 div.part-2-parag div {
+  padding-top: 1rem;
 }
 
 /*html.transition,

@@ -222,8 +222,8 @@ const  underList14= document.querySelector(".in-play-live-matches-body .in-play-
                });
 
     /************************* for the tracker part  ((stats-timeline)) *************************/ 
-    const stats = document.querySelector(".in-play-live-tracker .tracker-part div:nth-child(1)");
-    const  timeline= document.querySelector(".in-play-live-tracker .tracker-part div:nth-child(2)");
+    const stats = document.querySelector(".in-play-live-tracker .st-T-line .stats-timeline div:nth-child(1)");
+    const  timeline= document.querySelector(".in-play-live-tracker .st-T-line .stats-timeline div:nth-child(2)");
        stats.addEventListener("click", () =>{
         stats.classList.toggle("active");
         timeline.classList.remove("active");
