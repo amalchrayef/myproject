@@ -151,6 +151,26 @@
 
 
     }
+  & input[type=text] {
+  background-color: var(--color-fifthynary-m--light);
+  color: white;
+  border: none;
+  width: 6rem;
+  height: 2.7rem;
+}
+& button{
+    background-color: #3CBC8D;
+    border: none;
+    cursor: pointer;
+    width: 7rem;
+    height: 2.7rem;
+
+
+}
+& div.inputs{
+    display: flex;
+    justify-content: space-between;
+}
  }
  & section.part-2{
     display: flex;
