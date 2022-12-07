@@ -34,13 +34,13 @@
        {
        width: 1.25rem;
        height: 1.25rem;
-       margin-left: 0.5rem;
+       margin-left: 1rem;
        margin-right: 1rem;
        }
        & div 
        {
         padding-top: 1.4rem;
-        padding-left: 1rem;
+      /*  padding-left: 0.5rem;*/
         padding-bottom: 1rem;
        display: flex;
        align-items: baseline;
@@ -52,80 +52,101 @@
          background-color: var( --color-fifthynary-m--light);
        }
        &:nth-child(2){
-         display: none;
-
-       }
-       &:nth-child(2).is-clicked{
-        display: block;
-        border-top: 0.2rem solid #757575;
-      }
-
-    
-      &:nth-child(4){
-        padding-left: 1.5rem;
-        border-top: 0.2rem solid #126e51;
-       &:hover i{
-         display: block;
-       }
-        & h4 {
-          padding-right: 7rem;
-        }
-        & span{
-          padding-right: 0.75rem;
-          color: var( --color-tertiary);
-        }
-        & i{
-        font-size: font-size(font-size--large);   
-        color: var( --color-tertiary);
-        display: none;      
-        }
-
-      
-      }
-
-      &:nth-child(4){
         display: none;
+        padding-left: 1rem;
+
+      }
+    &:nth-child(2).is-clicked{
+       display: block;
+       border-top: 0.2rem solid #757575;
      }
 
-     &:nth-child(4).is-clicked{
-      display: block;
-      display: flex;
-
-   }
-
-      &:nth-child(5) {
-        display: flex;
-        height: 7rem;
+       }
+       & section.tennis-list {
+        border-top: 0.2rem solid #4D6B2E;
         display: none;
-        &:hover i:last-of-type{
-          display: block;
-        }
-        & time {
-          padding-right: 1rem;
-        }
-        & section.first-part {
-          padding-right: 8rem;
-        }
-        & i {
-          padding-right: 1rem;
-          padding-left: 1rem;
-          font-size: font-size(font-size--large);   
-          color: var( --color-tertiary);
-          &:last-of-type{
-            display: none;
-          }
-  
-   }
-      &.is-clicked{
-    display: block;
-    display: flex;
 
-   }
       }
-      
+      & section.badminton-list {
+        border-top: 0.2rem solid #2484d3;
+        display: none;
+
+      }
+       & section.match-list {
+        border-top: 0.2rem solid #126e51;
+        display: none;
+      }
+      & section.basketball-list {
+        border-top: 0.2rem solid #c47e23;
+        display: none;
+      }
+       & section.match-list.is-clicked ,
+        & section.tennis-list.is-clicked 
+        , & section.badminton-list.is-clicked{
+        display: block;
+        transition: transform 5s;
+
+       }
+       & section.match-list section.item-1 ,
+        & section.tennis-list section.item-1 ,
+         & section.badminton-list section.item-1 {
+        margin-left: -0.01rem;
+        width: 100%;
+           & .first-part {
+            padding-left: 1rem;
+              & h4 {
+                padding-right: 5vw;
+                
+              }
+              & i {
+                padding-left: 0.5rem;
+              }
+           }
+           & .first-part:hover i{
+            display: block;
+          }
+          & .first-part i{
+            display: none;
+            font-size: font-size(font-size-smallest);
+            color: var(--color-tertiary);
+          }
+         
+           }
+           & section.match-list .second-part.is-clicked
+            , & section.tennis-list .second-part.is-clicked  ,
+             & section.badminton-list .second-part.is-clicked {
+            display: block;
+            display: flex;
+
+           }
+           & section.match-list .second-part
+            , & section.tennis-list .second-part , 
+             & section.badminton-list .second-part{
+            display: flex;
+            color: var(--color-primary-m-light);
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 0.1rem solid #494949;
+            display: none;
+
+           
+             & i:nth-of-type(2){
+                opacity: -1;
+             }
+             &:hover i:nth-of-type(2){
+              opacity: 5;
+           }
+           & .goals {
+            color: var(--color-secondary-m-light);
+           }
+           &:hover , &:active {
+            background-color: var( --color-fifthynary-m--light);
+          }
+           }
        }
 
-    }
+  
     &-matches{
       grid-column: column-2 / column-3;
       overflow-y: auto;

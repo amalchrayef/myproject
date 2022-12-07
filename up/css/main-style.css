@@ -1539,12 +1539,12 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 .in-play-live-list div img {
   width: 1.25rem;
   height: 1.25rem;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   margin-right: 1rem;
 }
 .in-play-live-list div {
   padding-top: 1.4rem;
-  padding-left: 1rem;
+  /*  padding-left: 0.5rem;*/
   padding-bottom: 1rem;
   display: flex;
   align-items: baseline;
@@ -1558,63 +1558,77 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 }
 .in-play-live-list div:nth-child(2) {
   display: none;
+  padding-left: 1rem;
 }
 .in-play-live-list div:nth-child(2).is-clicked {
   display: block;
   border-top: 0.2rem solid #757575;
 }
-.in-play-live-list div:nth-child(4) {
-  padding-left: 1.5rem;
+.in-play-live-list section.tennis-list {
+  border-top: 0.2rem solid #4D6B2E;
+  display: none;
+}
+.in-play-live-list section.badminton-list {
+  border-top: 0.2rem solid #2484d3;
+  display: none;
+}
+.in-play-live-list section.match-list {
   border-top: 0.2rem solid #126e51;
-}
-.in-play-live-list div:nth-child(4):hover i {
-  display: block;
-}
-.in-play-live-list div:nth-child(4) h4 {
-  padding-right: 7rem;
-}
-.in-play-live-list div:nth-child(4) span {
-  padding-right: 0.75rem;
-  color: var(--color-tertiary);
-}
-.in-play-live-list div:nth-child(4) i {
-  font-size: 1.1rem;
-  color: var(--color-tertiary);
   display: none;
 }
-.in-play-live-list div:nth-child(4) {
+.in-play-live-list section.basketball-list {
+  border-top: 0.2rem solid #c47e23;
   display: none;
 }
-.in-play-live-list div:nth-child(4).is-clicked {
+.in-play-live-list section.match-list.is-clicked, .in-play-live-list section.tennis-list.is-clicked, .in-play-live-list section.badminton-list.is-clicked {
   display: block;
-  display: flex;
+  transition: transform 5s;
 }
-.in-play-live-list div:nth-child(5) {
-  display: flex;
-  height: 7rem;
-  display: none;
+.in-play-live-list section.match-list section.item-1, .in-play-live-list section.tennis-list section.item-1, .in-play-live-list section.badminton-list section.item-1 {
+  margin-left: -0.01rem;
+  width: 100%;
 }
-.in-play-live-list div:nth-child(5):hover i:last-of-type {
-  display: block;
-}
-.in-play-live-list div:nth-child(5) time {
-  padding-right: 1rem;
-}
-.in-play-live-list div:nth-child(5) section.first-part {
-  padding-right: 8rem;
-}
-.in-play-live-list div:nth-child(5) i {
-  padding-right: 1rem;
+.in-play-live-list section.match-list section.item-1 .first-part, .in-play-live-list section.tennis-list section.item-1 .first-part, .in-play-live-list section.badminton-list section.item-1 .first-part {
   padding-left: 1rem;
-  font-size: 1.1rem;
+}
+.in-play-live-list section.match-list section.item-1 .first-part h4, .in-play-live-list section.tennis-list section.item-1 .first-part h4, .in-play-live-list section.badminton-list section.item-1 .first-part h4 {
+  padding-right: 5vw;
+}
+.in-play-live-list section.match-list section.item-1 .first-part i, .in-play-live-list section.tennis-list section.item-1 .first-part i, .in-play-live-list section.badminton-list section.item-1 .first-part i {
+  padding-left: 0.5rem;
+}
+.in-play-live-list section.match-list section.item-1 .first-part:hover i, .in-play-live-list section.tennis-list section.item-1 .first-part:hover i, .in-play-live-list section.badminton-list section.item-1 .first-part:hover i {
+  display: block;
+}
+.in-play-live-list section.match-list section.item-1 .first-part i, .in-play-live-list section.tennis-list section.item-1 .first-part i, .in-play-live-list section.badminton-list section.item-1 .first-part i {
+  display: none;
+  font-size: calc(0.3rem + 0.6667vw);
   color: var(--color-tertiary);
 }
-.in-play-live-list div:nth-child(5) i:last-of-type {
-  display: none;
-}
-.in-play-live-list div:nth-child(5).is-clicked {
+.in-play-live-list section.match-list .second-part.is-clicked, .in-play-live-list section.tennis-list .second-part.is-clicked, .in-play-live-list section.badminton-list .second-part.is-clicked {
   display: block;
   display: flex;
+}
+.in-play-live-list section.match-list .second-part, .in-play-live-list section.tennis-list .second-part, .in-play-live-list section.badminton-list .second-part {
+  display: flex;
+  color: var(--color-primary-m-light);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #494949;
+  display: none;
+}
+.in-play-live-list section.match-list .second-part i:nth-of-type(2), .in-play-live-list section.tennis-list .second-part i:nth-of-type(2), .in-play-live-list section.badminton-list .second-part i:nth-of-type(2) {
+  opacity: -1;
+}
+.in-play-live-list section.match-list .second-part:hover i:nth-of-type(2), .in-play-live-list section.tennis-list .second-part:hover i:nth-of-type(2), .in-play-live-list section.badminton-list .second-part:hover i:nth-of-type(2) {
+  opacity: 5;
+}
+.in-play-live-list section.match-list .second-part .goals, .in-play-live-list section.tennis-list .second-part .goals, .in-play-live-list section.badminton-list .second-part .goals {
+  color: var(--color-secondary-m-light);
+}
+.in-play-live-list section.match-list .second-part:hover, .in-play-live-list section.match-list .second-part:active, .in-play-live-list section.tennis-list .second-part:hover, .in-play-live-list section.tennis-list .second-part:active, .in-play-live-list section.badminton-list .second-part:hover, .in-play-live-list section.badminton-list .second-part:active {
+  background-color: var(--color-fifthynary-m--light);
 }
 .in-play-live-matches {
   grid-column: column-2/column-3;
