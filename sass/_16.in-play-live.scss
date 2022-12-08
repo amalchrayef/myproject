@@ -80,16 +80,60 @@
         border-top: 0.2rem solid #c47e23;
         display: none;
       }
+      & section.volleyball-list {
+        border-top: 0.2rem solid #ffdf1b;
+        display: none;
+      }
+   
+      & section.cricket-list {
+        border-top: 0.2rem solid #4D6B2E;
+        display: none;
+      }
+      & section.darts-list {
+        border-top: 0.2rem solid  #cf420a;
+        display: none;
+      }
+      & section.esports-list {
+        border-top: 0.2rem solid  #b243fc;
+        display: none;
+      }
+      & section.greyhounds-list {
+        border-top: 0.2rem solid  #c0a24f;
+        display: none;
+      }
+      & section.hockey-list {
+        border-top: 0.2rem solid  #9c9c9c;
+        display: none;
+      }
+   
+   
        & section.match-list.is-clicked ,
         & section.tennis-list.is-clicked 
-        , & section.badminton-list.is-clicked{
+        , & section.badminton-list.is-clicked 
+        , & section.basketball-list.is-clicked 
+        , & section.volleyball-list.is-clicked 
+         , & section.cricket-list.is-clicked
+          , & section.darts-list.is-clicked,
+           & section.esports-list.is-clicked, 
+           & section.greyhounds-list.is-clicked,
+            & section.hockey-list.is-clicked{
         display: block;
         transition: transform 5s;
+        & h1{
+        display: none;
+        }
 
        }
        & section.match-list section.item-1 ,
         & section.tennis-list section.item-1 ,
-         & section.badminton-list section.item-1 {
+         & section.badminton-list section.item-1 
+         ,  & section.basketball-list section.item-1 
+         ,  & section.volleyball-list section.item-1  
+         ,  & section.cricket-list section.item-1 
+          ,  & section.darts-list section.item-1 ,
+            & section.esports-list section.item-1,
+            & section.greyhounds-list section.item-1, 
+             & section.hockey-list section.item-1{
         margin-left: -0.01rem;
         width: 100%;
            & .first-part {
@@ -114,14 +158,28 @@
            }
            & section.match-list .second-part.is-clicked
             , & section.tennis-list .second-part.is-clicked  ,
-             & section.badminton-list .second-part.is-clicked {
+             & section.badminton-list .second-part.is-clicked 
+             , & section.basketball-list .second-part.is-clicked 
+             , & section.volleyball-list .second-part.is-clicked
+              , & section.cricket-list .second-part.is-clicked  
+              , & section.darts-list .second-part.is-clicked  ,
+               & section.esports-list .second-part.is-clicked ,
+               & section.greyhounds-list .second-part.is-clicked ,
+                & section.hockey-list .second-part.is-clicked{
             display: block;
             display: flex;
 
            }
            & section.match-list .second-part
             , & section.tennis-list .second-part , 
-             & section.badminton-list .second-part{
+             & section.badminton-list .second-part 
+             ,  & section.basketball-list .second-part 
+             ,  & section.volleyball-list .second-part 
+             ,  & section.cricket-list .second-part 
+             ,  & section.darts-list .second-part, 
+              & section.esports-list .second-part,
+                & section.greyhounds-list .second-part, 
+                 & section.hockey-list .second-part{
             display: flex;
             color: var(--color-primary-m-light);
             justify-content: space-between;
@@ -249,5 +307,115 @@
    
 
    }
+       /***************************** 1150px *************************************/  
+      @include  media-med-desk {
+             & {
+              grid-template-columns: [column-1] 3.7rem [column-2] 1fr [column-3] 43rem [column-4]  ;
+          
+              & .in-play-live-list div img 
+              {
+              width: 1.75rem;
+              height: 1.75rem;
+            /*margin-bottom: 1rem;
+              margin-top: 0.75rem;*/
+
+            }
+            & div h1
+            {
+              display: none;
+            }
+            & .in-play-live-list div 
+            {
+              border: none;
+              position: relative;
+           }
+
+             & section.match-list.is-clicked ,
+             & section.tennis-list.is-clicked 
+             , & section.badminton-list.is-clicked 
+             , & section.basketball-list.is-clicked 
+             , & section.volleyball-list.is-clicked 
+              , & section.cricket-list.is-clicked
+               , & section.darts-list.is-clicked,
+                & section.esports-list.is-clicked, 
+                & section.greyhounds-list.is-clicked{
+             & h1{
+             display: block;
+             }
+     
+            }
+           
+            & section.match-list ,
+             & section.tennis-list,
+              & section.badminton-list 
+              ,  & section.basketball-list
+              ,  & section.volleyball-list 
+              ,  & section.cricket-list 
+               ,  & section.darts-list ,
+                 & section.esports-list ,
+                 & section.greyhounds-list, 
+                  & section.hockey-list {
+                   position: absolute;
+                   z-index: 10;
+                   left: 4rem;
+                   background-color: var(--color-tertiary-m-light);
+                   color: var(--color-fifthynary-m-darks);
+                   width:24rem;
+                   border: none;
+                   border-radius: 0.25rem;
+                  
+
+                   & .first-part{
+                    color: var(--color-fifthynary-m-darks);
+                    font-size: font-size(font-size-xlarge);
+
+                    & i:hover , & i:active{
+                     color: var(--color-fifthynary-m-darks);
+
+                    }
+                   }
+                   & h1 {
+                    font-size: font-size(font-size-xxlarge);
+                    padding-left: 1rem;
+                    padding: 1rem;
+                   }
+       }
+       &:nth-child(2).is-clicked{
+        border-top: 0.2rem solid #757575;
+      }
+        
+        & section.tennis-list h1{
+         border-bottom: 0.2rem solid #4D6B2E;
+       }
+       & section.badminton-list h1 {
+         border-bottom: 0.2rem solid #2484d3; 
+       }
+        & section.match-list h1{
+         border-bottom: 0.2rem solid #126e51;
+       }
+       & section.basketball-list h1{
+         border-bottom: 0.2rem solid #c47e23;
+       }
+       & section.volleyball-list h1{
+         border-bottom: 0.2rem solid #ffdf1b;
+       }
+       & section.cricket-list h1{
+         border-bottom: 0.2rem solid #4D6B2E;
+       }
+       & section.darts-list h1{
+         border-bottom: 0.2rem solid  #cf420a;
+       }
+       & section.esports-list h1 {
+         border-bottom: 0.2rem solid  #b243fc;
+       }
+       & section.greyhounds-list h1{
+         border-bottom: 0.2rem solid  #c0a24f;
+       }
+       & section.hockey-list h1 {
+         border-bottom: 0.2rem solid  #9c9c9c;
+       }
+
    
-  }
+  } 
+}
+}

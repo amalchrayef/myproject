@@ -158,11 +158,353 @@ clickedSix.addEventListener("click", () =>{
  badmintonclickedSix.addEventListener("click", () =>{
     badmintonactiveSix.classList.toggle("is-clicked");
  });
-/*const lickedLign = document.querySelector(".in-play-live .in-play-live-list div:nth-child(3)");
-const ctiveLign = document.querySelector(".in-play-live .in-play-live-list div:nth-child(4)");
-const lickedLignn = document.querySelector(".in-play-live .in-play-live-list div:nth-child(4)");
-const ctiveLignn = document.querySelector(".in-play-live .in-play-live-list div:nth-child(5)");
+ /************************* basketball *************************/ 
 
+ const basketball = document.querySelector(".in-play-live-list div:nth-child(9)");
+ const basketballList = document.querySelector(".in-play-live-list .basketball-list");
+ const basketballclickedOne = document.querySelector(".in-play-live-list .basketball-list .one");
+ const basketballactiveOne = document.querySelector(".in-play-live-list .basketball-list .second-part.one");
+ 
+ basketball.addEventListener("click", () =>{
+    basketballList.classList.toggle("is-clicked");
+ });
+ 
+ basketballclickedOne.addEventListener("click", () =>{
+    basketballactiveOne.classList.toggle("is-clicked");
+ });
+ 
+ const basketballclickedTwo = document.querySelector(".in-play-live-list .basketball-list .two");
+ const basketballactiveTwo = document.querySelector(".in-play-live-list .basketball-list .second-part.two");
+ 
+ basketballclickedTwo.addEventListener("click", () =>{
+    basketballactiveTwo.classList.toggle("is-clicked");
+ });
+ 
+ const basketballclickedThree = document.querySelector(".in-play-live-list .basketball-list .three");
+ const basketballactiveThree = document.querySelector(".in-play-live-list .basketball-list .second-part.three");
+ 
+ basketballclickedThree.addEventListener("click", () =>{
+    basketballactiveThree.classList.toggle("is-clicked");
+ });
+ 
+ const basketballclickedFour = document.querySelector(".in-play-live-list .basketball-list .four");
+ const basketballactiveFour = document.querySelector(".in-play-live-list .basketball-list .second-part.four");
+ 
+ basketballclickedFour.addEventListener("click", () =>{
+    basketballactiveFour.classList.toggle("is-clicked");
+ });
+ 
+ const basketballclickedFive = document.querySelector(".in-play-live-list .basketball-list .five");
+ const basketballactiveFive = document.querySelector(".in-play-live-list .basketball-list .second-part.five");
+ 
+ basketballclickedFive.addEventListener("click", () =>{
+    basketballactiveFive.classList.toggle("is-clicked");
+ });
+ 
+ const basketballclickedSix = document.querySelector(".in-play-live-list .basketball-list .six");
+ const basketballactiveSix = document.querySelector(".in-play-live-list .basketball-list .second-part.six");
+ 
+ basketballclickedSix.addEventListener("click", () =>{
+    basketballactiveSix.classList.toggle("is-clicked");
+ });
+ /************************* volleyball *************************/ 
+
+ const volleyball = document.querySelector(".in-play-live-list div:nth-child(11)");
+ const volleyballList = document.querySelector(".in-play-live-list .volleyball-list");
+ const volleyballclickedOne = document.querySelector(".in-play-live-list .volleyball-list .one");
+ const volleyballactiveOne = document.querySelector(".in-play-live-list .volleyball-list .second-part.one");
+ 
+ volleyball.addEventListener("click", () =>{
+    volleyballList.classList.toggle("is-clicked");
+ });
+ 
+ volleyballclickedOne.addEventListener("click", () =>{
+    volleyballactiveOne.classList.toggle("is-clicked");
+ });
+ 
+ const volleyballclickedTwo = document.querySelector(".in-play-live-list .volleyball-list .two");
+ const volleyballactiveTwo = document.querySelector(".in-play-live-list .volleyball-list .second-part.two");
+ 
+ volleyballclickedTwo.addEventListener("click", () =>{
+    volleyballactiveTwo.classList.toggle("is-clicked");
+ });
+ 
+ const volleyballclickedThree = document.querySelector(".in-play-live-list .volleyball-list .three");
+ const volleyballactiveThree = document.querySelector(".in-play-live-list .volleyball-list .second-part.three");
+ 
+ volleyballclickedThree.addEventListener("click", () =>{
+    volleyballactiveThree.classList.toggle("is-clicked");
+ });
+ 
+ const volleyballclickedFour = document.querySelector(".in-play-live-list .volleyball-list .four");
+ const volleyballactiveFour = document.querySelector(".in-play-live-list .volleyball-list .second-part.four");
+ 
+ volleyballclickedFour.addEventListener("click", () =>{
+    volleyballactiveFour.classList.toggle("is-clicked");
+ });
+ 
+ const volleyballclickedFive = document.querySelector(".in-play-live-list .volleyball-list .five");
+ const volleyballactiveFive = document.querySelector(".in-play-live-list .volleyball-list .second-part.five");
+ 
+ volleyballclickedFive.addEventListener("click", () =>{
+    volleyballactiveFive.classList.toggle("is-clicked");
+ });
+ 
+ const volleyballclickedSix = document.querySelector(".in-play-live-list .volleyball-list .six");
+ const volleyballactiveSix = document.querySelector(".in-play-live-list .volleyball-list .second-part.six");
+ 
+ volleyballclickedSix.addEventListener("click", () =>{
+    volleyballactiveSix.classList.toggle("is-clicked");
+ });
+
+ /************************* cricket *************************/ 
+
+ const cricket = document.querySelector(".in-play-live-list div:nth-child(13)");
+ const cricketList = document.querySelector(".in-play-live-list .cricket-list");
+ const cricketclickedOne = document.querySelector(".in-play-live-list .cricket-list .one");
+ const cricketactiveOne = document.querySelector(".in-play-live-list .cricket-list .second-part.one");
+ 
+ cricket.addEventListener("click", () =>{
+    cricketList.classList.toggle("is-clicked");
+ });
+ 
+ cricketclickedOne.addEventListener("click", () =>{
+    cricketactiveOne.classList.toggle("is-clicked");
+ });
+ 
+ const cricketclickedTwo = document.querySelector(".in-play-live-list .cricket-list .two");
+ const cricketactiveTwo = document.querySelector(".in-play-live-list .cricket-list .second-part.two");
+ 
+ cricketclickedTwo.addEventListener("click", () =>{
+    cricketactiveTwo.classList.toggle("is-clicked");
+ });
+ 
+ const cricketclickedThree = document.querySelector(".in-play-live-list .cricket-list .three");
+ const cricketactiveThree = document.querySelector(".in-play-live-list .cricket-list .second-part.three");
+ 
+ cricketclickedThree.addEventListener("click", () =>{
+    cricketactiveThree.classList.toggle("is-clicked");
+ });
+ 
+ const cricketclickedFour = document.querySelector(".in-play-live-list .cricket-list .four");
+ const cricketactiveFour = document.querySelector(".in-play-live-list .cricket-list .second-part.four");
+ 
+ cricketclickedFour.addEventListener("click", () =>{
+    cricketactiveFour.classList.toggle("is-clicked");
+ });
+ 
+ const cricketclickedFive = document.querySelector(".in-play-live-list .cricket-list .five");
+ const cricketactiveFive = document.querySelector(".in-play-live-list .cricket-list .second-part.five");
+ 
+ cricketclickedFive.addEventListener("click", () =>{
+    cricketactiveFive.classList.toggle("is-clicked");
+ });
+ 
+ const cricketclickedSix = document.querySelector(".in-play-live-list .cricket-list .six");
+ const cricketactiveSix = document.querySelector(".in-play-live-list .cricket-list .second-part.six");
+ 
+ cricketclickedSix.addEventListener("click", () =>{
+    cricketactiveSix.classList.toggle("is-clicked");
+ });
+/************************* darts *************************/ 
+
+const  darts = document.querySelector(".in-play-live-list div:nth-child(15)");
+const dartsList = document.querySelector(".in-play-live-list .darts-list");
+const dartsclickedOne = document.querySelector(".in-play-live-list .darts-list .one");
+const dartsactiveOne = document.querySelector(".in-play-live-list .darts-list .second-part.one");
+
+darts.addEventListener("click", () =>{
+    dartsList.classList.toggle("is-clicked");
+});
+
+dartsclickedOne.addEventListener("click", () =>{
+    dartsactiveOne.classList.toggle("is-clicked");
+});
+
+const dartsclickedTwo = document.querySelector(".in-play-live-list .darts-list .two");
+const dartsactiveTwo = document.querySelector(".in-play-live-list .darts-list .second-part.two");
+
+dartsclickedTwo.addEventListener("click", () =>{
+    dartsactiveTwo.classList.toggle("is-clicked");
+});
+
+const dartsclickedThree = document.querySelector(".in-play-live-list .darts-list .three");
+const dartsactiveThree = document.querySelector(".in-play-live-list .darts-list .second-part.three");
+
+dartsclickedThree.addEventListener("click", () =>{
+    dartsactiveThree.classList.toggle("is-clicked");
+});
+
+const dartsclickedFour = document.querySelector(".in-play-live-list .darts-list .four");
+const dartsactiveFour = document.querySelector(".in-play-live-list .darts-list .second-part.four");
+
+dartsclickedFour.addEventListener("click", () =>{
+    dartsactiveFour.classList.toggle("is-clicked");
+});
+
+const dartsclickedFive = document.querySelector(".in-play-live-list .darts-list .five");
+const dartsactiveFive = document.querySelector(".in-play-live-list .darts-list .second-part.five");
+
+dartsclickedFive.addEventListener("click", () =>{
+    dartsactiveFive.classList.toggle("is-clicked");
+});
+
+const dartsclickedSix = document.querySelector(".in-play-live-list .darts-list .six");
+const dartsactiveSix = document.querySelector(".in-play-live-list .darts-list .second-part.six");
+
+dartsclickedSix.addEventListener("click", () =>{
+    dartsactiveSix.classList.toggle("is-clicked");
+});
+
+/************************* esports *************************/ 
+
+const  esports = document.querySelector(".in-play-live-list div:nth-child(17)");
+const esportsList = document.querySelector(".in-play-live-list .esports-list");
+const esportsclickedOne = document.querySelector(".in-play-live-list .esports-list .one");
+const esportsactiveOne = document.querySelector(".in-play-live-list .esports-list .second-part.one");
+
+esports.addEventListener("click", () =>{
+    esportsList.classList.toggle("is-clicked");
+});
+
+esportsclickedOne.addEventListener("click", () =>{
+    esportsactiveOne.classList.toggle("is-clicked");
+});
+
+const esportsclickedTwo = document.querySelector(".in-play-live-list .esports-list .two");
+const esportsactiveTwo = document.querySelector(".in-play-live-list .esports-list .second-part.two");
+
+esportsclickedTwo.addEventListener("click", () =>{
+    esportsactiveTwo.classList.toggle("is-clicked");
+});
+
+const esportsclickedThree = document.querySelector(".in-play-live-list .esports-list .three");
+const esportsactiveThree = document.querySelector(".in-play-live-list .esports-list .second-part.three");
+
+esportsclickedThree.addEventListener("click", () =>{
+    esportsactiveThree.classList.toggle("is-clicked");
+});
+
+const esportsclickedFour = document.querySelector(".in-play-live-list .esports-list .four");
+const esportsactiveFour = document.querySelector(".in-play-live-list .esports-list .second-part.four");
+
+esportsclickedFour.addEventListener("click", () =>{
+    esportsactiveFour.classList.toggle("is-clicked");
+});
+
+const esportsclickedFive = document.querySelector(".in-play-live-list .esports-list .five");
+const esportsactiveFive = document.querySelector(".in-play-live-list .esports-list .second-part.five");
+
+esportsclickedFive.addEventListener("click", () =>{
+    esportsactiveFive.classList.toggle("is-clicked");
+});
+
+const esportsclickedSix = document.querySelector(".in-play-live-list .esports-list .six");
+const esportsactiveSix = document.querySelector(".in-play-live-list .esports-list .second-part.six");
+
+esportsclickedSix.addEventListener("click", () =>{
+    esportsactiveSix.classList.toggle("is-clicked");
+});
+
+/************************* greyhounds *************************/ 
+
+const  greyhounds = document.querySelector(".in-play-live-list div:nth-child(19)");
+const greyhoundsList = document.querySelector(".in-play-live-list .greyhounds-list");
+const greyhoundsclickedOne = document.querySelector(".in-play-live-list .greyhounds-list .one");
+const greyhoundsactiveOne = document.querySelector(".in-play-live-list .greyhounds-list .second-part.one");
+
+greyhounds.addEventListener("click", () =>{
+    greyhoundsList.classList.toggle("is-clicked");
+});
+
+greyhoundsclickedOne.addEventListener("click", () =>{
+    greyhoundsactiveOne.classList.toggle("is-clicked");
+});
+
+const greyhoundsclickedTwo = document.querySelector(".in-play-live-list .greyhounds-list .two");
+const greyhoundsactiveTwo = document.querySelector(".in-play-live-list .greyhounds-list .second-part.two");
+
+greyhoundsclickedTwo.addEventListener("click", () =>{
+    greyhoundsactiveTwo.classList.toggle("is-clicked");
+});
+
+const greyhoundsclickedThree = document.querySelector(".in-play-live-list .greyhounds-list .three");
+const greyhoundsactiveThree = document.querySelector(".in-play-live-list .greyhounds-list .second-part.three");
+
+esportsclickedThree.addEventListener("click", () =>{
+    esportsactiveThree.classList.toggle("is-clicked");
+});
+
+const greyhoundsclickedFour = document.querySelector(".in-play-live-list .greyhounds-list .four");
+const greyhoundsactiveFour = document.querySelector(".in-play-live-list .greyhounds-list .second-part.four");
+
+greyhoundsclickedFour.addEventListener("click", () =>{
+    greyhoundsactiveFour.classList.toggle("is-clicked");
+});
+
+const greyhoundsclickedFive = document.querySelector(".in-play-live-list .greyhounds-list .five");
+const greyhoundsactiveFive = document.querySelector(".in-play-live-list .greyhounds-list .second-part.five");
+
+greyhoundsclickedFive.addEventListener("click", () =>{
+    greyhoundsactiveFive.classList.toggle("is-clicked");
+});
+
+const greyhoundsclickedSix = document.querySelector(".in-play-live-list .greyhounds-list .six");
+const greyhoundsactiveSix = document.querySelector(".in-play-live-list .greyhounds-list .second-part.six");
+
+greyhoundsclickedSix.addEventListener("click", () =>{
+    greyhoundsactiveSix.classList.toggle("is-clicked");
+});
+
+/************************* hockey *************************/ 
+
+const  hockey = document.querySelector(".in-play-live-list div:nth-child(21)");
+const hockeyList = document.querySelector(".in-play-live-list .hockey-list");
+const hockeyclickedOne = document.querySelector(".in-play-live-list .hockey-list .one");
+const hockeyactiveOne = document.querySelector(".in-play-live-list .hockey-list .second-part.one");
+
+hockey.addEventListener("click", () =>{
+    hockeyList.classList.toggle("is-clicked");
+});
+
+hockeyclickedOne.addEventListener("click", () =>{
+    hockeyactiveOne.classList.toggle("is-clicked");
+});
+
+const hockeyclickedTwo = document.querySelector(".in-play-live-list .hockey-list .two");
+const hockeyactiveTwo = document.querySelector(".in-play-live-list .hockey-list .second-part.two");
+
+hockeyclickedTwo.addEventListener("click", () =>{
+    hockeyactiveTwo.classList.toggle("is-clicked");
+});
+
+const hockeyclickedThree = document.querySelector(".in-play-live-list .hockey-list .three");
+const hockeyactiveThree = document.querySelector(".in-play-live-list .hockey-list .second-part.three");
+
+hockeyclickedThree.addEventListener("click", () =>{
+    hockeyactiveThree.classList.toggle("is-clicked");
+});
+
+const hockeyclickedFour = document.querySelector(".in-play-live-list .hockey-list .four");
+const hockeyactiveFour = document.querySelector(".in-play-live-list .hockey-list .second-part.four");
+
+hockeyclickedFour.addEventListener("click", () =>{
+    hockeyactiveFour.classList.toggle("is-clicked");
+});
+
+const hockeyclickedFive = document.querySelector(".in-play-live-list .hockey-list .five");
+const hockeyactiveFive = document.querySelector(".in-play-live-list .hockey-list .second-part.five");
+
+hockeyclickedFive.addEventListener("click", () =>{
+    hockeyactiveFive.classList.toggle("is-clicked");
+});
+
+const hockeyclickedSix = document.querySelector(".in-play-live-list .hockey-list .six");
+const hockeyactiveSix = document.querySelector(".in-play-live-list .hockey-list .second-part.six");
+
+hockeyclickedSix.addEventListener("click", () =>{
+    hockeyactiveSix.classList.toggle("is-clicked");
+});
     /************************* for the filter *************************/ 
 
 const liste = document.querySelector(".in-play-live-matches-header .menu");
