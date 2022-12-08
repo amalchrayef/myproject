@@ -1,6 +1,36 @@
            
             /************************* for the menu *************************/ 
 
+
+            function ChangeClasse (element){
+
+             if (element != activePart) {
+               activePart.classList.remove("is-clicked"); }
+               if (element != matchList) {
+                matchList.classList.remove("is-clicked"); }
+                if (element != tennisList) {
+                tennisList.classList.remove("is-clicked"); }
+                if (element != badmintonList) {
+                badmintonList.classList.remove("is-clicked"); }
+                if (element != basketballList) {
+                basketballList.classList.remove("is-clicked"); }
+                if (element != volleyballList) {
+                volleyballList.classList.remove("is-clicked"); }
+                if (element != cricketList) {
+                cricketList.classList.remove("is-clicked");   }
+                if (element != dartsList) {
+                dartsList.classList.remove("is-clicked"); }
+                if (element != esportsList) {
+                esportsList.classList.remove("is-clicked");  }
+                if (element != greyhoundsList) {
+                greyhoundsList.classList.remove("is-clicked"); }
+                if (element != hockeyList) {
+                hockeyList.classList.remove("is-clicked"); }
+
+
+
+            }
+
             /************************* favorite *************************/ 
 
 const clickedPart = document.querySelector(".in-play-live .in-play-live-list div:first-of-type");
@@ -8,7 +38,10 @@ const activePart = document.querySelector(".in-play-live .in-play-live-list div:
 
 clickedPart.addEventListener("click", () =>{
     activePart.classList.toggle("is-clicked");
+    ChangeClasse (activePart)
 });
+
+    
 
             /************************* soccer *************************/ 
 
@@ -19,6 +52,7 @@ const activeOne = document.querySelector(".in-play-live-list .match-list .second
 
 soccer.addEventListener("click", () =>{
     matchList.classList.toggle("is-clicked");
+    ChangeClasse (matchList)
 });
 
 clickedOne.addEventListener("click", () =>{
@@ -68,6 +102,7 @@ clickedSix.addEventListener("click", () =>{
             
             tennis.addEventListener("click", () =>{
                 tennisList.classList.toggle("is-clicked");
+                ChangeClasse (tennisList)
             });
             
             tennisclickedOne.addEventListener("click", () =>{
@@ -118,6 +153,7 @@ clickedSix.addEventListener("click", () =>{
  
  badminton.addEventListener("click", () =>{
     badmintonList.classList.toggle("is-clicked");
+    ChangeClasse (badmintonList)
  });
  
  badmintonclickedOne.addEventListener("click", () =>{
@@ -167,6 +203,7 @@ clickedSix.addEventListener("click", () =>{
  
  basketball.addEventListener("click", () =>{
     basketballList.classList.toggle("is-clicked");
+    ChangeClasse (basketballList)
  });
  
  basketballclickedOne.addEventListener("click", () =>{
@@ -216,6 +253,8 @@ clickedSix.addEventListener("click", () =>{
  
  volleyball.addEventListener("click", () =>{
     volleyballList.classList.toggle("is-clicked");
+    ChangeClasse (volleyballList)
+
  });
  
  volleyballclickedOne.addEventListener("click", () =>{
@@ -266,6 +305,8 @@ clickedSix.addEventListener("click", () =>{
  
  cricket.addEventListener("click", () =>{
     cricketList.classList.toggle("is-clicked");
+    ChangeClasse (cricketList)
+
  });
  
  cricketclickedOne.addEventListener("click", () =>{
@@ -315,6 +356,8 @@ const dartsactiveOne = document.querySelector(".in-play-live-list .darts-list .s
 
 darts.addEventListener("click", () =>{
     dartsList.classList.toggle("is-clicked");
+    ChangeClasse (dartsList)
+
 });
 
 dartsclickedOne.addEventListener("click", () =>{
@@ -365,6 +408,8 @@ const esportsactiveOne = document.querySelector(".in-play-live-list .esports-lis
 
 esports.addEventListener("click", () =>{
     esportsList.classList.toggle("is-clicked");
+    ChangeClasse (esportsList)
+
 });
 
 esportsclickedOne.addEventListener("click", () =>{
@@ -415,6 +460,8 @@ const greyhoundsactiveOne = document.querySelector(".in-play-live-list .greyhoun
 
 greyhounds.addEventListener("click", () =>{
     greyhoundsList.classList.toggle("is-clicked");
+    ChangeClasse (greyhoundsList)
+
 });
 
 greyhoundsclickedOne.addEventListener("click", () =>{
@@ -465,6 +512,8 @@ const hockeyactiveOne = document.querySelector(".in-play-live-list .hockey-list 
 
 hockey.addEventListener("click", () =>{
     hockeyList.classList.toggle("is-clicked");
+    ChangeClasse (hockeyList)
+
 });
 
 hockeyclickedOne.addEventListener("click", () =>{

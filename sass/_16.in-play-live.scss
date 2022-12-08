@@ -338,7 +338,9 @@
               , & section.cricket-list.is-clicked
                , & section.darts-list.is-clicked,
                 & section.esports-list.is-clicked, 
-                & section.greyhounds-list.is-clicked{
+                & section.greyhounds-list.is-clicked    ,
+                     & section.hockey-list.is-clicked
+                {
              & h1{
              display: block;
              }
@@ -354,7 +356,9 @@
                ,  & section.darts-list ,
                  & section.esports-list ,
                  & section.greyhounds-list, 
-                  & section.hockey-list {
+                  & section.hockey-list,
+                  & .in-play-live-list div:nth-child(2)
+                  {
                    position: absolute;
                    z-index: 10;
                    left: 4rem;
