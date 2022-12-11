@@ -207,6 +207,24 @@
       }
 
     }
-    
+     /***************************** 1150px *************************************/  
+     @include  media-med-desk {
+      & {
+        & .FR-under-list , & .DC-under-list
+         {
+        padding-left: 0.5rem;
+          }
+          & .FR , & .DC , & .MG , & .AMG , & .MC {    
+             padding-left: 1rem;
+      }  
+      & .in-play-live-matches-body-all .FR-under-list div , & .in-play-live-matches-body-all .DC-under-list div {
+           justify-content: start;
 
+      }
+      & .in-play-live-matches-body-all .two-lists .slider-all {
+        padding-right: 3rem;
+      }
+    }
+
+   }  
    }

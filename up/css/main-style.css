@@ -1511,6 +1511,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   display: grid;
   grid-template-columns: [column-1] 26rem [column-2] 1fr [column-3] 43rem [column-4];
   /***************************** 1150px *************************************/
+  /***************************** 950px *************************************/
 }
 .in-play-live-list {
   background-color: var(--color-secondary-m-dark);
@@ -1823,12 +1824,40 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   .in-play-live section.hockey-list h1 {
     border-bottom: 0.2rem solid #9c9c9c;
   }
+  .in-play-live .in-play-live-matches-header div.title {
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  .in-play-live {
+    display: grid;
+    grid-template-columns: [colu-1] 1fr [colu-2];
+    grid-template-rows: [row-1] 2rem [row-2] 30rem [row-3] 1fr [row-4] 43rem [row-5];
+  }
+  .in-play-live .in-play-live-list {
+    display: none;
+  }
+  .in-play-live .in-play-live-matches {
+    grid-row: row-3/row-4;
+    grid-column: colu-1/colu-2;
+  }
+  .in-play-live .in-play-live-tracker {
+    grid-row: row-2/row-3;
+    grid-column: colu-1/colu-2;
+  }
+  .in-play-live .in-play-live-tracker {
+    grid-template-rows: [rw-1] 2rem [rw-2] 30rem [rw-3] 1fr [rw-4] 43rem [rw-5];
+  }
+  .in-play-live .in-play-live-tracker .part-2, .in-play-live .in-play-live-tracker .part-3, .in-play-live .in-play-live-tracker .my-bets {
+    display: none;
+  }
 }
 
 .in-play-live-matches-body {
   grid-row: row-2/row-3;
   background-color: var(--color-fifthynary-m----light);
   color: var(--color-tertiary-m--dark);
+  /***************************** 1150px *************************************/
 }
 .in-play-live-matches-body-all, .in-play-live-matches-body-asian-lines, .in-play-live-matches-body-corners-cards, .in-play-live-matches-body-goals, .in-play-live-matches-body-half, .in-play-live-matches-body-minutes {
   display: none;
@@ -2005,6 +2034,20 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 }
 .in-play-live-matches-body-all .not-active, .in-play-live-matches-body-asian-lines .not-active, .in-play-live-matches-body-corners-cards .not-active, .in-play-live-matches-body-goals .not-active, .in-play-live-matches-body-half .not-active, .in-play-live-matches-body-minutes .not-active {
   display: none;
+}
+@media screen and (max-width: 1150px) {
+  .in-play-live-matches-body .FR-under-list, .in-play-live-matches-body .DC-under-list {
+    padding-left: 0.5rem;
+  }
+  .in-play-live-matches-body .FR, .in-play-live-matches-body .DC, .in-play-live-matches-body .MG, .in-play-live-matches-body .AMG, .in-play-live-matches-body .MC {
+    padding-left: 1rem;
+  }
+  .in-play-live-matches-body .in-play-live-matches-body-all .FR-under-list div, .in-play-live-matches-body .in-play-live-matches-body-all .DC-under-list div {
+    justify-content: start;
+  }
+  .in-play-live-matches-body .in-play-live-matches-body-all .two-lists .slider-all {
+    padding-right: 3rem;
+  }
 }
 
 .in-play-live-tracker {

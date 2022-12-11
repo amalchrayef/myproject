@@ -262,7 +262,7 @@
          align-items: baseline;
          justify-content: space-between;
          & div{
-          background-color: #126e51;
+         background-color: #126e51;
          }
         }
         & div.menu {
@@ -338,7 +338,7 @@
               , & section.cricket-list.is-clicked
                , & section.darts-list.is-clicked,
                 & section.esports-list.is-clicked, 
-                & section.greyhounds-list.is-clicked    ,
+                & section.greyhounds-list.is-clicked,
                      & section.hockey-list.is-clicked
                 {
              & h1{
@@ -418,8 +418,38 @@
        & section.hockey-list h1 {
          border-bottom: 0.2rem solid  #9c9c9c;
        }
-
-   
+       & .in-play-live-matches-header div.title  {
+        padding-right: 2rem;
+        }
   } 
 }
+
+       /***************************** 950px *************************************/  
+
+@include  media-tablet {
+& {
+  display: grid;
+  grid-template-columns: [colu-1] 1fr [colu-2]  ;
+  grid-template-rows: [row-1] 2rem [row-2] 30rem [row-3] 1fr [row-4] 43rem [row-5] ;
+  & .in-play-live-list{
+    display: none;
+  }
+  & .in-play-live-matches{
+    grid-row: row-3 / row-4;
+    grid-column: colu-1 / colu-2;
+  }
+
+  & .in-play-live-tracker{
+    grid-row: row-2 / row-3;
+    grid-column: colu-1 / colu-2;
+  }
+   & .in-play-live-tracker {
+    grid-template-rows: [rw-1] 2rem [rw-2] 30rem [rw-3] 1fr [rw-4] 43rem [rw-5] ;
+    & .part-2 , & .part-3 , & .my-bets{
+      display: none;
+    }
+
+   }
+    }
+  }
 }
