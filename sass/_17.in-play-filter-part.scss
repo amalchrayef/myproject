@@ -89,6 +89,7 @@
         cursor: pointer;
         padding-right: 2rem;
         padding: 1rem;
+        padding-right: 2rem;
 
         & div {
          padding-right: 1rem ;
@@ -205,8 +206,9 @@
      & .not-active{
         display: none;
       }
+   
+  }
 
-    }
      /***************************** 1150px *************************************/  
      @include  media-med-desk {
       & {

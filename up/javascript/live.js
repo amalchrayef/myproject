@@ -769,4 +769,11 @@ const  underList14= document.querySelector(".in-play-live-matches-body .in-play-
         stats.classList.remove("active");
 
     });
+     /************************* for the chevron down list *************************/ 
+     const chevron = document.querySelector(".in-play-live-tracker .header i:nth-child(6)");
+     const  footList= document.querySelector(".in-play-live-tracker .match-list");
+        chevron.addEventListener("click", () =>{
+         footList.classList.toggle("active-responsive");
+     });
+ 
 

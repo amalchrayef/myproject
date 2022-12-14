@@ -1,13 +1,12 @@
 .in-play-live {
     display: grid;
     grid-template-columns: [column-1] 26rem [column-2] 1fr [column-3] 43rem [column-4]  ;
-   
-
  
     &-list{
         background-color: var(--color-secondary-m-dark);
      grid-column: column-1 / column-2;
      background-color: var(--color-secondary-m-dark);
+     height: 90vh;
      overflow-y: auto;
    
    /* *************** scroll bar properties **********/
@@ -210,6 +209,8 @@
       overflow-y: auto;
       display: grid;
       grid-template-rows: [row-1] 14rem [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6]  ;
+      height: 90vh;
+      overflow-x: hidden;
 
     
     /* *************** scroll bar properties **********/
@@ -444,12 +445,87 @@
     grid-column: colu-1 / colu-2;
   }
    & .in-play-live-tracker {
-    grid-template-rows: [rw-1] 2rem [rw-2] 30rem [rw-3] 1fr [rw-4] 43rem [rw-5] ;
+    display: grid;
+    grid-template-columns: [colum-1] 1fr [colum-2]  ;
+    grid-template-rows: [rw-1] 1fr [rw-2] 1fr [rw-3] 1fr [rw-4] 1fr [rw-5] ;
     & .part-2 , & .part-3 , & .my-bets{
       display: none;
     }
+    & .header{
+      grid-row: rw-1 / rw-2;
+      grid-column: colum-1 / colum-2;
+      border-bottom: 0.2rem solid #494949;
 
+
+    }
+    & .st-T-line{
+      grid-row: rw-2 / rw-3;
+      grid-column: colum-1 / colum-2;
+    }
+    & .tracker-part{
+      grid-row: rw-3 / rw-4;
+      grid-column: colum-1 / colum-2;
+      display: flex;  
+      justify-content: left; 
+      flex-direction: column;
+      & img {
+        width: 45vw;
+      }
+    }
+     & .stats {
+      grid-row: rw-3 / rw-4;
+      grid-column: colum-1 / colum-2;
+      display: flex;  
+      justify-content: right; 
+      align-items: center;
+   & img {
+        width: 45vw;
+      }
+     }
    }
+   & .in-play-live-matches-header{
+    & a {
+      display: none;
+    }
+    & .title {
+      display: none;
+    }
+   }
+   & .in-play-live-matches{
+    grid-template-rows: [row-1] 6.5rem [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6]  ;
+      }
+
+& .in-play-live-matches-header div.menu {
+  padding-top: 2rem;
+    }
+    & .in-play-live-tracker{
+      height: 33rem;
+  }
+  & .in-play-live-matches{
+    height: 100%;
+    position: relative;
+}
+& .in-play-live-tracker .tracker-part a {
+display: flex;
+justify-content: start;
+padding-left: 2rem;
+}
+ .in-play-live-tracker .header a i {
+  display: block;
+}
+.in-play-live-tracker .header i:nth-child(6) {
+  display: block;
+
+}
+& .in-play-live-tracker .match-list.active-responsive{
+  display: block;
+}
+& .in-play-live-tracker .match-list{
+  display: none;
+  top: 10rem;
+  left: 35vw;
+  position: absolute;
+}
     }
   }
 }

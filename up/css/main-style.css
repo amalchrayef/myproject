@@ -1078,6 +1078,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 .in-play-page {
   display: grid;
   grid-template-rows: repeat(6, min-content);
+  height: 90vh;
   overflow-y: auto;
   /* *************** scroll bar properties **********/
 }
@@ -1517,6 +1518,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   background-color: var(--color-secondary-m-dark);
   grid-column: column-1/column-2;
   background-color: var(--color-secondary-m-dark);
+  height: 90vh;
   overflow-y: auto;
   /* *************** scroll bar properties **********/
 }
@@ -1664,6 +1666,8 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   overflow-y: auto;
   display: grid;
   grid-template-rows: [row-1] 14rem [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6];
+  height: 90vh;
+  overflow-x: hidden;
   /* *************** scroll bar properties **********/
 }
 .in-play-live-matches::-webkit-scrollbar {
@@ -1846,10 +1850,80 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
     grid-column: colu-1/colu-2;
   }
   .in-play-live .in-play-live-tracker {
-    grid-template-rows: [rw-1] 2rem [rw-2] 30rem [rw-3] 1fr [rw-4] 43rem [rw-5];
+    display: grid;
+    grid-template-columns: [colum-1] 1fr [colum-2];
+    grid-template-rows: [rw-1] 1fr [rw-2] 1fr [rw-3] 1fr [rw-4] 1fr [rw-5];
   }
   .in-play-live .in-play-live-tracker .part-2, .in-play-live .in-play-live-tracker .part-3, .in-play-live .in-play-live-tracker .my-bets {
     display: none;
+  }
+  .in-play-live .in-play-live-tracker .header {
+    grid-row: rw-1/rw-2;
+    grid-column: colum-1/colum-2;
+    border-bottom: 0.2rem solid #494949;
+  }
+  .in-play-live .in-play-live-tracker .st-T-line {
+    grid-row: rw-2/rw-3;
+    grid-column: colum-1/colum-2;
+  }
+  .in-play-live .in-play-live-tracker .tracker-part {
+    grid-row: rw-3/rw-4;
+    grid-column: colum-1/colum-2;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+  .in-play-live .in-play-live-tracker .tracker-part img {
+    width: 45vw;
+  }
+  .in-play-live .in-play-live-tracker .stats {
+    grid-row: rw-3/rw-4;
+    grid-column: colum-1/colum-2;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .in-play-live .in-play-live-tracker .stats img {
+    width: 45vw;
+  }
+  .in-play-live .in-play-live-matches-header a {
+    display: none;
+  }
+  .in-play-live .in-play-live-matches-header .title {
+    display: none;
+  }
+  .in-play-live .in-play-live-matches {
+    grid-template-rows: [row-1] 6.5rem [row-2] 1fr [row-3] 1fr [row-4] 1fr [row-5] 1fr [row-6];
+  }
+  .in-play-live .in-play-live-matches-header div.menu {
+    padding-top: 2rem;
+  }
+  .in-play-live .in-play-live-tracker {
+    height: 33rem;
+  }
+  .in-play-live .in-play-live-matches {
+    height: 100%;
+    position: relative;
+  }
+  .in-play-live .in-play-live-tracker .tracker-part a {
+    display: flex;
+    justify-content: start;
+    padding-left: 2rem;
+  }
+  .in-play-live .in-play-live-tracker .header a i {
+    display: block;
+  }
+  .in-play-live .in-play-live-tracker .header i:nth-child(6) {
+    display: block;
+  }
+  .in-play-live .in-play-live-tracker .match-list.active-responsive {
+    display: block;
+  }
+  .in-play-live .in-play-live-tracker .match-list {
+    display: none;
+    top: 10rem;
+    left: 35vw;
+    position: absolute;
   }
 }
 
@@ -1936,6 +2010,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   cursor: pointer;
   padding-right: 2rem;
   padding: 1rem;
+  padding-right: 2rem;
 }
 .in-play-live-matches-body-all .two-lists .slider-all div, .in-play-live-matches-body-asian-lines .two-lists .slider-all div, .in-play-live-matches-body-corners-cards .two-lists .slider-all div, .in-play-live-matches-body-goals .two-lists .slider-all div, .in-play-live-matches-body-half .two-lists .slider-all div, .in-play-live-matches-body-minutes .two-lists .slider-all div {
   padding-right: 1rem;
@@ -2053,6 +2128,27 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 .in-play-live-tracker {
   grid-column: column-3/column-4;
   background-color: var(--color-primary-m-dark);
+  overflow-y: auto;
+  height: 90vh;
+  /* *************** scroll bar properties **********/
+}
+.in-play-live-tracker::-webkit-scrollbar {
+  width: 1.3rem;
+  border-left: 0.6rem solid var(--color-primary-m-dark);
+}
+.in-play-live-tracker::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: var(--color-quaternary-m--dark);
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-top: 0.19rem solid transparent;
+  border-bottom: 0.19rem solid transparent;
+  background-clip: content-box;
+}
+.in-play-live-tracker::-webkit-scrollbar-track {
+  background-color: var(--color-secondary-m-dark);
+  border-left: 0.06rem solid var(--color-primary-m-dark);
 }
 .in-play-live-tracker .header {
   display: flex;
@@ -2062,7 +2158,16 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   padding-bottom: 2rem;
   color: var(--color-quaternary-m-dark);
 }
-.in-play-live-tracker .header div:nth-child(2), .in-play-live-tracker .header div:nth-child(3) {
+.in-play-live-tracker .header a i {
+  padding-right: 33vw;
+  color: var(--color-quaternary-m-dark);
+  display: none;
+}
+.in-play-live-tracker .header i:nth-child(6) {
+  padding-left: 33vw;
+  display: none;
+}
+.in-play-live-tracker .header div:nth-child(4), .in-play-live-tracker .header div:nth-child(3) {
   font-size: 1.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -2070,7 +2175,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   font-weight: 900;
   position: relative;
 }
-.in-play-live-tracker .header div:nth-child(2)::before {
+.in-play-live-tracker .header div:nth-child(4)::before {
   content: "";
   position: absolute;
   bottom: -35%;
@@ -2094,7 +2199,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 }
 .in-play-live-tracker .tracker-part img {
   padding-top: 2rem;
-  padding-left: 2.5rem;
+  padding-left: 2rem;
 }
 .in-play-live-tracker .tracker-part a {
   color: var(--color-tertiary);
@@ -2108,8 +2213,6 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   color: var(--color-primary-m-light);
 }
 .in-play-live-tracker .stats img {
-  padding-left: 0.75rem;
-  padding-right: 1rem;
   display: block;
 }
 .in-play-live-tracker .st-T-line {
