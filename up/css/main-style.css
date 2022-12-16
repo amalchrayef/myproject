@@ -54,6 +54,8 @@ body {
   font-family: "PT Sans", sans-serif;
   line-height: 1.8;
   background-color: var(--color-primary);
+  font-smooth: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main {
@@ -1836,7 +1838,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   .in-play-live {
     display: grid;
     grid-template-columns: [colu-1] 1fr [colu-2];
-    grid-template-rows: [row-1] 2rem [row-2] 30rem [row-3] 1fr [row-4] 43rem [row-5];
+    grid-template-rows: [row-1] 2rem [row-2] 35rem [row-3] 1fr [row-4] 43rem [row-5];
   }
   .in-play-live .in-play-live-list {
     display: none;
@@ -2131,6 +2133,65 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   overflow-y: auto;
   height: 90vh;
   /* *************** scroll bar properties **********/
+}
+.in-play-live-tracker .match-list {
+  display: none;
+  width: 100rem;
+}
+.in-play-live-tracker section.match-list.active-responsive {
+  display: block;
+  transition: transform 5s;
+}
+.in-play-live-tracker section.match-list.active-responsive h1 {
+  display: none;
+}
+.in-play-live-tracker section.match-list section.item-1 {
+  margin-left: -0.01rem;
+  width: 100%;
+}
+.in-play-live-tracker section.match-list section.item-1 .first-part {
+  padding-left: 1rem;
+  display: flex;
+  align-items: baseline;
+}
+.in-play-live-tracker section.match-list section.item-1 .first-part h4 {
+  padding-right: 5vw;
+}
+.in-play-live-tracker section.match-list section.item-1 .first-part i {
+  padding-left: 0.5rem;
+}
+.in-play-live-tracker section.match-list section.item-1 .first-part:hover i {
+  display: block;
+}
+.in-play-live-tracker section.match-list section.item-1 .first-part i {
+  display: none;
+  font-size: calc(0.3rem + 0.6667vw);
+  color: var(--color-tertiary);
+}
+.in-play-live-tracker section.match-list .second-part.active-responsive {
+  display: block;
+  display: flex;
+}
+.in-play-live-tracker section.match-list .second-part {
+  display: flex;
+  color: var(--color-primary-m-light);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 0.1rem solid #494949;
+  display: none;
+}
+.in-play-live-tracker section.match-list .second-part i:nth-of-type(2) {
+  opacity: -1;
+}
+.in-play-live-tracker section.match-list .second-part:hover i:nth-of-type(2) {
+  opacity: 5;
+}
+.in-play-live-tracker section.match-list .second-part .goals {
+  color: var(--color-secondary-m-light);
+}
+.in-play-live-tracker section.match-list .second-part:hover, .in-play-live-tracker section.match-list .second-part:active {
+  background-color: var(--color-fifthynary-m--light);
 }
 .in-play-live-tracker::-webkit-scrollbar {
   width: 1.3rem;

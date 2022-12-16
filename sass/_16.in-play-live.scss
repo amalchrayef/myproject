@@ -430,8 +430,8 @@
 @include  media-tablet {
 & {
   display: grid;
-  grid-template-columns: [colu-1] 1fr [colu-2]  ;
-  grid-template-rows: [row-1] 2rem [row-2] 30rem [row-3] 1fr [row-4] 43rem [row-5] ;
+  grid-template-columns: [colu-1] 1fr [colu-2] ;
+  grid-template-rows: [row-1] 2rem [row-2] 35rem [row-3] 1fr [row-4] 43rem [row-5] ;
   & .in-play-live-list{
     display: none;
   }

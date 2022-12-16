@@ -4,7 +4,70 @@
     background-color: var(--color-primary-m-dark);
     overflow-y: auto;
     height: 90vh;
-   
+    & .match-list{
+        display: none;
+        width: 100rem;
+    }
+    & section.match-list.active-responsive {
+        display: block;
+        transition: transform 5s;
+        & h1{
+        display: none;
+        }
+    
+       }
+       & section.match-list section.item-1 {
+        margin-left: -0.01rem;
+        width: 100%;
+           & .first-part {
+            padding-left: 1rem;
+            display: flex;
+            align-items: baseline;
+              & h4 {
+                padding-right: 5vw;
+                
+              }
+              & i {
+                padding-left: 0.5rem;
+              }
+           }
+           & .first-part:hover i{
+            display: block;
+          }
+          & .first-part i{
+            display: none;
+            font-size: font-size(font-size-smallest);
+            color: var(--color-tertiary);
+          }
+         
+           }
+           & section.match-list .second-part.active-responsive{
+            display: block;
+            display: flex;
+           }
+           & section.match-list .second-part{
+            display: flex;
+            color: var(--color-primary-m-light);
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 0.1rem solid #494949;
+            display: none;
+    
+             & i:nth-of-type(2){
+                opacity: -1;
+             }
+             &:hover i:nth-of-type(2){
+              opacity: 5;
+           }
+           & .goals {
+            color: var(--color-secondary-m-light);
+           }
+           &:hover , &:active {
+            background-color: var( --color-fifthynary-m--light);
+          }
+           }
+    
     /* *************** scroll bar properties **********/
     &::-webkit-scrollbar {
       width: 1.3rem;

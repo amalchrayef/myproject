@@ -4,7 +4,9 @@
 body {
     font-family: 'PT Sans', sans-serif;
     line-height: 1.8;
-    background-color: var( --color-primary) ;
+    background-color: var(--color-primary);
+    font-smooth: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   main {
     flex: 1;
