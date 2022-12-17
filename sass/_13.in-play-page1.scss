@@ -1,10 +1,8 @@
 .in-play-page{
  display: grid;
  grid-template-rows: repeat(6, min-content);
- height: 90vh;
+ height: 97vh;
  overflow-y: auto; 
-
-
     /* *************** scroll bar properties **********/
 
      &::-webkit-scrollbar {
@@ -25,6 +23,7 @@
      &::-webkit-scrollbar-track {
        background-color:var(--color-fifthynary-m-light);
        border-left: 0.06rem solid var(--color-quaternary-m-light);
+       
      }
     
 

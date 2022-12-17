@@ -1080,7 +1080,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 .in-play-page {
   display: grid;
   grid-template-rows: repeat(6, min-content);
-  height: 90vh;
+  height: 97vh;
   overflow-y: auto;
   /* *************** scroll bar properties **********/
 }
@@ -1839,6 +1839,26 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
     display: grid;
     grid-template-columns: [colu-1] 1fr [colu-2];
     grid-template-rows: [row-1] 2rem [row-2] 35rem [row-3] 1fr [row-4] 43rem [row-5];
+    overflow-y: auto;
+    /* *************** scroll bar properties **********/
+  }
+  .in-play-live::-webkit-scrollbar {
+    width: 1.3rem;
+    border-left: 0.6rem solid var(--color-primary-m-dark);
+  }
+  .in-play-live::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: var(--color-quaternary-m--dark);
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    border-top: 0.19rem solid transparent;
+    border-bottom: 0.19rem solid transparent;
+    background-clip: content-box;
+  }
+  .in-play-live::-webkit-scrollbar-track {
+    background-color: var(--color-secondary-m-dark);
+    border-left: 0.06rem solid var(--color-primary-m-dark);
   }
   .in-play-live .in-play-live-list {
     display: none;
@@ -1926,6 +1946,9 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
     top: 10rem;
     left: 35vw;
     position: absolute;
+  }
+  .in-play-live section.match-list.active-responsive {
+    display: block;
   }
 }
 
@@ -2139,7 +2162,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   width: 100rem;
 }
 .in-play-live-tracker section.match-list.active-responsive {
-  display: block;
+  display: none;
   transition: transform 5s;
 }
 .in-play-live-tracker section.match-list.active-responsive h1 {

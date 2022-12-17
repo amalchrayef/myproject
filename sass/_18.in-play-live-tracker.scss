@@ -9,7 +9,7 @@
         width: 100rem;
     }
     & section.match-list.active-responsive {
-        display: block;
+        display: none;
         transition: transform 5s;
         & h1{
         display: none;

@@ -775,5 +775,5 @@ const  underList14= document.querySelector(".in-play-live-matches-body .in-play-
         chevron.addEventListener("click", () =>{
          footList.classList.toggle("active-responsive");
      });
- 
+
 

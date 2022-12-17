@@ -432,6 +432,28 @@
   display: grid;
   grid-template-columns: [colu-1] 1fr [colu-2] ;
   grid-template-rows: [row-1] 2rem [row-2] 35rem [row-3] 1fr [row-4] 43rem [row-5] ;
+  overflow-y: auto;
+
+   /* *************** scroll bar properties **********/
+   &::-webkit-scrollbar {
+    width: 1.3rem;
+    border-left: 0.6rem solid var(--color-primary-m-dark);
+  }
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color:var(--color-quaternary-m--dark);
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    border-top: 0.19rem solid transparent;
+    border-bottom: 0.19rem solid transparent;
+    background-clip: content-box;
+  }
+  &::-webkit-scrollbar-track {
+    background-color:var(--color-secondary-m-dark);
+    border-left: 0.06rem solid var(--color-primary-m-dark);
+  }
+
   & .in-play-live-list{
     display: none;
   }
@@ -526,6 +548,9 @@ padding-left: 2rem;
   left: 35vw;
   position: absolute;
 }
+& section.match-list.active-responsive {
+  display: block;
+    }
     }
   }
 }
