@@ -777,3 +777,45 @@ const  underList14= document.querySelector(".in-play-live-matches-body .in-play-
      });
 
 
+     /************************* soccer list under 950 px  *************************/ 
+     const clickedOnee = document.querySelector(".in-play-live-tracker .match-list .one");
+     const activeOnee = document.querySelector(".in-play-live-tracker .match-list .second-part.one");
+     
+     clickedOnee.addEventListener("click", () =>{
+         activeOnee.classList.toggle("is-clicked");
+     });
+     
+     const clickedTwoo = document.querySelector(".in-play-live-tracker .match-list .two");
+     const activeTwoo = document.querySelector(".in-play-live-tracker .match-list .second-part.two");
+     
+     clickedTwoo.addEventListener("click", () =>{
+         activeTwoo.classList.toggle("is-clicked");
+     });
+     
+     const clickedThreee = document.querySelector(".in-play-live-tracker .match-list .three");
+     const activeThreee = document.querySelector(".in-play-live-tracker .match-list .second-part.three");
+     
+     clickedThreee.addEventListener("click", () =>{
+         activeThreee.classList.toggle("is-clicked");
+     });
+     
+     const clickedFourr = document.querySelector(".in-play-live-tracker .match-list .four");
+     const activeFourr = document.querySelector(".in-play-live-tracker .match-list .second-part.four");
+     
+     clickedFourr.addEventListener("click", () =>{
+         activeFourr.classList.toggle("is-clicked");
+     });
+     
+     const clickedFivee = document.querySelector(".in-play-live-tracker .match-list .five");
+     const activeFivee = document.querySelector(".in-play-live-tracker .match-list .second-part.five");
+     
+     clickedFivee.addEventListener("click", () =>{
+         activeFivee.classList.toggle("is-clicked");
+     });
+     
+     const clickedSixx = document.querySelector(".in-play-live-tracker .match-list .six");
+     const activeSixx = document.querySelector(".in-play-live-tracker .match-list .second-part.six");
+     
+     clickedSixx.addEventListener("click", () =>{
+         activeSixx.classList.toggle("is-clicked");
+     });
