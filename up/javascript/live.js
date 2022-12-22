@@ -50,10 +50,24 @@ const matchList = document.querySelector(".in-play-live-list .match-list ");
 const clickedOne = document.querySelector(".in-play-live-list .match-list .one");
 const activeOne = document.querySelector(".in-play-live-list .match-list .second-part.one");
 
-soccer.addEventListener("click", () =>{
-    matchList.classList.toggle("is-clicked");
-    ChangeClasse (matchList)
-});
+//soccer.addEventListener("click", () =>{
+   // matchList.classList.toggle("is-clicked");
+   // ChangeClasse (matchList)
+  //  localStorage.setItem("activeItem",soccer)
+  //  const activeIndex= localStorage.getItem("activeItem");
+  //  if (activeIndex){
+  // soccer.toggle('is-clicked');
+//}
+   // if (activeIndex)
+  //  $('soccer').removeClass('is-clicked').eq(activeIndex).addClass('is-clicked')
+//});
+//$(document).ready( function() {
+    // set active onclick //
+   // localStorage.setItem("activeItem",soccer)
+  //  var activeIndex= localStorage.getItem("activeItem");
+//if (activeIndex)
+   // $('soccer').removeClass('is-clicked').eq(activeIndex).addClass('is-clicked')
+ // });
 
 clickedOne.addEventListener("click", () =>{
     activeOne.classList.toggle("is-clicked");

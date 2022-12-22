@@ -2,34 +2,31 @@
 .in-play-live-tracker{
     grid-column: column-3 / column-4;
     background-color: var(--color-primary-m-dark);
-    overflow-y: auto;
-    height: 90vh;
-    & .match-list{
-        display: none;
-        width: 100rem;
-        height: 46vh;
-        overflow-y: auto;
-      /* *************** scroll bar properties **********/
-      &::-webkit-scrollbar {
-        width: 1.3rem;
-        border-left: 0.6rem solid var(--color-fifthynary);
-      }
-      &::-webkit-scrollbar-thumb {
-        cursor: pointer;
-        border-radius: 1rem;
-        background-color:var(--color-primary-m-light);
-        border-left: 0.3rem solid transparent;
-        border-right: 0.3rem solid transparent;
-        border-top: 0.19rem solid transparent;
-        border-bottom: 0.19rem solid transparent;
-        background-clip: content-box;
-      }
-      &::-webkit-scrollbar-track {
-        background-color:var(--color-tertiary-m-light);
-        border-left: 0.06rem solid var(--color-tertiary);
-      }
-    
-    }
+      overflow-y: auto;
+      height: 90vh;
+        /* *************** scroll bar properties **********/
+        &::-webkit-scrollbar {
+          width: 1.3rem;
+          border-left: 0.6rem solid var(--color-fifthynary);
+        }
+        &::-webkit-scrollbar-thumb {
+          cursor: pointer;
+          border-radius: 1rem;
+          background-color:var(--color-primary-m-light);
+          border-left: 0.3rem solid transparent;
+          border-right: 0.3rem solid transparent;
+          border-top: 0.19rem solid transparent;
+          border-bottom: 0.19rem solid transparent;
+          background-clip: content-box;
+        }
+        &::-webkit-scrollbar-track {
+          background-color:var(--color-tertiary-m-light);
+          border-left: 0.06rem solid var(--color-tertiary);
+        }
+      
+    & section.match-list {
+      display: none;
+       }
     & section.match-list.active-responsive {
         display: none;
         transition: transform 5s;
