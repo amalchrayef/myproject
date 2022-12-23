@@ -1645,6 +1645,45 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   display: flex;
   flex-direction: column;
 }
+.in-play-live-list section.tennis-list .second-part:active section {
+  color: var(--color-fifthynary);
+}
+.in-play-live-list section.tennis-list .second-part:active section.first {
+  color: var();
+}
+.in-play-live-list section.tennis-list .second-part .goals {
+  display: flex;
+}
+.in-play-live-list section.tennis-list .second-part .goals section {
+  padding-left: 0.5rem;
+  color: var(--color-primary-m-light);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.in-play-live-list section.tennis-list .second-part .goals section.first {
+  color: var(--color-tertiary-m-light);
+}
+.in-play-live-list section.tennis-list .second-part:active section {
+  color: var(--color-fifthynary);
+}
+.in-play-live-list section.tennis-list .second-part:active section.goals section.first {
+  color: var(--color-secondary-m-light);
+}
+.in-play-live-list section.tennis-list .second-part:active section.goals section {
+  color: var(--color-fifthynary);
+}
+.in-play-live-list section.tennis-list .second-part .goals {
+  display: flex;
+}
+.in-play-live-list section.tennis-list .second-part .goals section {
+  padding-left: 0.5rem;
+  color: var(--color-primary-m-light);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.in-play-live-list section.tennis-list .second-part .goals section.first {
+  color: var(--color-tertiary-m-light);
+}
 .in-play-live-list section.match-list .second-part, .in-play-live-list section.tennis-list .second-part, .in-play-live-list section.badminton-list .second-part, .in-play-live-list section.basketball-list .second-part, .in-play-live-list section.volleyball-list .second-part, .in-play-live-list section.cricket-list .second-part, .in-play-live-list section.darts-list .second-part, .in-play-live-list section.esports-list .second-part, .in-play-live-list section.greyhounds-list .second-part, .in-play-live-list section.hockey-list .second-part {
   display: flex;
   color: var(--color-primary-m-light);
