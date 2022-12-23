@@ -1623,24 +1623,27 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 }
 .in-play-live-list section.match-list section.item-1 .first-part, .in-play-live-list section.tennis-list section.item-1 .first-part, .in-play-live-list section.badminton-list section.item-1 .first-part, .in-play-live-list section.basketball-list section.item-1 .first-part, .in-play-live-list section.volleyball-list section.item-1 .first-part, .in-play-live-list section.cricket-list section.item-1 .first-part, .in-play-live-list section.darts-list section.item-1 .first-part, .in-play-live-list section.esports-list section.item-1 .first-part, .in-play-live-list section.greyhounds-list section.item-1 .first-part, .in-play-live-list section.hockey-list section.item-1 .first-part {
   padding-left: 1rem;
-}
-.in-play-live-list section.match-list section.item-1 .first-part h4, .in-play-live-list section.tennis-list section.item-1 .first-part h4, .in-play-live-list section.badminton-list section.item-1 .first-part h4, .in-play-live-list section.basketball-list section.item-1 .first-part h4, .in-play-live-list section.volleyball-list section.item-1 .first-part h4, .in-play-live-list section.cricket-list section.item-1 .first-part h4, .in-play-live-list section.darts-list section.item-1 .first-part h4, .in-play-live-list section.esports-list section.item-1 .first-part h4, .in-play-live-list section.greyhounds-list section.item-1 .first-part h4, .in-play-live-list section.hockey-list section.item-1 .first-part h4 {
-  padding-right: 5vw;
+  display: flex;
+  justify-content: space-between;
 }
 .in-play-live-list section.match-list section.item-1 .first-part i, .in-play-live-list section.tennis-list section.item-1 .first-part i, .in-play-live-list section.badminton-list section.item-1 .first-part i, .in-play-live-list section.basketball-list section.item-1 .first-part i, .in-play-live-list section.volleyball-list section.item-1 .first-part i, .in-play-live-list section.cricket-list section.item-1 .first-part i, .in-play-live-list section.darts-list section.item-1 .first-part i, .in-play-live-list section.esports-list section.item-1 .first-part i, .in-play-live-list section.greyhounds-list section.item-1 .first-part i, .in-play-live-list section.hockey-list section.item-1 .first-part i {
   padding-left: 0.5rem;
 }
 .in-play-live-list section.match-list section.item-1 .first-part:hover i, .in-play-live-list section.tennis-list section.item-1 .first-part:hover i, .in-play-live-list section.badminton-list section.item-1 .first-part:hover i, .in-play-live-list section.basketball-list section.item-1 .first-part:hover i, .in-play-live-list section.volleyball-list section.item-1 .first-part:hover i, .in-play-live-list section.cricket-list section.item-1 .first-part:hover i, .in-play-live-list section.darts-list section.item-1 .first-part:hover i, .in-play-live-list section.esports-list section.item-1 .first-part:hover i, .in-play-live-list section.greyhounds-list section.item-1 .first-part:hover i, .in-play-live-list section.hockey-list section.item-1 .first-part:hover i {
-  display: block;
+  opacity: 5;
 }
 .in-play-live-list section.match-list section.item-1 .first-part i, .in-play-live-list section.tennis-list section.item-1 .first-part i, .in-play-live-list section.badminton-list section.item-1 .first-part i, .in-play-live-list section.basketball-list section.item-1 .first-part i, .in-play-live-list section.volleyball-list section.item-1 .first-part i, .in-play-live-list section.cricket-list section.item-1 .first-part i, .in-play-live-list section.darts-list section.item-1 .first-part i, .in-play-live-list section.esports-list section.item-1 .first-part i, .in-play-live-list section.greyhounds-list section.item-1 .first-part i, .in-play-live-list section.hockey-list section.item-1 .first-part i {
-  display: none;
+  opacity: 0;
   font-size: calc(0.3rem + 0.6667vw);
   color: var(--color-tertiary);
 }
 .in-play-live-list section.match-list .second-part.is-clicked, .in-play-live-list section.tennis-list .second-part.is-clicked, .in-play-live-list section.badminton-list .second-part.is-clicked, .in-play-live-list section.basketball-list .second-part.is-clicked, .in-play-live-list section.volleyball-list .second-part.is-clicked, .in-play-live-list section.cricket-list .second-part.is-clicked, .in-play-live-list section.darts-list .second-part.is-clicked, .in-play-live-list section.esports-list .second-part.is-clicked, .in-play-live-list section.greyhounds-list .second-part.is-clicked, .in-play-live-list section.hockey-list .second-part.is-clicked {
   display: block;
   display: flex;
+}
+.in-play-live-list section.tennis-list .second-part .first-part {
+  display: flex;
+  flex-direction: column;
 }
 .in-play-live-list section.match-list .second-part, .in-play-live-list section.tennis-list .second-part, .in-play-live-list section.badminton-list .second-part, .in-play-live-list section.basketball-list .second-part, .in-play-live-list section.volleyball-list .second-part, .in-play-live-list section.cricket-list .second-part, .in-play-live-list section.darts-list .second-part, .in-play-live-list section.esports-list .second-part, .in-play-live-list section.greyhounds-list .second-part, .in-play-live-list section.hockey-list .second-part {
   display: flex;
@@ -2225,12 +2228,15 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   padding-left: 1rem;
   display: flex;
   align-items: baseline;
-}
-.in-play-live-tracker section.match-list section.item-1 .first-part h4 {
-  padding-right: 5vw;
+  justify-content: space-around;
 }
 .in-play-live-tracker section.match-list section.item-1 .first-part i {
   padding-left: 0.5rem;
+  z-index: 9;
+  right: -2rem;
+}
+.in-play-live-tracker section.match-list section.item-1 .first-part h4 {
+  padding-right: 5vw;
 }
 .in-play-live-tracker section.match-list section.item-1 .first-part:hover i {
   display: block;
@@ -2243,6 +2249,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 .in-play-live-tracker section.match-list .second-part.active-responsive {
   display: block;
   display: flex;
+  justify-content: space-between;
 }
 .in-play-live-tracker section.match-list .second-part {
   display: flex;
