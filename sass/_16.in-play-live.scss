@@ -65,10 +65,13 @@
         border-top: 0.2rem solid #4D6B2E;
         display: none;
       }
-      & section.badminton-list {
+      & section.bandy-list {
         border-top: 0.2rem solid #2484d3;
         display: none;
-
+      }
+      & section.american-football-list {
+        border-top: 0.2rem solid #2484d3;
+        display: none;
       }
        & section.match-list {
         border-top: 0.2rem solid #126e51;
@@ -107,14 +110,15 @@
    
        & section.match-list.is-clicked ,
         & section.tennis-list.is-clicked 
-        , & section.badminton-list.is-clicked 
+        , & section.american-football-list.is-clicked 
         , & section.basketball-list.is-clicked 
         , & section.volleyball-list.is-clicked 
          , & section.cricket-list.is-clicked
           , & section.darts-list.is-clicked,
            & section.esports-list.is-clicked, 
            & section.greyhounds-list.is-clicked,
-            & section.hockey-list.is-clicked{
+            & section.hockey-list.is-clicked , 
+            & section.bandy-list.is-clicked{
         display: block;
         transition: transform 5s;
         & h1{
@@ -124,8 +128,9 @@
        }
 
        & section.match-list section.item-1 ,
+       & section.bandy-list section.item-1 ,
         & section.tennis-list section.item-1 ,
-         & section.badminton-list section.item-1 
+         & section.american-football-list section.item-1 
          ,  & section.basketball-list section.item-1 
          ,  & section.volleyball-list section.item-1  
          ,  & section.cricket-list section.item-1 
@@ -162,14 +167,15 @@
            }
            & section.match-list .second-part.is-clicked
             , & section.tennis-list .second-part.is-clicked  ,
-             & section.badminton-list .second-part.is-clicked 
+             & section.american-football-list .second-part.is-clicked 
              , & section.basketball-list .second-part.is-clicked 
              , & section.volleyball-list .second-part.is-clicked
               , & section.cricket-list .second-part.is-clicked  
               , & section.darts-list .second-part.is-clicked  ,
                & section.esports-list .second-part.is-clicked ,
                & section.greyhounds-list .second-part.is-clicked ,
-                & section.hockey-list .second-part.is-clicked{
+                & section.hockey-list .second-part.is-clicked,
+                & section.bandy-list .second-part.is-clicked{
             display: block;
             display: flex;
 
@@ -180,7 +186,7 @@
            }
            & section.tennis-list .second-part:active {
             & section {
-    color: var(--color-fifthynary);
+           color: var(--color-fifthynary);
               &.first{
                 color: var();
               }
@@ -228,14 +234,15 @@
 
            & section.match-list .second-part
             , & section.tennis-list .second-part , 
-             & section.badminton-list .second-part 
+             & section.american-football-list .second-part 
              ,  & section.basketball-list .second-part 
              ,  & section.volleyball-list .second-part 
              ,  & section.cricket-list .second-part 
              ,  & section.darts-list .second-part, 
               & section.esports-list .second-part,
                 & section.greyhounds-list .second-part, 
-                 & section.hockey-list .second-part{
+                 & section.hockey-list .second-part,
+                 & section.bandy-list .second-part{
             display: flex;
             color: var(--color-primary-m-light);
             justify-content: space-between;
@@ -390,14 +397,14 @@
 
              & section.match-list.is-clicked ,
              & section.tennis-list.is-clicked 
-             , & section.badminton-list.is-clicked 
+             , & section.american-football-list.is-clicked 
              , & section.basketball-list.is-clicked 
              , & section.volleyball-list.is-clicked 
               , & section.cricket-list.is-clicked
                , & section.darts-list.is-clicked,
                 & section.esports-list.is-clicked, 
                 & section.greyhounds-list.is-clicked,
-                     & section.hockey-list.is-clicked
+                & section.hockey-list.is-clicked
                 {
              & h1{
              display: block;
@@ -407,7 +414,7 @@
            
             & section.match-list ,
              & section.tennis-list,
-              & section.badminton-list 
+              & section.american-football-list 
               ,  & section.basketball-list
               ,  & section.volleyball-list 
               ,  & section.cricket-list 
@@ -449,7 +456,7 @@
         & section.tennis-list h1{
          border-bottom: 0.2rem solid #4D6B2E;
        }
-       & section.badminton-list h1 {
+       & section.american-football-list h1 {
          border-bottom: 0.2rem solid #2484d3; 
        }
         & section.match-list h1{

@@ -7,6 +7,7 @@ body {
     background-color: var(--color-primary);
     font-smooth: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-weight: font-weight(font-weight-regular);
   }
   main {
     flex: 1;
