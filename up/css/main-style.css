@@ -2516,7 +2516,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   display: none;
 }
 .in-play-live-tracker .tennis-tracker {
-  display: none;
+  display: block;
 }
 .in-play-live-tracker .american-football-tracker {
   display: none;
