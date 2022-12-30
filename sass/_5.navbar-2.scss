@@ -99,7 +99,12 @@
                     position: absolute;
                   
                   }
-
+ //*-*-*-*-*-*-*-*-*-*-- The 1510px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+ @include media-tv {
+  & {
+    height: 10rem; 
+  }
+}
 
                     /***************************** 950px *************************************/  
            @include  media-tablet {

@@ -48,7 +48,7 @@
        font-size: font-size(font-size-smallest);
        border-bottom: 0.1rem solid #494949;
        &:hover , &:active {
-         background-color: var( --color-fifthynary-m--light);
+         background-color: var(--color-fifthynary-m--light);
        }
        &:nth-child(2){
         display: none;
@@ -106,6 +106,10 @@
         border-top: 0.2rem solid  #9c9c9c;
         display: none;
       }
+      & section.alpine-list {
+        border-top: 0.2rem solid  #4577c2;
+        display: none;
+      }
    
    
        & section.match-list.is-clicked ,
@@ -118,7 +122,8 @@
            & section.esports-list.is-clicked, 
            & section.greyhounds-list.is-clicked,
             & section.hockey-list.is-clicked , 
-            & section.bandy-list.is-clicked{
+            & section.bandy-list.is-clicked,
+            & section.alpine-list.is-clicked{
         display: block;
         transition: transform 5s;
         & h1{
@@ -137,14 +142,19 @@
           ,  & section.darts-list section.item-1 ,
             & section.esports-list section.item-1,
             & section.greyhounds-list section.item-1, 
-             & section.hockey-list section.item-1{
+             & section.hockey-list section.item-1 ,
+             & section.alpine-list section.item-1{
         margin-left: -0.01rem;
         width: 100%;
 
-           & .first-part {
+           & .first-part{
             padding-left: 1rem;
             display: flex;
             justify-content: space-between;
+            & .first-part.names{
+              display: flex;
+              flex-direction: column;
+            }
            //   & h4 {
             //  padding-right: 7vw;
             //  }
@@ -164,6 +174,11 @@
             color: var(--color-tertiary);
           }
          
+           }
+           & section.alpine-list section.item-1{
+            & .first-part section span{
+              display: none;
+            }
            }
            & section.match-list .second-part.is-clicked
             , & section.tennis-list .second-part.is-clicked  ,
@@ -261,7 +276,7 @@
            & .goals {
             color: var(--color-secondary-m-light);
            }
-           &:hover , &:active {
+           &:hover , &:focus:active {
             background-color: var( --color-fifthynary-m--light);
           }
            }

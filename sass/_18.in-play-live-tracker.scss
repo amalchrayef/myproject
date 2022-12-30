@@ -115,9 +115,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 3.5rem;
     padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
     color: var(--color-quaternary-m-dark);
+    & h2 {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
     
     & a i {
         padding-right: 33vw;
@@ -230,6 +237,8 @@
     padding: 1rem;
     font-size: font-size(font-size--large);
     color: var(--color-primary-m-light);
+    border-top: 0.2rem solid #404040;
+
 
     & h2{
         color: var(--color-tertiary-m-dark);
@@ -318,7 +327,161 @@
   display: none;
  }
  & .tennis-tracker{
-  display:block;
+  display:none;
+  & .stats {
+    display: block;
+    border-bottom: 0.01rem solid #404040;
+    & .first-lign , & .second-lign{
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-around;
+      & .score-1 , & .score-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        position: relative;
+       
+          }
+          & .score-1 h2::before {
+            content: "";
+            border-bottom: 1rem;
+            position: absolute; 
+            bottom: 2.9rem;
+            right: -10%;
+            left: -17%;
+            width: 3rem;
+            height: height(height-size-smal);
+            background-color: var(--color-tertiary-m--dark);
+            z-index: 5;
+          }
+          & .score-2 h2::before{
+            content: "";
+            border-bottom: 1rem;
+            position: absolute; 
+            bottom: 2.9rem;
+            right: -8%;
+            left: 25%;
+            width: 3rem;
+            height: height(height-size-smal);
+            background-color: var(--color-tertiary-m-dark);
+            z-index: 5;
+          }
+    }
+    & .top-part .first-part section {
+      display: flex;
+      align-items: center;
+      & h2{
+        padding-left: 0.5rem;
+      }
+     }
+   & .top-part .first-part .dot-1 {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--color-tertiary-m-dark);
+    border-radius: 50%;
+   }
+   & .top-part .first-part .dot-2 {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var( --color-quaternary-m-dark);
+    border-radius: 50%;
+   }
+  }
+  & .stats .top-part{
+    justify-content: space-between;
+    padding: 1.5rem;
+    & .second-part {
+      display: flex;
+    }
+    & .second-part .score-a, & .second-part .score-b , & .second-part .score-c{
+      display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    align-items: center;
+    font-size: font-size(font-size--large);
+    }
+    & .second-part .score-a span:nth-child(2),  & .second-part .score-a span:nth-child(3){
+       color: var(--color-secondary-m-light);
+    }
+    
+  }
+  & .stats .top-part , & .stats .first-lign , & .stats .second-lign{
+    color: var(--color-tertiary-m-light);
+    display: flex;
+
+  }
+  & .stats .first-lign .middle-progress, & .stats .second-lign .middle-progress{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    & .p-p-1 , & .p-p-2{
+      padding-right: 1rem;
+      padding-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    & section {
+      display: flex;
+      padding-bottom: 0.6rem;
+    }
+
+    & .pre-progress-1 {
+  position: relative;
+  //display: inline-block;
+  vertical-align: middle;
+  height: 0.4rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: var(--color-secondary);
+  width: 6.5rem;
+  & span.progress-1 , & span.progress-2 {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    right: 0;
+    height: 0.4rem;
+    overflow: hidden;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-color: var(--color-tertiary-m-dark);
+    float: right;
+  }
+  & span.progress-2 {
+    float: left;
+   }
+  & .progress-1 , & .progress-2{
+    width: 60%;
+  }
+}
+
+  }
+  & .summary {
+    color: var(--color-tertiary-m-light);
+    padding: 1.7rem;
+    font-size: font-size(font-size-xlarge);
+    width: 100%;
+
+    & div:nth-child(1){
+    border-bottom: 0.01rem solid #404040;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+    }
+    & div:nth-child(2){
+      display: flex;
+      align-items: baseline;
+      padding-top: 0.5rem;
+      justify-content: center;
+      & .d-active{
+        display: none;
+      }
+     & .d-active i , & .active i {
+       padding-left: 0.5rem;
+     }
+    }
+  }
  }
  & .american-football-tracker{
   display: none;

@@ -223,6 +223,11 @@ section#main-part {
 .header__main-nav2--hamburger {
   position: absolute;
 }
+@media screen and (min-width: 1510px) {
+  .header__main-nav2 {
+    height: 10rem;
+  }
+}
 @media screen and (max-width: 950px) {
   .header__main-nav2 {
     width: 100%;
@@ -1615,32 +1620,43 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   border-top: 0.2rem solid #9c9c9c;
   display: none;
 }
-.in-play-live-list section.match-list.is-clicked, .in-play-live-list section.tennis-list.is-clicked, .in-play-live-list section.american-football-list.is-clicked, .in-play-live-list section.basketball-list.is-clicked, .in-play-live-list section.volleyball-list.is-clicked, .in-play-live-list section.cricket-list.is-clicked, .in-play-live-list section.darts-list.is-clicked, .in-play-live-list section.esports-list.is-clicked, .in-play-live-list section.greyhounds-list.is-clicked, .in-play-live-list section.hockey-list.is-clicked, .in-play-live-list section.bandy-list.is-clicked {
+.in-play-live-list section.alpine-list {
+  border-top: 0.2rem solid #4577c2;
+  display: none;
+}
+.in-play-live-list section.match-list.is-clicked, .in-play-live-list section.tennis-list.is-clicked, .in-play-live-list section.american-football-list.is-clicked, .in-play-live-list section.basketball-list.is-clicked, .in-play-live-list section.volleyball-list.is-clicked, .in-play-live-list section.cricket-list.is-clicked, .in-play-live-list section.darts-list.is-clicked, .in-play-live-list section.esports-list.is-clicked, .in-play-live-list section.greyhounds-list.is-clicked, .in-play-live-list section.hockey-list.is-clicked, .in-play-live-list section.bandy-list.is-clicked, .in-play-live-list section.alpine-list.is-clicked {
   display: block;
   transition: transform 5s;
 }
-.in-play-live-list section.match-list.is-clicked h1, .in-play-live-list section.tennis-list.is-clicked h1, .in-play-live-list section.american-football-list.is-clicked h1, .in-play-live-list section.basketball-list.is-clicked h1, .in-play-live-list section.volleyball-list.is-clicked h1, .in-play-live-list section.cricket-list.is-clicked h1, .in-play-live-list section.darts-list.is-clicked h1, .in-play-live-list section.esports-list.is-clicked h1, .in-play-live-list section.greyhounds-list.is-clicked h1, .in-play-live-list section.hockey-list.is-clicked h1, .in-play-live-list section.bandy-list.is-clicked h1 {
+.in-play-live-list section.match-list.is-clicked h1, .in-play-live-list section.tennis-list.is-clicked h1, .in-play-live-list section.american-football-list.is-clicked h1, .in-play-live-list section.basketball-list.is-clicked h1, .in-play-live-list section.volleyball-list.is-clicked h1, .in-play-live-list section.cricket-list.is-clicked h1, .in-play-live-list section.darts-list.is-clicked h1, .in-play-live-list section.esports-list.is-clicked h1, .in-play-live-list section.greyhounds-list.is-clicked h1, .in-play-live-list section.hockey-list.is-clicked h1, .in-play-live-list section.bandy-list.is-clicked h1, .in-play-live-list section.alpine-list.is-clicked h1 {
   display: none;
 }
-.in-play-live-list section.match-list section.item-1, .in-play-live-list section.bandy-list section.item-1, .in-play-live-list section.tennis-list section.item-1, .in-play-live-list section.american-football-list section.item-1, .in-play-live-list section.basketball-list section.item-1, .in-play-live-list section.volleyball-list section.item-1, .in-play-live-list section.cricket-list section.item-1, .in-play-live-list section.darts-list section.item-1, .in-play-live-list section.esports-list section.item-1, .in-play-live-list section.greyhounds-list section.item-1, .in-play-live-list section.hockey-list section.item-1 {
+.in-play-live-list section.match-list section.item-1, .in-play-live-list section.bandy-list section.item-1, .in-play-live-list section.tennis-list section.item-1, .in-play-live-list section.american-football-list section.item-1, .in-play-live-list section.basketball-list section.item-1, .in-play-live-list section.volleyball-list section.item-1, .in-play-live-list section.cricket-list section.item-1, .in-play-live-list section.darts-list section.item-1, .in-play-live-list section.esports-list section.item-1, .in-play-live-list section.greyhounds-list section.item-1, .in-play-live-list section.hockey-list section.item-1, .in-play-live-list section.alpine-list section.item-1 {
   margin-left: -0.01rem;
   width: 100%;
 }
-.in-play-live-list section.match-list section.item-1 .first-part, .in-play-live-list section.bandy-list section.item-1 .first-part, .in-play-live-list section.tennis-list section.item-1 .first-part, .in-play-live-list section.american-football-list section.item-1 .first-part, .in-play-live-list section.basketball-list section.item-1 .first-part, .in-play-live-list section.volleyball-list section.item-1 .first-part, .in-play-live-list section.cricket-list section.item-1 .first-part, .in-play-live-list section.darts-list section.item-1 .first-part, .in-play-live-list section.esports-list section.item-1 .first-part, .in-play-live-list section.greyhounds-list section.item-1 .first-part, .in-play-live-list section.hockey-list section.item-1 .first-part {
+.in-play-live-list section.match-list section.item-1 .first-part, .in-play-live-list section.bandy-list section.item-1 .first-part, .in-play-live-list section.tennis-list section.item-1 .first-part, .in-play-live-list section.american-football-list section.item-1 .first-part, .in-play-live-list section.basketball-list section.item-1 .first-part, .in-play-live-list section.volleyball-list section.item-1 .first-part, .in-play-live-list section.cricket-list section.item-1 .first-part, .in-play-live-list section.darts-list section.item-1 .first-part, .in-play-live-list section.esports-list section.item-1 .first-part, .in-play-live-list section.greyhounds-list section.item-1 .first-part, .in-play-live-list section.hockey-list section.item-1 .first-part, .in-play-live-list section.alpine-list section.item-1 .first-part {
   padding-left: 1rem;
   display: flex;
   justify-content: space-between;
 }
-.in-play-live-list section.match-list section.item-1 .first-part i, .in-play-live-list section.bandy-list section.item-1 .first-part i, .in-play-live-list section.tennis-list section.item-1 .first-part i, .in-play-live-list section.american-football-list section.item-1 .first-part i, .in-play-live-list section.basketball-list section.item-1 .first-part i, .in-play-live-list section.volleyball-list section.item-1 .first-part i, .in-play-live-list section.cricket-list section.item-1 .first-part i, .in-play-live-list section.darts-list section.item-1 .first-part i, .in-play-live-list section.esports-list section.item-1 .first-part i, .in-play-live-list section.greyhounds-list section.item-1 .first-part i, .in-play-live-list section.hockey-list section.item-1 .first-part i {
+.in-play-live-list section.match-list section.item-1 .first-part .first-part.names, .in-play-live-list section.bandy-list section.item-1 .first-part .first-part.names, .in-play-live-list section.tennis-list section.item-1 .first-part .first-part.names, .in-play-live-list section.american-football-list section.item-1 .first-part .first-part.names, .in-play-live-list section.basketball-list section.item-1 .first-part .first-part.names, .in-play-live-list section.volleyball-list section.item-1 .first-part .first-part.names, .in-play-live-list section.cricket-list section.item-1 .first-part .first-part.names, .in-play-live-list section.darts-list section.item-1 .first-part .first-part.names, .in-play-live-list section.esports-list section.item-1 .first-part .first-part.names, .in-play-live-list section.greyhounds-list section.item-1 .first-part .first-part.names, .in-play-live-list section.hockey-list section.item-1 .first-part .first-part.names, .in-play-live-list section.alpine-list section.item-1 .first-part .first-part.names {
+  display: flex;
+  flex-direction: column;
+}
+.in-play-live-list section.match-list section.item-1 .first-part i, .in-play-live-list section.bandy-list section.item-1 .first-part i, .in-play-live-list section.tennis-list section.item-1 .first-part i, .in-play-live-list section.american-football-list section.item-1 .first-part i, .in-play-live-list section.basketball-list section.item-1 .first-part i, .in-play-live-list section.volleyball-list section.item-1 .first-part i, .in-play-live-list section.cricket-list section.item-1 .first-part i, .in-play-live-list section.darts-list section.item-1 .first-part i, .in-play-live-list section.esports-list section.item-1 .first-part i, .in-play-live-list section.greyhounds-list section.item-1 .first-part i, .in-play-live-list section.hockey-list section.item-1 .first-part i, .in-play-live-list section.alpine-list section.item-1 .first-part i {
   padding-left: 0.5rem;
 }
-.in-play-live-list section.match-list section.item-1 .first-part:hover i, .in-play-live-list section.bandy-list section.item-1 .first-part:hover i, .in-play-live-list section.tennis-list section.item-1 .first-part:hover i, .in-play-live-list section.american-football-list section.item-1 .first-part:hover i, .in-play-live-list section.basketball-list section.item-1 .first-part:hover i, .in-play-live-list section.volleyball-list section.item-1 .first-part:hover i, .in-play-live-list section.cricket-list section.item-1 .first-part:hover i, .in-play-live-list section.darts-list section.item-1 .first-part:hover i, .in-play-live-list section.esports-list section.item-1 .first-part:hover i, .in-play-live-list section.greyhounds-list section.item-1 .first-part:hover i, .in-play-live-list section.hockey-list section.item-1 .first-part:hover i {
+.in-play-live-list section.match-list section.item-1 .first-part:hover i, .in-play-live-list section.bandy-list section.item-1 .first-part:hover i, .in-play-live-list section.tennis-list section.item-1 .first-part:hover i, .in-play-live-list section.american-football-list section.item-1 .first-part:hover i, .in-play-live-list section.basketball-list section.item-1 .first-part:hover i, .in-play-live-list section.volleyball-list section.item-1 .first-part:hover i, .in-play-live-list section.cricket-list section.item-1 .first-part:hover i, .in-play-live-list section.darts-list section.item-1 .first-part:hover i, .in-play-live-list section.esports-list section.item-1 .first-part:hover i, .in-play-live-list section.greyhounds-list section.item-1 .first-part:hover i, .in-play-live-list section.hockey-list section.item-1 .first-part:hover i, .in-play-live-list section.alpine-list section.item-1 .first-part:hover i {
   opacity: 5;
 }
-.in-play-live-list section.match-list section.item-1 .first-part i, .in-play-live-list section.bandy-list section.item-1 .first-part i, .in-play-live-list section.tennis-list section.item-1 .first-part i, .in-play-live-list section.american-football-list section.item-1 .first-part i, .in-play-live-list section.basketball-list section.item-1 .first-part i, .in-play-live-list section.volleyball-list section.item-1 .first-part i, .in-play-live-list section.cricket-list section.item-1 .first-part i, .in-play-live-list section.darts-list section.item-1 .first-part i, .in-play-live-list section.esports-list section.item-1 .first-part i, .in-play-live-list section.greyhounds-list section.item-1 .first-part i, .in-play-live-list section.hockey-list section.item-1 .first-part i {
+.in-play-live-list section.match-list section.item-1 .first-part i, .in-play-live-list section.bandy-list section.item-1 .first-part i, .in-play-live-list section.tennis-list section.item-1 .first-part i, .in-play-live-list section.american-football-list section.item-1 .first-part i, .in-play-live-list section.basketball-list section.item-1 .first-part i, .in-play-live-list section.volleyball-list section.item-1 .first-part i, .in-play-live-list section.cricket-list section.item-1 .first-part i, .in-play-live-list section.darts-list section.item-1 .first-part i, .in-play-live-list section.esports-list section.item-1 .first-part i, .in-play-live-list section.greyhounds-list section.item-1 .first-part i, .in-play-live-list section.hockey-list section.item-1 .first-part i, .in-play-live-list section.alpine-list section.item-1 .first-part i {
   opacity: 0;
   font-size: calc(0.3rem + 0.6667vw);
   color: var(--color-tertiary);
+}
+.in-play-live-list section.alpine-list section.item-1 .first-part section span {
+  display: none;
 }
 .in-play-live-list section.match-list .second-part.is-clicked, .in-play-live-list section.tennis-list .second-part.is-clicked, .in-play-live-list section.american-football-list .second-part.is-clicked, .in-play-live-list section.basketball-list .second-part.is-clicked, .in-play-live-list section.volleyball-list .second-part.is-clicked, .in-play-live-list section.cricket-list .second-part.is-clicked, .in-play-live-list section.darts-list .second-part.is-clicked, .in-play-live-list section.esports-list .second-part.is-clicked, .in-play-live-list section.greyhounds-list .second-part.is-clicked, .in-play-live-list section.hockey-list .second-part.is-clicked, .in-play-live-list section.bandy-list .second-part.is-clicked {
   display: block;
@@ -1707,7 +1723,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 .in-play-live-list section.match-list .second-part .goals, .in-play-live-list section.tennis-list .second-part .goals, .in-play-live-list section.american-football-list .second-part .goals, .in-play-live-list section.basketball-list .second-part .goals, .in-play-live-list section.volleyball-list .second-part .goals, .in-play-live-list section.cricket-list .second-part .goals, .in-play-live-list section.darts-list .second-part .goals, .in-play-live-list section.esports-list .second-part .goals, .in-play-live-list section.greyhounds-list .second-part .goals, .in-play-live-list section.hockey-list .second-part .goals, .in-play-live-list section.bandy-list .second-part .goals {
   color: var(--color-secondary-m-light);
 }
-.in-play-live-list section.match-list .second-part:hover, .in-play-live-list section.match-list .second-part:active, .in-play-live-list section.tennis-list .second-part:hover, .in-play-live-list section.tennis-list .second-part:active, .in-play-live-list section.american-football-list .second-part:hover, .in-play-live-list section.american-football-list .second-part:active, .in-play-live-list section.basketball-list .second-part:hover, .in-play-live-list section.basketball-list .second-part:active, .in-play-live-list section.volleyball-list .second-part:hover, .in-play-live-list section.volleyball-list .second-part:active, .in-play-live-list section.cricket-list .second-part:hover, .in-play-live-list section.cricket-list .second-part:active, .in-play-live-list section.darts-list .second-part:hover, .in-play-live-list section.darts-list .second-part:active, .in-play-live-list section.esports-list .second-part:hover, .in-play-live-list section.esports-list .second-part:active, .in-play-live-list section.greyhounds-list .second-part:hover, .in-play-live-list section.greyhounds-list .second-part:active, .in-play-live-list section.hockey-list .second-part:hover, .in-play-live-list section.hockey-list .second-part:active, .in-play-live-list section.bandy-list .second-part:hover, .in-play-live-list section.bandy-list .second-part:active {
+.in-play-live-list section.match-list .second-part:hover, .in-play-live-list section.match-list .second-part:focus:active, .in-play-live-list section.tennis-list .second-part:hover, .in-play-live-list section.tennis-list .second-part:focus:active, .in-play-live-list section.american-football-list .second-part:hover, .in-play-live-list section.american-football-list .second-part:focus:active, .in-play-live-list section.basketball-list .second-part:hover, .in-play-live-list section.basketball-list .second-part:focus:active, .in-play-live-list section.volleyball-list .second-part:hover, .in-play-live-list section.volleyball-list .second-part:focus:active, .in-play-live-list section.cricket-list .second-part:hover, .in-play-live-list section.cricket-list .second-part:focus:active, .in-play-live-list section.darts-list .second-part:hover, .in-play-live-list section.darts-list .second-part:focus:active, .in-play-live-list section.esports-list .second-part:hover, .in-play-live-list section.esports-list .second-part:focus:active, .in-play-live-list section.greyhounds-list .second-part:hover, .in-play-live-list section.greyhounds-list .second-part:focus:active, .in-play-live-list section.hockey-list .second-part:hover, .in-play-live-list section.hockey-list .second-part:focus:active, .in-play-live-list section.bandy-list .second-part:hover, .in-play-live-list section.bandy-list .second-part:focus:active {
   background-color: var(--color-fifthynary-m--light);
 }
 .in-play-live-matches {
@@ -2338,9 +2354,15 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 3.5rem;
   padding-bottom: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   color: var(--color-quaternary-m-dark);
+}
+.in-play-live-tracker .header h2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .in-play-live-tracker .header a i {
   padding-right: 33vw;
@@ -2437,6 +2459,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   padding: 1rem;
   font-size: 1.1rem;
   color: var(--color-primary-m-light);
+  border-top: 0.2rem solid #404040;
 }
 .in-play-live-tracker .my-bets h2 {
   color: var(--color-tertiary-m-dark);
@@ -2516,7 +2539,152 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   display: none;
 }
 .in-play-live-tracker .tennis-tracker {
+  display: none;
+}
+.in-play-live-tracker .tennis-tracker .stats {
   display: block;
+  border-bottom: 0.01rem solid #404040;
+}
+.in-play-live-tracker .tennis-tracker .stats .first-lign, .in-play-live-tracker .tennis-tracker .stats .second-lign {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.in-play-live-tracker .tennis-tracker .stats .first-lign .score-1, .in-play-live-tracker .tennis-tracker .stats .first-lign .score-2, .in-play-live-tracker .tennis-tracker .stats .second-lign .score-1, .in-play-live-tracker .tennis-tracker .stats .second-lign .score-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.in-play-live-tracker .tennis-tracker .stats .first-lign .score-1 h2::before, .in-play-live-tracker .tennis-tracker .stats .second-lign .score-1 h2::before {
+  content: "";
+  border-bottom: 1rem;
+  position: absolute;
+  bottom: 2.9rem;
+  right: -10%;
+  left: -17%;
+  width: 3rem;
+  height: 0.2rem;
+  background-color: var(--color-tertiary-m--dark);
+  z-index: 5;
+}
+.in-play-live-tracker .tennis-tracker .stats .first-lign .score-2 h2::before, .in-play-live-tracker .tennis-tracker .stats .second-lign .score-2 h2::before {
+  content: "";
+  border-bottom: 1rem;
+  position: absolute;
+  bottom: 2.9rem;
+  right: -8%;
+  left: 25%;
+  width: 3rem;
+  height: 0.2rem;
+  background-color: var(--color-tertiary-m-dark);
+  z-index: 5;
+}
+.in-play-live-tracker .tennis-tracker .stats .top-part .first-part section {
+  display: flex;
+  align-items: center;
+}
+.in-play-live-tracker .tennis-tracker .stats .top-part .first-part section h2 {
+  padding-left: 0.5rem;
+}
+.in-play-live-tracker .tennis-tracker .stats .top-part .first-part .dot-1 {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--color-tertiary-m-dark);
+  border-radius: 50%;
+}
+.in-play-live-tracker .tennis-tracker .stats .top-part .first-part .dot-2 {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--color-quaternary-m-dark);
+  border-radius: 50%;
+}
+.in-play-live-tracker .tennis-tracker .stats .top-part {
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.in-play-live-tracker .tennis-tracker .stats .top-part .second-part {
+  display: flex;
+}
+.in-play-live-tracker .tennis-tracker .stats .top-part .second-part .score-a, .in-play-live-tracker .tennis-tracker .stats .top-part .second-part .score-b, .in-play-live-tracker .tennis-tracker .stats .top-part .second-part .score-c {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.in-play-live-tracker .tennis-tracker .stats .top-part .second-part .score-a span:nth-child(2), .in-play-live-tracker .tennis-tracker .stats .top-part .second-part .score-a span:nth-child(3) {
+  color: var(--color-secondary-m-light);
+}
+.in-play-live-tracker .tennis-tracker .stats .top-part, .in-play-live-tracker .tennis-tracker .stats .first-lign, .in-play-live-tracker .tennis-tracker .stats .second-lign {
+  color: var(--color-tertiary-m-light);
+  display: flex;
+}
+.in-play-live-tracker .tennis-tracker .stats .first-lign .middle-progress, .in-play-live-tracker .tennis-tracker .stats .second-lign .middle-progress {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+.in-play-live-tracker .tennis-tracker .stats .first-lign .middle-progress .p-p-1, .in-play-live-tracker .tennis-tracker .stats .first-lign .middle-progress .p-p-2, .in-play-live-tracker .tennis-tracker .stats .second-lign .middle-progress .p-p-1, .in-play-live-tracker .tennis-tracker .stats .second-lign .middle-progress .p-p-2 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.in-play-live-tracker .tennis-tracker .stats .first-lign .middle-progress section, .in-play-live-tracker .tennis-tracker .stats .second-lign .middle-progress section {
+  display: flex;
+  padding-bottom: 0.6rem;
+}
+.in-play-live-tracker .tennis-tracker .stats .first-lign .middle-progress .pre-progress-1, .in-play-live-tracker .tennis-tracker .stats .second-lign .middle-progress .pre-progress-1 {
+  position: relative;
+  vertical-align: middle;
+  height: 0.4rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: var(--color-secondary);
+  width: 6.5rem;
+}
+.in-play-live-tracker .tennis-tracker .stats .first-lign .middle-progress .pre-progress-1 span.progress-1, .in-play-live-tracker .tennis-tracker .stats .first-lign .middle-progress .pre-progress-1 span.progress-2, .in-play-live-tracker .tennis-tracker .stats .second-lign .middle-progress .pre-progress-1 span.progress-1, .in-play-live-tracker .tennis-tracker .stats .second-lign .middle-progress .pre-progress-1 span.progress-2 {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  right: 0;
+  height: 0.4rem;
+  overflow: hidden;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: var(--color-tertiary-m-dark);
+  float: right;
+}
+.in-play-live-tracker .tennis-tracker .stats .first-lign .middle-progress .pre-progress-1 span.progress-2, .in-play-live-tracker .tennis-tracker .stats .second-lign .middle-progress .pre-progress-1 span.progress-2 {
+  float: left;
+}
+.in-play-live-tracker .tennis-tracker .stats .first-lign .middle-progress .pre-progress-1 .progress-1, .in-play-live-tracker .tennis-tracker .stats .first-lign .middle-progress .pre-progress-1 .progress-2, .in-play-live-tracker .tennis-tracker .stats .second-lign .middle-progress .pre-progress-1 .progress-1, .in-play-live-tracker .tennis-tracker .stats .second-lign .middle-progress .pre-progress-1 .progress-2 {
+  width: 60%;
+}
+.in-play-live-tracker .tennis-tracker .summary {
+  color: var(--color-tertiary-m-light);
+  padding: 1.7rem;
+  font-size: 1.35rem;
+  width: 100%;
+}
+.in-play-live-tracker .tennis-tracker .summary div:nth-child(1) {
+  border-bottom: 0.01rem solid #404040;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.in-play-live-tracker .tennis-tracker .summary div:nth-child(2) {
+  display: flex;
+  align-items: baseline;
+  padding-top: 0.5rem;
+  justify-content: center;
+}
+.in-play-live-tracker .tennis-tracker .summary div:nth-child(2) .d-active {
+  display: none;
+}
+.in-play-live-tracker .tennis-tracker .summary div:nth-child(2) .d-active i, .in-play-live-tracker .tennis-tracker .summary div:nth-child(2) .active i {
+  padding-left: 0.5rem;
 }
 .in-play-live-tracker .american-football-tracker {
   display: none;
