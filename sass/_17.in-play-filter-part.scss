@@ -11,7 +11,7 @@
         display: none;
         }*/
         & .FR , & .DC , & .MG , & .AMG , & .MC {    
-          display: flex;
+           display: flex;
            justify-content: space-between;
            padding: 0.75rem;
            padding-left: 2rem;
@@ -68,12 +68,15 @@
           display: flex;
           justify-content: center;
         }
-         & div span {
-             padding-right: 1rem;
+        & div span {
+            padding-right: 1rem;
          }
          & div span:nth-child(2) {
           color:var(--color-secondary-m-light);    
            }
+           & div span.resp {
+            display: none;
+             }
       }
       & .two-lists{
         &.is-clicked{
@@ -81,7 +84,7 @@
          }
       }
 
-      & .two-lists .slider-all {
+      & .two-lists .slider-all  {
         display: flex;
         justify-content: end;
         cursor: pointer;

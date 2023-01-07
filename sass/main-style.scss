@@ -24,7 +24,12 @@
       @content;
     }
   }
-  
+   //*-*-*-*-*-*-*-*-*-*-- The 768px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+   @mixin media-medium-m {
+    @media screen and (max-width: break-point(break-point-medium-m)) {
+      @content;
+    }
+  }
   //*-*-*-*-*-*-*-*-*-*-- The 650px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
   @mixin media-medium {
     @media screen and (max-width: break-point(break-point-medium)) {

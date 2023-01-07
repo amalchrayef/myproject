@@ -10,11 +10,15 @@
                 matchList.classList.remove("is-clicked"); }
                 if (element != tennisList) {
                 tennisList.classList.remove("is-clicked"); }
-                if (element != badmintonList) {
-                badmintonList.classList.remove("is-clicked"); }
+                if (element != alpineList) {
+                alpineList.classList.remove("is-clicked"); }
+                if (element != americanList) {
+                    americanList.classList.remove("is-clicked"); }
+                    if (element != bandyList) {
+                        bandyList.classList.remove("is-clicked"); }
                 if (element != basketballList) {
                 basketballList.classList.remove("is-clicked"); }
-                if (element != volleyballList) {
+               /* if (element != volleyballList) {
                 volleyballList.classList.remove("is-clicked"); }
                 if (element != cricketList) {
                 cricketList.classList.remove("is-clicked");   }
@@ -26,7 +30,7 @@
                 greyhoundsList.classList.remove("is-clicked"); }
                 if (element != hockeyList) {
                 hockeyList.classList.remove("is-clicked"); }
-
+*/
 
 
             }
@@ -115,88 +119,55 @@ clickedSix.addEventListener("click", () =>{
             tennisclickedTwo.addEventListener("click", () =>{
                 tennisactiveTwo.classList.toggle("is-clicked");
             });
-            
-            const tennisclickedThree = document.querySelector(".in-play-live-list .tennis-list .three");
-            const tennisactiveThree = document.querySelector(".in-play-live-list .tennis-list .second-part.three");
-            
-            tennisclickedThree.addEventListener("click", () =>{
-                tennisactiveThree.classList.toggle("is-clicked");
-            });
-            
-            const tennisclickedFour = document.querySelector(".in-play-live-list .tennis-list .four");
-            const tennisactiveFour = document.querySelector(".in-play-live-list .tennis-list .second-part.four");
-            
-            tennisclickedFour.addEventListener("click", () =>{
-                tennisactiveFour.classList.toggle("is-clicked");
-            });
-            
-            const tennisclickedFive = document.querySelector(".in-play-live-list .tennis-list .five");
-            const tennisactiveFive = document.querySelector(".in-play-live-list .tennis-list .second-part.five");
-            
-            tennisclickedFive.addEventListener("click", () =>{
-                tennisactiveFive.classList.toggle("is-clicked");
-            });
-            
-            const tennisclickedSix = document.querySelector(".in-play-live-list .tennis-list .six");
-            const tennisactiveSix = document.querySelector(".in-play-live-list .tennis-list .second-part.six");
-            
-            tennisclickedSix.addEventListener("click", () =>{
-                tennisactiveSix.classList.toggle("is-clicked");
-            });
+         
 
- /************************* badminton *************************/ 
+ /************************* alpine *************************/ 
 
- const badminton = document.querySelector(".in-play-live-list div:nth-child(7)");
- const badmintonList = document.querySelector(".in-play-live-list .badminton-list");
- const badmintonclickedOne = document.querySelector(".in-play-live-list .badminton-list .one");
- const badmintonactiveOne = document.querySelector(".in-play-live-list .badminton-list .second-part.one");
+ const alpine = document.querySelector(".in-play-live-list div:nth-child(7)");
+ const alpineList = document.querySelector(".in-play-live-list .alpine-list");
  
- badminton.addEventListener("click", () =>{
-    badmintonList.classList.toggle("is-clicked");
-    ChangeClasse (badmintonList)
+ alpine.addEventListener("click", () =>{
+    alpineList.classList.toggle("is-clicked");
+    ChangeClasse (alpineList)
+ });
+ /*************************american-football-list*************************/ 
+
+ const american = document.querySelector(".in-play-live-list div:nth-child(9)");
+ const americanList = document.querySelector(".in-play-live-list .american-football-list");
+ const americanclickedOne = document.querySelector(".in-play-live-list .american-football-list .one");
+ const americanactiveOne = document.querySelector(".in-play-live-list .american-football-list .second-part.one");
+ 
+ american.addEventListener("click", () =>{
+    americanList.classList.toggle("is-clicked");
+    ChangeClasse (americanList)
  });
  
- badmintonclickedOne.addEventListener("click", () =>{
-    badmintonactiveOne.classList.toggle("is-clicked");
+ americanclickedOne.addEventListener("click", () =>{
+    americanactiveOne.classList.toggle("is-clicked");
  });
  
- const badmintonclickedTwo = document.querySelector(".in-play-live-list .badminton-list .two");
- const badmintonactiveTwo = document.querySelector(".in-play-live-list .badminton-list .second-part.two");
+ const americanclickedTwo = document.querySelector(".in-play-live-list .american-football-list .two");
+ const americanactiveTwo = document.querySelector(".in-play-live-list .american-football-list .second-part.two");
  
- badmintonclickedTwo.addEventListener("click", () =>{
-    badmintonactiveTwo.classList.toggle("is-clicked");
+ americanclickedTwo.addEventListener("click", () =>{
+    americanactiveTwo.classList.toggle("is-clicked");
  });
  
- const badmintonclickedThree = document.querySelector(".in-play-live-list .badminton-list .three");
- const badmintonactiveThree = document.querySelector(".in-play-live-list .badminton-list .second-part.three");
- 
- badmintonclickedThree.addEventListener("click", () =>{
-    badmintonactiveThree.classList.toggle("is-clicked");
- });
- 
- const badmintonclickedFour = document.querySelector(".in-play-live-list .badminton-list .four");
- const badmintonactiveFour = document.querySelector(".in-play-live-list .badminton-list .second-part.four");
- 
- badmintonclickedFour.addEventListener("click", () =>{
-    badmintonactiveFour.classList.toggle("is-clicked");
- });
- 
- const badmintonclickedFive = document.querySelector(".in-play-live-list .badminton-list .five");
- const badmintonactiveFive = document.querySelector(".in-play-live-list .badminton-list .second-part.five");
- 
- badmintonclickedFive.addEventListener("click", () =>{
-    badmintonactiveFive.classList.toggle("is-clicked");
- });
- 
- const badmintonclickedSix = document.querySelector(".in-play-live-list .badminton-list .six");
- const badmintonactiveSix = document.querySelector(".in-play-live-list .badminton-list .second-part.six");
- 
- badmintonclickedSix.addEventListener("click", () =>{
-    badmintonactiveSix.classList.toggle("is-clicked");
- });
+  /*************************bandy-list*************************/ 
+
+  const bandy = document.querySelector(".in-play-live-list div:nth-child(11)");
+  const bandyList = document.querySelector(".in-play-live-list .bandy-list");
+  const bandyclickedOne = document.querySelector(".in-play-live-list .bandy-list .one");
+  const bandyactiveOne = document.querySelector(".in-play-live-list .bandy-list .second-part.one");
+  
+  bandy.addEventListener("click", () =>{
+     bandyList.classList.toggle("is-clicked");
+     ChangeClasse (bandyList)
+  });
+
  /************************* basketball *************************/ 
 
- const basketball = document.querySelector(".in-play-live-list div:nth-child(9)");
+ const basketball = document.querySelector(".in-play-live-list div:nth-child(13)");
  const basketballList = document.querySelector(".in-play-live-list .basketball-list");
  const basketballclickedOne = document.querySelector(".in-play-live-list .basketball-list .one");
  const basketballactiveOne = document.querySelector(".in-play-live-list .basketball-list .second-part.one");
@@ -224,29 +195,10 @@ clickedSix.addEventListener("click", () =>{
     basketballactiveThree.classList.toggle("is-clicked");
  });
  
- const basketballclickedFour = document.querySelector(".in-play-live-list .basketball-list .four");
- const basketballactiveFour = document.querySelector(".in-play-live-list .basketball-list .second-part.four");
  
- basketballclickedFour.addEventListener("click", () =>{
-    basketballactiveFour.classList.toggle("is-clicked");
- });
- 
- const basketballclickedFive = document.querySelector(".in-play-live-list .basketball-list .five");
- const basketballactiveFive = document.querySelector(".in-play-live-list .basketball-list .second-part.five");
- 
- basketballclickedFive.addEventListener("click", () =>{
-    basketballactiveFive.classList.toggle("is-clicked");
- });
- 
- const basketballclickedSix = document.querySelector(".in-play-live-list .basketball-list .six");
- const basketballactiveSix = document.querySelector(".in-play-live-list .basketball-list .second-part.six");
- 
- basketballclickedSix.addEventListener("click", () =>{
-    basketballactiveSix.classList.toggle("is-clicked");
- });
  /************************* volleyball *************************/ 
 
- const volleyball = document.querySelector(".in-play-live-list div:nth-child(11)");
+ const volleyball = document.querySelector(".in-play-live-list div:nth-child(15)");
  const volleyballList = document.querySelector(".in-play-live-list .volleyball-list");
  const volleyballclickedOne = document.querySelector(".in-play-live-list .volleyball-list .one");
  const volleyballactiveOne = document.querySelector(".in-play-live-list .volleyball-list .second-part.one");
@@ -298,7 +250,7 @@ clickedSix.addEventListener("click", () =>{
 
  /************************* cricket *************************/ 
 
- const cricket = document.querySelector(".in-play-live-list div:nth-child(13)");
+ const cricket = document.querySelector(".in-play-live-list div:nth-child(17)");
  const cricketList = document.querySelector(".in-play-live-list .cricket-list");
  const cricketclickedOne = document.querySelector(".in-play-live-list .cricket-list .one");
  const cricketactiveOne = document.querySelector(".in-play-live-list .cricket-list .second-part.one");
@@ -349,7 +301,7 @@ clickedSix.addEventListener("click", () =>{
  });
 /************************* darts *************************/ 
 
-const  darts = document.querySelector(".in-play-live-list div:nth-child(15)");
+const  darts = document.querySelector(".in-play-live-list div:nth-child(19)");
 const dartsList = document.querySelector(".in-play-live-list .darts-list");
 const dartsclickedOne = document.querySelector(".in-play-live-list .darts-list .one");
 const dartsactiveOne = document.querySelector(".in-play-live-list .darts-list .second-part.one");
@@ -401,7 +353,7 @@ dartsclickedSix.addEventListener("click", () =>{
 
 /************************* esports *************************/ 
 
-const  esports = document.querySelector(".in-play-live-list div:nth-child(17)");
+const  esports = document.querySelector(".in-play-live-list div:nth-child(21)");
 const esportsList = document.querySelector(".in-play-live-list .esports-list");
 const esportsclickedOne = document.querySelector(".in-play-live-list .esports-list .one");
 const esportsactiveOne = document.querySelector(".in-play-live-list .esports-list .second-part.one");
@@ -453,7 +405,7 @@ esportsclickedSix.addEventListener("click", () =>{
 
 /************************* greyhounds *************************/ 
 
-const  greyhounds = document.querySelector(".in-play-live-list div:nth-child(19)");
+const  greyhounds = document.querySelector(".in-play-live-list div:nth-child(23)");
 const greyhoundsList = document.querySelector(".in-play-live-list .greyhounds-list");
 const greyhoundsclickedOne = document.querySelector(".in-play-live-list .greyhounds-list .one");
 const greyhoundsactiveOne = document.querySelector(".in-play-live-list .greyhounds-list .second-part.one");
@@ -505,7 +457,7 @@ greyhoundsclickedSix.addEventListener("click", () =>{
 
 /************************* hockey *************************/ 
 
-const  hockey = document.querySelector(".in-play-live-list div:nth-child(21)");
+const  hockey = document.querySelector(".in-play-live-list div:nth-child(25)");
 const hockeyList = document.querySelector(".in-play-live-list .hockey-list");
 const hockeyclickedOne = document.querySelector(".in-play-live-list .hockey-list .one");
 const hockeyactiveOne = document.querySelector(".in-play-live-list .hockey-list .second-part.one");
@@ -558,7 +510,7 @@ hockeyclickedSix.addEventListener("click", () =>{
 
 const liste = document.querySelector(".in-play-live-matches-header .menu");
 const sentences = Array.from(liste.children);
-/*const    activeSpace = document.querySelector("in-play-live-matches-body div.active");*/
+const    activeSpace = document.querySelector("in-play-live-matches-body div.active");
 
 const parts = document.querySelector(".in-play-live-matches-body");
 const part = Array.from(parts.children);
@@ -672,7 +624,7 @@ const  underList14= document.querySelector(".in-play-live-matches-body .in-play-
 
     /************************* for the slider/all *************************/ 
 
-    const slider = document.querySelector(".in-play-live-matches-body .tenth-MG-list .slider-all .slider");
+   const slider = document.querySelector(".in-play-live-matches-body .tenth-MG-list .slider-all .slider");
     const  all = document.querySelector(".in-play-live-matches-body .tenth-MG-list .slider-all .all");
     const sliderPart= document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-all div.tenth-MG-list div.two-lists div.MG-under-list-slider");
     const  allPart = document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-all div.tenth-MG-list div.two-lists div.MG-under-list-all");
@@ -709,7 +661,7 @@ const  underList14= document.querySelector(".in-play-live-matches-body .in-play-
     
         /************************* for the underlists ((goals)) *************************/ 
 
-        const list16 = document.querySelector(".in-play-live-matches-body-goals .third-DC-list div.DC");
+      const list16 = document.querySelector(".in-play-live-matches-body-goals .third-DC-list div.DC");
         const  underList16= document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-goals .third-DC-list div.DC-under-list");
            list16.addEventListener("click", () =>{
             underList16.classList.toggle("is-clicked");
@@ -729,7 +681,7 @@ const  underList14= document.querySelector(".in-play-live-matches-body .in-play-
 
         /************************* for the underlists ((half)) *************************/ 
 
-        const list19 = document.querySelector(".in-play-live-matches-body-half .third-DC-list div.DC");
+       const list19 = document.querySelector(".in-play-live-matches-body-half .third-DC-list div.DC");
         const  underList19= document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-half .third-DC-list div.DC-under-list");
            list19.addEventListener("click", () =>{
             underList19.classList.toggle("is-clicked");
@@ -743,7 +695,7 @@ const  underList14= document.querySelector(".in-play-live-matches-body .in-play-
 
                /************************* for the underlists ((minutes)) *************************/ 
 
-               const list21 = document.querySelector(".in-play-live-matches-body-minutes .third-DC-list div.DC");
+             const list21 = document.querySelector(".in-play-live-matches-body-minutes .third-DC-list div.DC");
                const  underList21= document.querySelector(".in-play-live-matches-body .in-play-live-matches-body-minutes .third-DC-list div.DC-under-list");
                   list21.addEventListener("click", () =>{
                    underList21.classList.toggle("is-clicked");
@@ -756,21 +708,41 @@ const  underList14= document.querySelector(".in-play-live-matches-body .in-play-
                });
 
     /************************* for the tracker part  ((stats-timeline)) *************************/ 
-    const stats = document.querySelector(".in-play-live-tracker .st-T-line .stats-timeline div:nth-child(1)");
-    const  timeline= document.querySelector(".in-play-live-tracker .st-T-line .stats-timeline div:nth-child(2)");
-       stats.addEventListener("click", () =>{
-        stats.classList.toggle("active");
+    const live = document.querySelector(".in-play-live-tracker .st-T-line .stats-timeline div:nth-child(1)");
+   const stats = document.querySelector(".in-play-live-tracker .st-T-line .stats-timeline div:nth-child(2)");
+    const  timeline= document.querySelector(".in-play-live-tracker .st-T-line .stats-timeline div:nth-child(3)");
+    const  icon= document.querySelector(".in-play-live-tracker .st-T-line .stats-timeline i ");
+    const  statsPart= document.querySelector(".in-play-live-tracker .soccer-tracker .stats ");
+    const  trackerPart= document.querySelector(".in-play-live-tracker .soccer-tracker .tracker-part ");
+
+    stats.addEventListener("click", () =>{
+        stats.classList.add("active");
         timeline.classList.remove("active");
+    });
+      timeline.addEventListener("click", () =>{
+        timeline.classList.add("active");
+        stats.classList.remove("active");
+        live.classList.remove("active");
+    });
+    live.addEventListener("click", () =>{
+        live.classList.add("active");
+        trackerPart.classList.add("active");
+        timeline.classList.remove("active");
+        statsPart.classList.remove("active");
 
     });
+    icon.addEventListener("click", () =>{
+        statsPart.classList.add("active");
+        trackerPart.classList.remove("active");
+        live.classList.remove("active");
 
-      timeline.addEventListener("click", () =>{
-        timeline.classList.toggle("active");
-        stats.classList.remove("active");
-
+    });
+    timeline.addEventListener("click", () =>{
+        statsPart.classList.remove("active");
+        trackerPart.classList.remove("active");
     });
      /************************* for the chevron down list *************************/ 
-     const chevron = document.querySelector(".in-play-live-tracker .header i:nth-child(6)");
+    const chevron = document.querySelector(".in-play-live-tracker .header i:nth-child(6)");
      const  footList= document.querySelector(".in-play-live-tracker .match-list");
         chevron.addEventListener("click", () =>{
          footList.classList.toggle("active-responsive");
@@ -778,7 +750,7 @@ const  underList14= document.querySelector(".in-play-live-matches-body .in-play-
 
 
      /************************* soccer list under 950 px  *************************/ 
-     const clickedOnee = document.querySelector(".in-play-live-tracker .match-list .one");
+    const clickedOnee = document.querySelector(".in-play-live-tracker .match-list .one");
      const activeOnee = document.querySelector(".in-play-live-tracker .match-list .second-part.one");
      
      clickedOnee.addEventListener("click", () =>{
