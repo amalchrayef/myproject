@@ -1518,7 +1518,7 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 
 .in-play-live {
   display: grid;
-  grid-template-columns: [column-1] 26rem [column-2] 1fr [column-3] 42rem [column-4];
+  grid-template-columns: [column-1] 26rem [column-2] 1fr [column-3] 43rem [column-4];
   /***************************** 1150px *************************************/
   /***************************** 950px *************************************/
   /***************************** 350px *************************************/
@@ -1661,6 +1661,19 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
 }
 .in-play-live-list section.alpine-list section.item-1 .first-part section span {
   display: none;
+}
+.in-play-live-list section.match-list .second-part {
+  position: relative;
+}
+.in-play-live-list section.match-list .second-part input {
+  position: absolute;
+  opacity: 3;
+  z-index: 3;
+  width: 30vw;
+  height: 5.5rem;
+}
+.in-play-live-list section.match-list .second-part input [type^=checkbox]:checked + section.match-list .second-part {
+  background-color: #126e51;
 }
 .in-play-live-list section.match-list .second-part.is-clicked, .in-play-live-list section.tennis-list .second-part.is-clicked, .in-play-live-list section.american-football-list .second-part.is-clicked, .in-play-live-list section.basketball-list .second-part.is-clicked, .in-play-live-list section.volleyball-list .second-part.is-clicked, .in-play-live-list section.cricket-list .second-part.is-clicked, .in-play-live-list section.darts-list .second-part.is-clicked, .in-play-live-list section.esports-list .second-part.is-clicked, .in-play-live-list section.greyhounds-list .second-part.is-clicked, .in-play-live-list section.hockey-list .second-part.is-clicked, .in-play-live-list section.bandy-list .second-part.is-clicked {
   display: block;
@@ -2637,6 +2650,20 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   color: var(--color-primary-m-light);
   border-top: 0.2rem solid #404040;
 }
+.in-play-live-tracker .my-bets .active {
+  display: block;
+  padding-bottom: 2rem;
+}
+.in-play-live-tracker .my-bets .not-active {
+  display: none;
+  padding-bottom: 2rem;
+}
+.in-play-live-tracker .my-bets .first-lign .list .active {
+  display: block;
+}
+.in-play-live-tracker .my-bets .first-lign .list .not-active {
+  display: none;
+}
 .in-play-live-tracker .my-bets h2 {
   color: var(--color-tertiary-m-dark);
 }
@@ -2646,6 +2673,41 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   justify-content: space-between;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  position: relative;
+}
+.in-play-live-tracker .my-bets .first-lign .list input[id^=btn-9]:checked + ul {
+  display: block;
+}
+.in-play-live-tracker .my-bets .first-lign input {
+  outline: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0.6vw;
+  width: 7rem;
+  height: 7rem;
+}
+.in-play-live-tracker .my-bets .first-lign ul {
+  position: absolute;
+  background-color: var(--color-tertiary-m-light);
+  right: 2rem;
+  top: 3.5rem;
+  display: block;
+  z-index: 5;
+  width: 15rem;
+  display: none;
+}
+.in-play-live-tracker .my-bets .first-lign ul li:first-child {
+  background-color: var(--color-fifthynary);
+  padding: 0.5rem;
+}
+.in-play-live-tracker .my-bets .first-lign ul li {
+  background-color: var(--color-quaternary-m-dark);
+  padding: 0.75rem;
+  border-bottom: 1px solid #9c9c9c;
+  color: var(--color-primary-m-dark);
+}
+.in-play-live-tracker .my-bets .first-lign ul li:first-child {
+  color: var(--color-secondary);
 }
 .in-play-live-tracker .my-bets .first-lign div:nth-child(2) {
   display: flex;
@@ -2663,6 +2725,14 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   border: 0.1rem solid var(--color-fifthynary-m--light);
   padding: 0.75rem;
   margin-bottom: 1.2rem;
+  transition: transform 0.35s ease-in-out;
+}
+.in-play-live-tracker .my-bets .cards:hover {
+  transform: scale(1.04);
+  background-color: var(--color-fifthynary-m--light);
+}
+.in-play-live-tracker .my-bets .cards i {
+  float: right;
 }
 .in-play-live-tracker .my-bets .cards .cotes {
   display: flex;
@@ -2672,22 +2742,45 @@ input[id^=bttn]:checked + ul, input[id^=btnn]:checked + ul, input[id^=btnnn]:che
   color: var(--color-tertiary-m--dark);
 }
 .in-play-live-tracker .my-bets input[type=text] {
+  outline: 0;
   background-color: var(--color-fifthynary-m--light);
   color: white;
   border: none;
   width: 6rem;
   height: 2.7rem;
+  border-radius: 10%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none;
+}
+.in-play-live-tracker .my-bets input[type=text]:focus {
+  border: none;
 }
 .in-play-live-tracker .my-bets button {
-  background-color: #3CBC8D;
   border: none;
   cursor: pointer;
-  width: 7rem;
-  height: 2.7rem;
+  width: 8rem;
+  height: 3rem;
+  border-left: 1rem;
+  color: rgb(165, 163, 163);
+  background: transparent;
+  border: 0.01rem rgb(165, 163, 163) solid;
+  border-radius: 0.5rem;
+  transition: all 0.35s ease-in-out;
+}
+.in-play-live-tracker .my-bets button:hover {
+  color: white;
+  background-color: #5fe8bd;
+  border: 0.01rem #5fe8bd solid;
 }
 .in-play-live-tracker .my-bets div.inputs {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 2rem;
+  outline: 0;
+}
+.in-play-live-tracker .my-bets div.inputs input[type=text] {
+  border-left: 8rem;
 }
 .in-play-live-tracker section.part-2 {
   display: flex;

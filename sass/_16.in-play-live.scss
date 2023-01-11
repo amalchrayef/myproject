@@ -1,6 +1,6 @@
 .in-play-live {
    display: grid;
-    grid-template-columns: [column-1] 26rem [column-2] 1fr [column-3] 42rem [column-4]  ;
+    grid-template-columns: [column-1] 26rem [column-2] 1fr [column-3] 43rem [column-4]  ;
  
     &-list{
         background-color: var(--color-secondary-m-dark);
@@ -180,6 +180,32 @@
               display: none;
             }
            }
+
+           & section.match-list .second-part
+         /*  , & section.tennis-list .second-part,
+            & section.american-football-list .second-part 
+            , & section.basketball-list .second-part
+            , & section.volleyball-list .second-part
+             , & section.cricket-list .second-part 
+             , & section.darts-list .second-part  ,
+              & section.esports-list .second-part,
+              & section.greyhounds-list .second-part,
+               & section.hockey-list .second-part,
+               & section.bandy-list .second-part */{
+                position: relative;
+                & input {
+                  position: absolute;
+                  opacity: 3;
+                  z-index: 3;
+                  width: 30vw;
+                   height: 5.5rem;
+                 }
+
+                & input [type^=checkbox]:checked + section.match-list .second-part
+                 {       
+                   background-color: #126e51;
+                 }
+          }
            & section.match-list .second-part.is-clicked
             , & section.tennis-list .second-part.is-clicked  ,
              & section.american-football-list .second-part.is-clicked 
@@ -192,7 +218,7 @@
                 & section.hockey-list .second-part.is-clicked,
                 & section.bandy-list .second-part.is-clicked{
             display: block;
-            display: flex;
+           display: flex;
             & .first-part{
               display: flex;
               flex-direction: column;
